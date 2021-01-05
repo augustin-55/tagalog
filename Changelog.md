@@ -1,0 +1,7 @@
+# V1 : Complete version of the website like May advice me
+    * We did a great website about "learn Tagalog". Gradually, she's becoming my existence, what I learn from life, in life. This website will be dedicated to us. I love you so much my May.
+
+# V2 : "May and Augustin"
+    * That's how I decided to call this blog. Our names together are the proves of my happiness, why I smile everyday. This blog will be consacrated to our life together. We're still apart, but we'll get there.
+
+**Markdown**
