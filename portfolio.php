@@ -8,11 +8,12 @@
 <!-- Main body : Portfolio -->
 <div class="main-container-portfolio">
     <?php while ($portfolio = $req->fetch()) { ?>
-    <section>
+    <section class="section-portfolio">
         <article>
             <img class="picture-portfolio" src="assets/pictures/portfolio/<?php echo $portfolio['picture']; ?>" alt="<?php echo $portfolio['title']; ?>">
         </article>
         <article class="aside-portfolio">
+            <div class="division-bar-portfolio"></div>
             <p class="title-portfolio"><?php echo $portfolio['title']; ?></p>
             <p class="description-portfolio"><?php echo $portfolio['description']; ?></p>
         </article>

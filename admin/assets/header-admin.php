@@ -13,7 +13,7 @@
     <!-- My stylesheet -->
     <link rel="stylesheet" href="../scss/style.css">
 </head>
-<body>
+<body class="admin-body">
     
 <!-- Header -->
 <header>
@@ -33,22 +33,18 @@
                 </li>
                 <!-- Vocabulary -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-language"></i>Vocabulary</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-language"></i>Manage vocabulary</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="courtesy.php">Courtesy</a>
-                        <a class="dropdown-item" href="numbers.php">Numbers</a>
-                        <a class="dropdown-item" href="cooking.php">Food</a>
-                        <a class="dropdown-item" href="animals.php">Animals</a>
-                        <a class="dropdown-item" href="people.php">People</a>
+                        <a class="dropdown-item" href="index.php">Courtesy</a>
                     </div>
                 </li>
                 <!-- Training -->
                 <li class="nav-item">
-                    <a class="nav-link" href="training.php"><i class="fas fa-graduation-cap"></i>Training</a>
+                    <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>Manage portfolio</a>
                 </li>
                 <!-- Bucket List -->
                 <li class="nav-item">
-                    <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Wish List</a>
+                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Manage travel stories</a>
                 </li>
             </ul>
         </div>

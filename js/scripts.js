@@ -12,7 +12,9 @@ $(function() {
             3.2 : Cooking
             3.3 : Courtesy
         4 : Training
-        5 : Bucket List
+        5 : About us
+        6 : Portfolio
+        7 : Travels
 
     */ 
 
@@ -34,13 +36,17 @@ $(function() {
         $(this).next().toggle();
     });
 
-    /* ---------- 5 : Wish List ---------- */
-
-    $('.linkToReality').click(function() {
-
-        $(this).parents('article').next().toggleClass('display-article');
-
+    /* ---------- 6 : Portfolio ---------- */
+    
+    $('.section-portfolio').mouseenter(function() {
+        $(this).children('.aside-portfolio').addClass('aside-portfolio-display animate__animated animate__flipInX');
+    }).mouseleave(function() {
+        $(this).children('.aside-portfolio').removeClass('aside-portfolio-display animate__animated animate__flipInX');
     });
 
+    /* ---------- 7 : Travels ---------- */
 
+    $('.linkToReality').click(function() {
+        $(this).parents('article').next().toggleClass('display-article');
+    });
 });
