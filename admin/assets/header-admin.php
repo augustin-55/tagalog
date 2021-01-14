@@ -32,11 +32,8 @@
                     <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home</a>
                 </li>
                 <!-- Vocabulary -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-language"></i>Manage vocabulary</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="index.php">Courtesy</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>Manage vocabulary</a>
                 </li>
                 <!-- Training -->
                 <li class="nav-item">

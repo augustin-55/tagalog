@@ -6,6 +6,10 @@
 ?>
 
 <!-- Main body : Portfolio -->
+<section class="title-portfolio">
+    <p>In this part, story of our life together through pictures... Always looking forward to spend time together...</p>
+    <div class="underline-title-portfolio"><i class="fas fa-heart"></i></div>
+</section>
 <div class="main-container-portfolio">
     <?php while ($portfolio = $req->fetch()) { ?>
     <section class="section-portfolio">

@@ -25,12 +25,14 @@
                         <th>Picture</th>
                         <th>English</th>
                         <th>Tagalog</th>
+                        <th>French</th>
                     </tr>
                     <?php while ($animals = $req->fetch()) { ?>
                         <tr>
                             <td><img src="assets/pictures/vocabulary/animals/<?php echo $animals['picture']; ?>" class="picture-animals" alt=""></td>
                             <td class="english-trad"><p><?php echo $animals['english']; ?></p></td>
                             <td class="tagalog-trad"><p><?php echo $animals['tagalog']; ?></p></td>
+                            <td class="french-trad"><p><?php echo $animals['french']; ?></p></td>
                         </tr>
                     <?php }; $req->closeCursor(); ?>
                 </table>

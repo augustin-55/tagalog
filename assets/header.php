@@ -31,7 +31,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="main-title">
-                <a class="navbar-brand" href="index.php">May & Augustin</a>
+                <a class="navbar-brand" href="index.php"><img src="assets/pictures/logo1.svg" alt="logo"></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -27,12 +27,14 @@
                             <th>Picture</th>
                             <th>English</th>
                             <th>Tagalog</th>
+                            <th>French</th>
                         </tr>
                         <?php while ($cooking = $req->fetch()) { ?>
                             <tr>
                                 <td><img src="assets/pictures/vocabulary/cooking/<?php echo $cooking['picture']; ?>" class="picture-cooking" alt=""></td>
                                 <td class="english-trad"><p><?php echo $cooking['english']; ?></p></td>
                                 <td class="tagalog-trad"><p><?php echo $cooking['tagalog']; ?></p></td>
+                                <td class="french-trad"><p><?php echo $cooking['french']; ?></p></td>
                             </tr>
                         <?php }; $req->closeCursor(); ?>
                     </table>
