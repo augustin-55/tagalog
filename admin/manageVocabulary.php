@@ -3,13 +3,28 @@
 <section class="main-container-admin-vocabulary main-container">
     <div class="menu-mVocabulary">
         <ul>
-            <li><a href="#">Animals</a></li>
-            <li><a href="#">Animals</a></li>
-            <li><a href="#">Animals</a></li>
+            <li><a href="?manageVocabulary=courtesy">Courtesy</a></li>
+            <li><a href="?manageVocabulary=food">Food</a></li>
+            <li><a href="?manageVocabulary=animals">Animals</a></li>
         </ul>
     </div>
     <div class="content-mVocabulary">
-        <?php include('assets/manageVocabulary/animals.php'); ?>
+        <?php
+            if (isset($_GET['manageVocabulary'])) {
+                if ($_GET['manageVocabulary'] == 'animals') {
+                    include_once('assets/manageVocabulary/animals.php');
+                }
+                else if ($_GET['manageVocabulary'] == 'courtesy') {
+                    include_once('assets/manageVocabulary/courtesy.php');
+                }
+                else if ($_GET['manageVocabulary'] == 'food') {
+                    include_once('assets/manageVocabulary/food.php');
+                }
+            }
+            else {
+                include_once('assets/manageVocabulary/courtesy.php');
+            }
+        ?>
     </div>
 </section>
 

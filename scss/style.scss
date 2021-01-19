@@ -63,7 +63,7 @@
 
 $main-purple: #542886;
 $main-blue: #0e0e1a;
-$main-hover: #7a3700;
+$main-hover: #bdbdbd;
 
 /* ----- 1 : Main body ----- */ 
 
@@ -868,7 +868,6 @@ footer {
 
         a {
             color: white;
-            // font-family: 'Oswald-regular';
             font-size: 15px;
 
             i {
@@ -911,4 +910,75 @@ footer {
 .main-container-admin-vocabulary {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    .menu-mVocabulary {
+        box-shadow: 2px 2px 2px black;
+        // border-radius: 5px;
+        background-color: $main-blue;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 20px 30px;
+
+                a {
+                    color: white;
+                }
+
+                a:hover,
+                a:focus,
+                a:active {
+                    text-decoration: none;
+                }
+            }
+
+            li:hover,
+            li:focus,
+            li:active {
+                background-color: black;
+            }
+        }
+    }
+
+    .content-mVocabulary {
+        border: 1px solid black;
+        padding: 0 20px;
+
+        section {
+            display: flex;
+
+            .table-mVocabulary {
+                // background-color: red;
+                text-align: center;
+
+                table {
+                    border-collapse: collapse;
+                    margin: 0 20px;
+                }
+
+                th, td {
+                    border: 1px solid #303030;
+                    padding: 10px 20px;
+                    color: white;
+                }
+
+                th {
+                    background-color: $main-blue;
+                    
+                }
+            }
+
+            .form-mVocabulary {
+                background-color: red;
+
+                form {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
 }
