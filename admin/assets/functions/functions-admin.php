@@ -2,7 +2,7 @@
 
 // Imports
 
-include('../assets/bdd/env.php');
+include('../env.php');
 
 // BDD
 try {
