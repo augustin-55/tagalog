@@ -2,7 +2,7 @@
 
 // Imports
 
-include('assets/bdd/env.php');
+include('../assets/bdd/env.php');
 
 // BDD
 try {
@@ -11,4 +11,3 @@ try {
 catch (Exception $e) {
     die('Errer : ' . $e->getMessage());
 }
-

@@ -1,4 +1,4 @@
-<?php require('../assets/functions/functions.php'); ?>
+<?php require('assets/functions/functions-admin.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
