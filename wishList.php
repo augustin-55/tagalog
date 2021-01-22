@@ -9,7 +9,7 @@
 
 <!-- Main body : Wish List -->
 <div class="main-container main-container-wishList">
-    <h2>Wish List</h2>
+    <h2>Our travels together</h2>
     <section class="dream-section-list">
         
         <?php while ($dream = $sql->fetch()) { ?>

@@ -2,8 +2,6 @@
 <?php
     $current_page = 'courtesy';
     include('assets/header.php');
-    $sql = 'SELECT * FROM courtesy ORDER BY id ASC';
-    $req = $bdd->query($sql); 
 ?>
 
 <!-- Main body : Courtesy -->
@@ -23,11 +21,11 @@
     <!-- Words section : basic talk -->
     <section class="section-courtesy-basics">
         <h2>Courtesy vocabulary : Basic talk</h2>
-        <?php while ($courtesy = $req->fetch()) { ?>
+        <?php while ($donnees = $courtesy->fetch()) { ?>
         <div class="flex-courtesy">
             <ul class="courtesy-article-words">
-                <li class="tagalog-basics-courtesy"><?php echo $courtesy['tagalog']; ?></li>
-                <li class="english-basics-courtesy"><?php echo $courtesy['english']; ?></li>
+                <li class="tagalog-basics-courtesy"><?php echo $donees['tagalog']; ?></li>
+                <li class="english-basics-courtesy"><?php echo $donnees['english']; ?></li>
             </ul>
         </div>
         <?php } $req->closeCursor(); ?>

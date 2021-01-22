@@ -63,7 +63,9 @@
 
 $main-purple: #542886;
 $main-blue: #0e0e1a;
+$main-pink: #16000f;
 $main-hover: #bdbdbd;
+$main-yellow: #414105;
 
 /* ----- 1 : Main body ----- */ 
 
@@ -71,6 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
 }
 
 .index-body {
@@ -81,30 +84,9 @@ body {
         width: 98%;
         background-color: #00000000;
 
-        // .navbar {
-
-        //     .navbar-brand {
-
-        //         img {
-        //             height: 100px;
-        //         }
-        //     }
-        // }
-
         .navbar-nav {
     
             li {
-    
-                // .dropdown-menu {
-                //     background-color: #0e0e1acb;
-    
-                //     a:hover,
-                //     a:focus,
-                //     a:active {
-                //         background-color: #090911cb;
-                //         color: white;
-                //     }
-                // }
                 
                 a {
                     color: #000000;
@@ -153,7 +135,8 @@ body {
 }
 
 .admin-body {
-    background-color: #1b1b1b;
+    // background-color: #1b1b1b;
+    background-image: url('../assets/pictures/admin/background-admin.png');
 }
 
 .main-container {
@@ -799,55 +782,99 @@ header {
     }
 }
 
-.main-container-portfolio {
+.main-content-portfolio {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 0 40px 0;
+    justify-content: space-around;
+    align-items: center;
 
-   section {
-       display: flex;
-       align-items: flex-end;
-       justify-content: center;
-       margin: 40px;
+    .main-menu-portfolio {
+        background-color: #0c0c0c;
+        box-shadow: 2px 2px 2px black;
+        margin: 0 20px 0 80px;
+        position: sticky;
+        top: 50px;
+        width: 10%;
 
-       .aside-portfolio {
-           position: absolute;
-           width: 800px;
-           background-color: #000000e0;
-           color: white;
-           display: none;
-           
-           .division-bar-portfolio {
-               height: 2px;
-               background-color: $main-hover;
-               width: 100%;
-               margin-bottom: 10px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                text-align: center;
+                padding: 20px 40px;
+
+                a {
+                    color: #b3b3b3;
+                    
+                }
+
+                a:hover,
+                a:focus,
+                a:active {
+                    text-decoration: none;
+                }
+            }
+
+            li:hover,
+            li:focus,
+            li:active {
+                background-color: $main-blue;
+            }
+        }
+    }
+
+    .main-container-portfolio {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0 40px 0;
+        width: 90%;
+    
+       section {
+           display: flex;
+           align-items: flex-end;
+           justify-content: center;
+           margin: 20px;
+    
+           .aside-portfolio {
+               position: absolute;
+               width: 600px;
+               background-color: #000000e0;
+               color: white;
+               display: none;
+               
+               .division-bar-portfolio {
+                   height: 2px;
+                   background-color: $main-hover;
+                   width: 100%;
+                   margin-bottom: 10px;
+               }
+    
+               .title-portfolio {
+                   text-align: center;
+                   font-family: 'Oswald-regular';
+                   font-size: 18px;
+               }
+    
+               .description-portfolio {
+                   text-align: justify;
+                   padding: 0 40px;
+                   font-family: 'Quicksand-regular';
+                   font-size: 14px;
+                    text-shadow: 2px 2px 2px black;
+               }
            }
-
-           .title-portfolio {
-               text-align: center;
-               font-family: 'Oswald-regular';
-               font-size: 18px;
+    
+           .aside-portfolio-display {
+               display: block
            }
-
-           .description-portfolio {
-               text-align: justify;
-               padding: 0 40px;
-               font-family: 'Quicksand-regular';
-               font-size: 14px;
-                text-shadow: 2px 2px 2px black;
+    
+           img {
+               width: 600px;
            }
        }
-
-       .aside-portfolio-display {
-           display: block
-       }
-
-       img {
-           width: 800px;
-       }
-   }
+    }
 }
 
 /* ----- 4 : Footer ----- */ 
@@ -911,11 +938,12 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px 0;
 
     .menu-mVocabulary {
         box-shadow: 2px 2px 2px black;
-        // border-radius: 5px;
-        background-color: $main-blue;
+        border-radius: 5px;
+        background-color: $main-pink;
 
         ul {
             list-style-type: none;
@@ -923,10 +951,12 @@ footer {
             margin: 0;
 
             li {
-                padding: 20px 30px;
+                text-align: center;
 
                 a {
                     color: white;
+                    display: inline-block;
+                    padding: 20px 30px;
                 }
 
                 a:hover,
@@ -939,14 +969,13 @@ footer {
             li:hover,
             li:focus,
             li:active {
-                background-color: black;
+                background-color: #0b0c11;
             }
         }
     }
 
     .content-mVocabulary {
-        border: 1px solid black;
-        padding: 0 20px;
+        padding: 0 40px;
 
         section {
             display: flex;
@@ -961,22 +990,61 @@ footer {
                 }
 
                 th, td {
-                    border: 1px solid #303030;
-                    padding: 10px 20px;
-                    color: white;
+                    border: 1px solid #030303;
+                    padding: 10px 30px;
                 }
 
                 th {
-                    background-color: $main-blue;
-                    
+                    background-color: $main-pink;
+                    color: $main-hover;
+                }
+
+                td {
+                    background-color: #272730;
+                    color: white;
+
+                    img {
+                        width: 100px;
+                    }
                 }
             }
 
             .form-mVocabulary {
-                background-color: red;
+                text-align: center;
+                background-color: $main-pink;
+                padding-top: 10px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px black;
+
 
                 form {
                     margin: 0 20px;
+
+                    div {
+                        margin: 20px 0;
+
+                        input {
+                            border-radius: 5px;
+                            background-color: #0b0b0e;
+                            color: #a3a3a3;
+                            border: 1px solid $main-yellow;
+                            padding: 5px 10px;
+                        }
+
+                        .upload-picture {
+                            text-transform: lowercase;
+                        }
+
+                        input:hover,
+                        input:focus,
+                        input:active {
+                            background-color: #121218;
+                        }
+
+                        input::placeholder {
+                            color: #363636;
+                        }
+                    }
                 }
             }
         }

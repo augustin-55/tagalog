@@ -1,14 +1,16 @@
 <?php
 
-// Imports
+// Import BDD
 
-include('env.php');
+require('env.php');
 
-// BDD
 try {
     $bdd = new PDO('mysql:host=localhost;dbname=tagalog;charset=utf8', $user, $mdp);
 }
 catch (Exception $e) {
-    die('Errer : ' . $e->getMessage());
+    die('Erreur : ' . $e->getMessage());
 }
 
+// Import queries
+
+require('queries.php');

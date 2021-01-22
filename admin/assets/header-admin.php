@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>May & Augustin- Admin</title>
+    <title>May & Augustin - Admin</title>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -33,15 +33,19 @@
                 </li>
                 <!-- Vocabulary -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>Manage vocabulary</a>
+                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>(M) vocabulary</a>
                 </li>
                 <!-- Training -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>Manage portfolio</a>
+                    <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>(M) Training</a>
+                </li>
+                <!-- Portfolio -->
+                <li class="nav-item">
+                    <a class="nav-link" href="managePortfolio.php"><i class="fas fa-graduation-cap"></i>(M) Portfolio</a>
                 </li>
                 <!-- Bucket List -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Manage travel stories</a>
+                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>(M) trips adventures</a>
                 </li>
             </ul>
         </div>

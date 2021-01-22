@@ -68,7 +68,7 @@
                     </li>
                     <!-- Bucket List -->
                     <li class="nav-item">
-                        <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Travels</a>
+                        <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
                     </li>
                 </ul>
             </div>
