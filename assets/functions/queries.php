@@ -8,8 +8,9 @@
     * Animals
 * 1 : Training
 * 2 : Portfolio
-* 3 : Trips
-* 4 : Category
+* 3 : Category
+* 4 : Trips
+* 5 : About us
 */
 
 $categoryPortfolio = '';
@@ -44,8 +45,10 @@ $query = 'SELECT * FROM portfolio INNER JOIN category ON portfolio.category_id =
 
 $portfolio = $bdd->query($query);
 
-/* ---------- 3 : Trips ---------- */ 
-
-/* ---------- 4 : Category ---------- */ 
+/* ---------- 3 : Category ---------- */ 
 
 $category = $bdd->query('SELECT * FROM category');
+
+/* ---------- 4 : Trips ---------- */ 
+
+$dream = $bdd->query("SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.id = feedback.id_dreamplace");

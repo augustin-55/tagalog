@@ -1,6 +1,6 @@
      <footer>
           <section>
-               <p>Copyright. <?php echo date('Y'); ?></p>
+               <p>May & Augustin. Copyright. <?php echo date('Y'); ?></p>
           </section>
           <section>
                <p><a href="admin/"><i class="fas fa-user"></i> Admin</a></p>

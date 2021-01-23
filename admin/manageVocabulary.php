@@ -1,6 +1,6 @@
 <?php include('assets/header-admin.php'); ?>
 
-<section class="main-container-admin-vocabulary main-container">
+<section class="main-container-mVocabulary main-container">
     <div class="menu-mVocabulary">
         <ul>
             <li><a href="?manageVocabulary=courtesy">Courtesy</a></li>

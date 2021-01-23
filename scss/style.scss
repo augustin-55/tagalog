@@ -63,9 +63,11 @@
 
 $main-purple: #542886;
 $main-blue: #0e0e1a;
-$main-pink: #16000f;
+$main-pink: #36151d;
 $main-hover: #bdbdbd;
 $main-yellow: #414105;
+$main-red: #410000;
+$main-pink-light: #582d35;
 
 /* ----- 1 : Main body ----- */ 
 
@@ -89,10 +91,10 @@ body {
             li {
                 
                 a {
-                    color: #000000;
+                    color: $main-red;
     
                     i {
-                        color: $main-blue;
+                        color: $main-pink-light;
                     }
                 }
     
@@ -124,6 +126,10 @@ body {
 .animals-body {
     background-image: url('../assets/pictures/vocabulary/animals/background.jpg');
     background-size: cover;
+}
+
+.courtesy-body {
+    background-image: url('../assets/pictures/vocabulary/courtesy/background.jpg');
 }
 
 .courtesy-body {
@@ -913,6 +919,18 @@ footer {
     }
 }
 
+.footer-admin {
+    p {
+        
+        a {
+
+            i{
+                color: $main-pink
+            }
+        }
+    }
+}
+
 /* ----- 5 : Admin ----- */
 
 // 5.1 : Main
@@ -934,13 +952,13 @@ footer {
 
 // 5.3 : Manage vocabulary
 
-.main-container-admin-vocabulary {
+.main-container-mVocabulary, .main-container-mPortfolio {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
 
-    .menu-mVocabulary {
+    .menu-mVocabulary, .menu-mPortfolio {
         box-shadow: 2px 2px 2px black;
         border-radius: 5px;
         background-color: $main-pink;
@@ -974,13 +992,14 @@ footer {
         }
     }
 
-    .content-mVocabulary {
+    .content-mVocabulary, .content-mPortfolio {
         padding: 0 40px;
 
         section {
             display: flex;
+            align-items: center;
 
-            .table-mVocabulary {
+            .table-mVocabulary, .table-mPortfolio {
                 // background-color: red;
                 text-align: center;
 
@@ -1006,10 +1025,20 @@ footer {
                     img {
                         width: 100px;
                     }
+
+                    i {
+                        color: $main-pink;
+                    }
+
+                    i:hover,
+                    i:focus,
+                    i:active {
+                        color: $main-hover;
+                    }
                 }
             }
 
-            .form-mVocabulary {
+            .form-mVocabulary, .form-mPortfolio {
                 text-align: center;
                 background-color: $main-pink;
                 padding-top: 10px;
@@ -1023,7 +1052,7 @@ footer {
                     div {
                         margin: 20px 0;
 
-                        input {
+                        input, textarea {
                             border-radius: 5px;
                             background-color: #0b0b0e;
                             color: #a3a3a3;
@@ -1037,11 +1066,14 @@ footer {
 
                         input:hover,
                         input:focus,
-                        input:active {
+                        input:active,
+                        textarea:hover,
+                        textarea:focus,
+                        textarea:active {
                             background-color: #121218;
                         }
 
-                        input::placeholder {
+                        input::placeholder, textarea::placeholder {
                             color: #363636;
                         }
                     }

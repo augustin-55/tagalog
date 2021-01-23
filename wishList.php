@@ -2,9 +2,6 @@
 <?php
     $current_page = 'wishList';
     include('assets/header.php');
-
-    $sql = $bdd->prepare("SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.id = feedback.id_dreamplace");
-    $sql->execute(); 
 ?>
 
 <!-- Main body : Wish List -->
@@ -12,26 +9,26 @@
     <h2>Our travels together</h2>
     <section class="dream-section-list">
         
-        <?php while ($dream = $sql->fetch()) { ?>
+        <?php while ($donnees = $dream->fetch()) { ?>
             <div class="flex-wishList">
                 <article class="dream-article">
-                    <img src="assets/pictures/wishList/<?php echo $dream['picture'] ?>" alt="<?php echo $dream['name']; ?>">
+                    <img src="assets/pictures/wishList/<?php echo $donnees['picture'] ?>" alt="<?php echo $donnees['name']; ?>">
                     <div class="dreamPlace-about">
                         <div class="separate-dreams"></div>
-                        <p class="dream-name"><?php echo $dream['name']; ?></p>
-                        <p class="dream-about"><?php echo $dream['description']; ?></p>
-                        <a href="#" class="linkToReality linkToReality-<?php echo $dream['name'] ?>">Our experience :)</a>
+                        <p class="dream-name"><?php echo $donnees['name']; ?></p>
+                        <p class="dream-about"><?php echo $donnees['description']; ?></p>
+                        <a href="#" class="linkToReality linkToReality-<?php echo $donnees['name'] ?>">Our experience :)</a>
                     </div>
                 </article>
                 <article class="reality-article">
-                    <img src="assets/pictures/lorem/<?php echo $dream['picture_one'] ?>" alt="<?php echo $dream['name']; ?>">
+                    <img src="assets/pictures/lorem/<?php echo $donnees['picture_one'] ?>" alt="<?php echo $donnees['name']; ?>">
                     <div class="realityPlace-about">
                         <div class="separate-reality"></div>
-                        <p class="reality-about"><?php echo $dream['experience']; ?></p>
+                        <p class="reality-about"><?php echo $donnees['experience']; ?></p>
                     </div>
                 </article>
             </div>
-        <?php } $sql->closeCursor(); ?>
+        <?php } ?>
         
     </section>
 </div>

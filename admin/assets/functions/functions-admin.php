@@ -2,7 +2,7 @@
 
 // Imports
 
-include('../env.php');
+include('env.php');
 
 // BDD
 try {
@@ -11,3 +11,5 @@ try {
 catch (Exception $e) {
     die('Errer : ' . $e->getMessage());
 }
+
+require('queries-admin.php');
