@@ -25,9 +25,9 @@
     </article>
     <article class="form-mPortfolio">
         <h4>Add a category</h4>
-        <form action="#" method="POST">
+        <form action="assets/managePortfolio/controller/add.php" method="POST">
             <div>
-                <input type="text" name="category" placeholder="Category">
+                <input type="text" name="category-list" placeholder="Category">
             </div>
             <div>
                 <input type="submit" value="Add">

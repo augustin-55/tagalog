@@ -25,7 +25,7 @@
         elseif($current_page == 'wishList') {echo 'wishList-body';}
         elseif($current_page == 'people') {echo 'people-body';}
         elseif($current_page == 'portfolio') {echo 'portfolio-body';}
-        elseif($current_page == 'aboutUS') {echo 'aboutUs-body';}
+        elseif($current_page == 'aboutUs') {echo 'aboutUs-body';}
     ?>">
 
     <!-- Header -->

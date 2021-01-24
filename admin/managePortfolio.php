@@ -18,7 +18,7 @@
                 }
             }
             else {
-                include_once('assets/managePortfolio/category-portfolio.php');
+                include_once('assets/managePortfolio/content-portfolio.php');
             }
         ?>
     </div>

@@ -21,7 +21,7 @@
                     <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
                     <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><a href="assets/managePortfolio/controller/delete.php?page=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -30,6 +30,14 @@
     <article class="form-mPortfolio">
         <h4>Add a new picture</h4>
         <form action="assets/managePortfolio/controller/add.php" method="POST">
+            <div>
+                <select name="category">
+                    <option value="0">---</option>
+                    <?php while ($donnees = $category->fetch()) { ?>
+                        <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
+                    <?php } ?>
+                </select>
+            </div>
             <div>
                 <input type="text" name="picture" placeholder="Picture.ext">
             </div>

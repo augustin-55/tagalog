@@ -11,9 +11,10 @@
 <section class="main-content-portfolio">
     <div class="main-menu-portfolio">
     <ul>
+        <li><a href="#">View all</a></li>
         <?php while ($donnees = $category->fetch()) { ?>
             <li><a href="?category=<?php echo $donnees['category']; ?>"><?php echo $donnees['category']; ?></a></li>
-        <?php } // $donnees->closeCursor(); ?>
+        <?php } ?>
     </ul>
     </div>
     <div class="main-container-portfolio">
@@ -28,7 +29,7 @@
                 <p class="description-portfolio"><?php echo $donnees['description']; ?></p>
             </article>
         </section>
-        <?php } // $donnees->closeCursor(); ?>
+        <?php } ?>
     </div>
 </section>
 
