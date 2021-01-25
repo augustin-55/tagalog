@@ -7,6 +7,7 @@
         <table >
             <thead>
                 <tr>
+                    <th>Category</th>
                     <th>Picture</th>
                     <th>Title</th>
                     <th>Description</th>

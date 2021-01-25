@@ -1,9 +1,9 @@
      <footer>
           <section>
-               <p>May & Augustin. Copyright. <?php echo date('Y'); ?></p>
+               <p><a href="admin/" class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</a> Copyright. <?php echo date('Y'); ?></p>
           </section>
           <section>
-               <p><a href="admin/"><i class="fas fa-user"></i> Admin</a></p>
+
           </section>     
      </footer>
     

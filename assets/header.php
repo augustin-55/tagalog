@@ -44,6 +44,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home</a>
                     </li>
+                    <!-- About us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.php"><i class="fas fa-heart"></i>About us</a>
+                    </li>
+                    <!-- Portfolio -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.php"><i class="fas fa-images"></i>Portfolio</a>
+                    </li>
+                    <!-- Bucket List -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
+                    </li>
                     <!-- Vocabulary -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-language"></i>Learning</a>
@@ -58,18 +70,6 @@
                     <!-- Training -->
                     <li class="nav-item">
                         <a class="nav-link" href="training.php"><i class="fas fa-graduation-cap"></i>Training</a>
-                    </li>
-                    <!-- About us -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.php"><i class="fas fa-heart"></i>About us</a>
-                    </li>
-                    <!-- Portfolio -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.php"><i class="fas fa-images"></i>Portfolio</a>
-                    </li>
-                    <!-- Bucket List -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
                     </li>
                 </ul>
             </div>

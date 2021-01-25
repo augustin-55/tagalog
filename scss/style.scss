@@ -29,6 +29,7 @@
     5 : Admin
         5.1 : Main
         5.2 : Homepage
+        5.3 : Manage tables
 */ 
 
 /* ----- 0 : Fonts and var ----- */
@@ -171,7 +172,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .index-body {
@@ -180,7 +181,7 @@ body {
     header {
         position: absolute;
         width: 98%;
-        background-color: #00000000;
+        
 
         .navbar-nav {
     
@@ -865,38 +866,128 @@ header {
 // 3.9 : About us
 
 .main-section-aboutUs {
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px 0;
 
     .main-profile {
-        // width: 200px;
-        // height: 800px;
-        border: 1px solid black;
+        background-color: #0e0e1aa8;
         padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
 
         article {
             display: flex;
             flex-direction: column;
             align-items: center;
 
+            .picture-display {
+                display: block;
+            }
+
+            .picture-none {
+                display: none;
+            }
+
             .profile-pictures {
                 display: flex;
                 flex-direction: column;
-
+                margin-bottom: 30px;
 
                 img {
                     width: 300px;
+                    border-radius: 5px;
+                }
+            }
+
+            .select-profile-link {
+                color: $main-hover;
+                margin-bottom: 30px;
+                font-family: 'Playball-regular';
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 70px;
+                    margin-right: 20px;
+                }
+
+                a {
+                    color: $main-hover;
+                    font-size: 24px;
+                    margin: 0 5px;
+                }
+
+                a:hover,
+                a:focus,
+                a:active {
+                    color: #9e4555;
+                    text-decoration: none;
+                }
+            }
+
+            .profile-presentation {
+                width: 250px;
+                margin-bottom: 20px;
+                text-align: justify;
+                font-family: 'Playball-regular';
+                font-size: 18px;
+                color: $main-hover;
+
+                .text-display {
+                    display: block;
+                }
+
+                .text-none {
+                    display: none;
+                }
+            }
+
+            .profile-socials {
+
+                .socials-display {
+                    display: block;
+                    padding: 0;
+                    list-style-type: none;
+                    display: flex;
+
+                    li {
+                        margin: 0 20px;
+
+                        a {
+
+                            i {
+                                color: $main-hover;
+                            }
+                        }
+                    }
+                }
+
+                .socials-none {
+                    display: none;
                 }
             }
         }
     }
 
     .aside-profile {
-        width: 600px;
-        height: 800px;
-        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;   
+        width: 70%;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+        background-color: #0e0e1aa8;
+        padding: 20px;
+
+        .menu-aboutUs {
+            // background-color: #0e0e1aa8;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        .content-aboutUs {
+            width: 800px;
+        }
     }
 }
 
@@ -1026,12 +1117,12 @@ header {
 
 footer {
     background-color: #0e0e1aa8;
-    width: 98%;
-    margin: 10px 20px;
+    margin: 20px;
     border-radius: 7px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
 
     p {
         margin: 0;
@@ -1043,9 +1134,10 @@ footer {
             font-size: 15px;
 
             i {
-                color: $main-purple;
+                color: $main-hover;
                 margin: 0 8px 0 0;
                 font-size: 17px;
+                opacity: 0;
             }
         }
 
@@ -1054,18 +1146,6 @@ footer {
         a:active {
             color: $main-hover;
             text-decoration: none;
-        }
-    }
-}
-
-.footer-admin {
-    p {
-        
-        a {
-
-            i{
-                color: $main-pink
-            }
         }
     }
 }
@@ -1089,7 +1169,7 @@ footer {
     border-radius: 5px;
 }
 
-// 5.3 : Manage vocabulary
+// 5.3 : Manage tables
 
 .main-container-mVocabulary, .main-container-mPortfolio {
     display: flex;
@@ -1223,4 +1303,17 @@ footer {
     }
 }
 
+// 5.4 : Footer
+
+.footer-admin {
+    p {
+        
+        a {
+
+            i {
+                opacity: 1;
+            }
+        }
+    }
+}
 

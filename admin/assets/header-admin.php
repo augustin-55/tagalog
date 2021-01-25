@@ -33,19 +33,19 @@
                 </li>
                 <!-- Vocabulary -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>(M) vocabulary</a>
+                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>Vocabulary</a>
                 </li>
                 <!-- Training -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>(M) Training</a>
+                    <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>Training</a>
                 </li>
                 <!-- Portfolio -->
                 <li class="nav-item">
-                    <a class="nav-link" href="managePortfolio.php"><i class="fas fa-graduation-cap"></i>(M) Portfolio</a>
+                    <a class="nav-link" href="managePortfolio.php"><i class="fas fa-graduation-cap"></i>Portfolio</a>
                 </li>
                 <!-- Bucket List -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>(M) trips adventures</a>
+                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Trips & adventures</a>
                 </li>
             </ul>
         </div>
