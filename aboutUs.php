@@ -13,7 +13,7 @@
             </div>
             <div class="select-profile-link"><img class="flower-picture" src="assets/pictures/about-us/flower.png" alt="flower"><img class="butterfly-picture picture-none" src="assets/pictures/about-us/butterfly.png" alt="butterfly"><a href="?profile=May" class="profile-May">May </a><span> & </span><a href="?profile=Augustin" class="profile-Augustin">Augustin</a></div>
             <div class="profile-presentation">
-                <p class="description-May">Integer venenatis risus vel sapien porta efficitur. Aliquam congue, lorem et ultrices tempor, purus nibh convallis velit, eget bibendum ipsum nunc in enim. Sed luctus nibh accumsan, tristique risus sit amet, pharetra justo. Morbi nec suscipit velit, vel eleifend arcu. Aenean accumsan lacinia mi, a vestibulum nisl. Nam tristique, nisi quis fermentum tempus, ipsum orci ultrices lorem, pulvinar pulvinar mi massa quis ex. In quis pretium nisl, vel efficitur sapien.</p>
+                <p class="description-May">I'm a ravishing woman coming from Philippines. My life is being full of beautiful accomplishments, how can I be this beautiful ? this is the biggest question of my life. I'm just wonderful and so lovable. (I belong to Augustin).</p>
                 <p class="description-Augustin text-none">Coming from France, passionnated by IT and farming. I live my passion fully at the best, especially making websites. Member of IT support for 2 years in Daimler buses company.</p>
             </div>
             <div class="profile-socials">

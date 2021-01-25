@@ -28,7 +28,7 @@ else if ($_GET['managePortfolio'] == 'category') {
     $delete = $bdd->prepare('DELETE FROM category WHERE id = "'.$id.'"');
 
     if ($delete->execute()) {
-        $confirmMessage = 'The article is well deleted from the database !';
+        $confirmMessage = 'This category is well deleted from the database !';
         header('location: ../../../confirm-portal.php?managePortfolio=category&message='.$confirmMessage.'');
     }
     else {

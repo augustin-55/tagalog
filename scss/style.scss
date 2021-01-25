@@ -884,10 +884,14 @@ header {
 
             .picture-display {
                 display: block;
+                animation: zoomIn;
+                animation-duration: 1s;
             }
 
             .picture-none {
                 display: none;
+                animation: zoomOut;
+                animation-duration: 1s;
             }
 
             .profile-pictures {
@@ -950,10 +954,14 @@ header {
 
                 .text-display {
                     display: block;
+                    animation: zoomIn;
+                animation-duration: 1s;
                 }
 
                 .text-none {
                     display: none;
+                    animation: zoomOut;
+                    animation-duration: 1s;
                 }
             }
 
@@ -984,10 +992,14 @@ header {
 
                 .socials-display {
                     display: flex;
+                    animation: zoomIn;
+                animation-duration: 1s;
                 }
 
                 .socials-none {
                     display: none;
+                    animation: zoomOut;
+                    animation-duration: 1s;
                 }
             }
         }
