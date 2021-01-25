@@ -908,6 +908,10 @@ header {
                 display: flex;
                 align-items: center;
 
+                span {
+                    margin-top: 4px;
+                }
+
                 img {
                     height: 70px;
                     margin-right: 20px;
@@ -919,11 +923,20 @@ header {
                     margin: 0 5px;
                 }
 
-                a:hover,
-                a:focus,
-                a:active {
-                    color: #9e4555;
+                .profile-May:hover,
+                .profile-May:focus,
+                .profile-May:active {
                     text-decoration: none;
+                    color: #9e4555;
+                    text-shadow: 2px 2px 2px black;
+                }
+
+                .profile-Augustin:hover,
+                .profile-Augustin:focus,
+                .profile-Augustin:active {
+                    text-decoration: none;
+                    color: #3a6d97;
+                    text-shadow: 2px 2px 2px black;
                 }
             }
 
@@ -946,8 +959,7 @@ header {
 
             .profile-socials {
 
-                .socials-display {
-                    display: block;
+                ul {
                     padding: 0;
                     list-style-type: none;
                     display: flex;
@@ -960,8 +972,18 @@ header {
                             i {
                                 color: $main-hover;
                             }
+
+                            i:hover,
+                            i:focus,
+                            i:active {
+                                color: $pink-light;
+                            }
                         }
                     }
+                }
+
+                .socials-display {
+                    display: flex;
                 }
 
                 .socials-none {
@@ -981,8 +1003,36 @@ header {
         padding: 20px;
 
         .menu-aboutUs {
-            // background-color: #0e0e1aa8;
+            background-color: #000000a8;
             box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding: 20px 40px;
+
+
+                    a {
+                        color: $main-hover;
+                        font-family: 'Oswald-regular';
+                    }
+                }
+
+                li:hover,
+                li:focus,
+                li:active {
+                    background-color: $main-blue;
+                    border-radius: 5px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
 
         .content-aboutUs {

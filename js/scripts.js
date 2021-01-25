@@ -78,6 +78,7 @@ $(function() {
         // Select profile link
         $('.butterfly-picture').addClass('picture-none').removeClass('picture-display');
         $('.flower-picture').addClass('picture-display').removeClass('picture-none');
+        $('.profile-May').css({'color': '#9e4555', 'text-shadow': '2px 2px 2px black'});
         // Description text
         $('.description-Augustin').addClass('text-none').removeClass('text-display');
         $('.description-May').addClass('text-display').removeClass('text-none');
@@ -92,6 +93,7 @@ $(function() {
         // Select profile link 
         $('.flower-picture').addClass('picture-none').removeClass('picture-display');
         $('.butterfly-picture').addClass('picture-display').removeClass('picture-none');
+        $('.profile-Augustin').css({'color': '#3a6d97', 'text-shadow': '2px 2px 2px black'});
         // Description text
         $('.description-May').addClass('text-none').removeClass('text-display');
         $('.description-Augustin').addClass('text-display').removeClass('text-none');
