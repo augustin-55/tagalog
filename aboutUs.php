@@ -31,13 +31,13 @@
     <section class="aside-profile">
         <div class="menu-aboutUs">
             <ul>
-                <li><a href="#">Our countries</a></li>
-                <li><a href="#">Jean Pierre</a></li>
-                <li><a href="#">Favorite songs</a></li>
+                <li><a href="?page=countries">Our countries</a></li>
+                <li><a href="?page=songs">Favorite songs</a></li>
             </ul>
         </div>
         <section class="content-aboutUs">
             <h4 class="text-center">~ About our countries ~</h4>
+            
             <article>
 
             </article>

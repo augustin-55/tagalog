@@ -46,7 +46,7 @@
                     </li>
                     <!-- About us -->
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.php"><i class="fas fa-heart"></i>About us</a>
+                        <a class="nav-link" href="aboutUs.php?profile=May"><i class="fas fa-heart"></i>About us</a>
                     </li>
                     <!-- Portfolio -->
                     <li class="nav-item">
