@@ -6,7 +6,7 @@
             <img src="../assets/pictures/portals/error.png" alt="Error picture">
             <p><?php echo $_GET['message']; ?></p>
         </article>
-        <form action="managePortfolio.php" method="POST">
+        <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio']; ?>" method="POST">
             <input type="submit" value="Previous">
         </form>
     </section>

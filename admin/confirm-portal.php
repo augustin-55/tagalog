@@ -6,7 +6,7 @@
             <img src="../assets/pictures/portals/confirm.png" alt="Confirm picture">
             <p><?php echo $_GET['message']; ?></p>
         </article>
-        <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio'] ?>" method="POST">
+        <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio']; ?>" method="POST">
             <input type="submit" value="Confirm">
         </form>
     </section>

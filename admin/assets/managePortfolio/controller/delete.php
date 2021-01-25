@@ -4,23 +4,35 @@ require('../../functions/functions-admin.php');
 
 var_dump($_GET);
 
-if ($_GET['page'] == 'content') {
+if ($_GET['managePortfolio'] == 'pictures') {
 
     $id = $_GET['id'];
 
     $delete = $bdd->prepare('DELETE FROM portfolio WHERE id = "'.$id.'"');
 
     if ($delete->execute()) {
-        $confirmMessage = 'Bien !';
-        header('location: ../../../confirm-portal.php?message='.$confirmMessage.'');
+        $confirmMessage = 'The article is well deleted from the database !';
+        header('location: ../../../confirm-portal.php?managePortfolio=pictures&message='.$confirmMessage.'');
     }
     else {
-        $errorMessage = 'Non !';
-        // header('location: ../../../error-portal.php?message='.$errorMessage.'');
+        $errorMessage = 'An error occured, this article can\'t be deleted';
+        header('location: ../../../error-portal.php?managePortfolio=pictures&message='.$errorMessage.'');
     }
-
 }
-else if ($_GET['page'] == 'category') {
+else if ($_GET['managePortfolio'] == 'category') {
 
     echo 'category';
+
+    $id = $_GET['id'];
+
+    $delete = $bdd->prepare('DELETE FROM category WHERE id = "'.$id.'"');
+
+    if ($delete->execute()) {
+        $confirmMessage = 'The article is well deleted from the database !';
+        header('location: ../../../confirm-portal.php?managePortfolio=category&message='.$confirmMessage.'');
+    }
+    else {
+        $errorMessage = 'An error occured, this category can\'t be deleted';
+        header('location: ../../../error-portal.php?managePortfolio=category&message='.$errorMessage.'');
+    }
 }

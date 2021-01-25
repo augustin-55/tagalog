@@ -6,7 +6,7 @@
 
 /* ----- Portfolio ----- */
 
-$portfolio = $bdd->query('SELECT * FROM portfolio');
+$portfolio = $bdd->query('SELECT * FROM category INNER JOIN portfolio ON category.id = portfolio.category_id');
 
 /* ----- Category ----- */
 

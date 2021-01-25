@@ -17,7 +17,7 @@
                     <tr>
                         <td><?php echo $donnees['category']; ?></td>
                         <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>
             </tbody>
@@ -25,7 +25,7 @@
     </article>
     <article class="form-mPortfolio">
         <h4>Add a category</h4>
-        <form action="assets/managePortfolio/controller/add.php" method="POST">
+        <form action="assets/managePortfolio/controller/add.php?managePortfolio=category" method="POST">
             <div>
                 <input type="text" name="category-list" placeholder="Category">
             </div>
