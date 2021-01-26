@@ -31,6 +31,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home</a>
                 </li>
+                <!-- About us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="manageAboutUs.php"><i class="fas fa-grin-hearts"></i>About us</a>
+                </li>
                 <!-- Vocabulary -->
                 <li class="nav-item">
                     <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>Vocabulary</a>
@@ -45,7 +49,7 @@
                 </li>
                 <!-- Bucket List -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Trips & adventures</a>
+                    <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
                 </li>
             </ul>
         </div>

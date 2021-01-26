@@ -73,6 +73,7 @@ $pink-light: #582d35;
 $pink-black: #1f0c11;
 $main-green: #264226;
 $green-light: #3a683a;
+$main-magenta: #7e1f43;
 
 // 0.3 : Portals
 .section-error-message {
@@ -172,7 +173,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // height: 100vh;
 }
 
 .index-body {
@@ -188,10 +188,10 @@ body {
             li {
                 
                 a {
-                    color: $main-red;
+                    color: #9b9b9b;
     
                     i {
-                        color: $pink-light;
+                        color: $main-magenta;
                     }
                 }
     
@@ -315,12 +315,10 @@ h4 {
 /* ----- 2 : Header ----- */
 
 header {
-    background-color: #0e0e1aa8;
-    // width: 98%;
+    background-color: #0e0e1ae1;
     margin: 10px 20px;
-    // position: absolute;
-    z-index: 100;
     border-radius: 7px;
+    z-index: 10;
 
     // 2.1 : Main title
 
@@ -1222,6 +1220,8 @@ footer {
         text-align: center;
     }
 }
+
+
 
 // 5.2 : Homepage
 

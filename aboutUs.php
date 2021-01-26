@@ -36,8 +36,20 @@
             </ul>
         </div>
         <section class="content-aboutUs">
-            <h4 class="text-center">~ About our countries ~</h4>
             
+                <?php if (isset($_GET['page'])) {
+                    if ($_GET['page'] == 'countries') {
+                        include_once('assets/about-us/countries.php');
+                    }
+                    else if ($_GET['page'] == 'songs') {
+                        include_once('assets/about-us/songs.php');
+                    }
+                }
+                else {
+                    include_once('assets/about-us/countries.php');
+                }
+                
+                ?>
             <article>
 
             </article>
