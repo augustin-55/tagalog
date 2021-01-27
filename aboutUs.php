@@ -31,6 +31,7 @@
     <section class="aside-profile">
         <div class="menu-aboutUs">
             <ul>
+                <li><a href="?page=meeting">Our meeting</a></li>
                 <li><a href="?page=countries">Our countries</a></li>
                 <li><a href="?page=songs">Favorite songs</a></li>
             </ul>
@@ -39,14 +40,17 @@
             
                 <?php if (isset($_GET['page'])) {
                     if ($_GET['page'] == 'countries') {
-                        include_once('assets/about-us/countries.php');
+                        include_once('assets/pages/about-us/countries.php');
+                    }
+                    if ($_GET['page'] == 'meeting') {
+                        include_once('assets/pages/about-us/meeting.php');
                     }
                     else if ($_GET['page'] == 'songs') {
-                        include_once('assets/about-us/songs.php');
+                        include_once('assets/pages/about-us/songs.php');
                     }
                 }
                 else {
-                    include_once('assets/about-us/countries.php');
+                    include_once('assets/about-us/pages/meeting.php');
                 }
                 
                 ?>

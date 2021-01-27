@@ -14,3 +14,14 @@ catch (Exception $e) {
 // Import queries
 
 require('queries.php');
+
+// Count number of months together
+
+$start = '2020-03-29';
+$end = date('Y-m-d');
+$datetime1 = new DateTime($start);
+$datetime2 = new DateTime($end);
+$interval = $datetime1->diff($datetime2);
+$nbday= $interval->format('%m');
+
+// echo $end;

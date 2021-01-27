@@ -419,75 +419,30 @@ header {
 // 3.2 : Homepage
 
 .main-container-home {
+    border: 1px solid black;
 
-    .flag-picture {
-        height: 180px;
-        position: absolute;
-        z-index: 100;
-        margin: 90px 0 0 20px;
-    }
+    .section-1-home {
+        display: flex;
+        flex-direction: column;
 
-    .carousel {
-
-        h5 {
-            color: #e6e6e6;
+        .intro-text-home {
+            color: #e6e6e6c4;
             text-shadow: 1px 1px 3px #0e0e1ab9;
-            font-family: 'Playball-regular';
-            font-size: 90px;
-            position: relative;
-            bottom: 60px;
-        }
-    }
-
-    .intro-text-home {
-        color: #e6e6e6c4;
-        text-shadow: 1px 1px 3px #0e0e1ab9;
-        font-size: 22px;
-        font-family: 'Lobster-regular';
-        text-align: center;
-        margin: 15px 0 80px 0;
-
-        .quote {
-            font-size: 30px;
-            color: #c58000a4;
-        }
-    }
-
-    .about-home {
-        margin: 0 0 30px 0;
-        border: 2px solid black;
-        background-color: #363636;
-        border-radius: 5px;
-
-        .map-about {
-            margin: 0 0 20px 20px;
-
-            img {
-                width: 600px;
-                border-radius: 5px;
-            }
-        }
-
-        .description-about {
-            width: 600px;
-            margin: 0 0 0 40px;
-            padding: 20px;
-            border-radius: 5px;
+            font-size: 22px;
+            font-family: 'Lobster-regular';
             text-align: center;
-
-            img {
-                width: 200px;
-                margin: 0 0 30px 0;
-            }
-
-            p {
-                color: #ffffffd7;
-                font-family: 'Oswald-regular';
-                text-shadow: 1px 1px 3px #000000;
-                margin: 0 0 30px 0;
-                line-height: 2em;
+            margin: 15px 0 80px 0;
+        
+            .quote {
+                font-size: 30px;
+                color: #c58000a4;
             }
         }
+    }
+
+    .section-2-home {
+        display: flex;
+        justify-content: space-around;
     }
 }
 

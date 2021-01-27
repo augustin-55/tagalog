@@ -54,7 +54,7 @@
                     </li>
                     <!-- Bucket List -->
                     <li class="nav-item">
-                        <a class="nav-link" href="wishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
+                        <a class="nav-link" href="wishList.php"><i class="fas fa-route"></i>Trips</a>
                     </li>
                     <!-- Vocabulary -->
                     <li class="nav-item dropdown">

@@ -1,1 +1,0 @@
-<h4 class="text-center">~ About our countries ~</h4>
