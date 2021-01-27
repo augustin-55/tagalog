@@ -88,7 +88,7 @@
        </section>
         <section>
             <article>
-                <img src="#" alt="couple picture home">
+                <img src="assets/pictures/lorem/lorem.jpg" alt="couple picture home">
             </article>
             <article>
                 <p>In  relationship for <?php echo $nbday; ?> months now, </p>

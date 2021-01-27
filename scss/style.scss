@@ -443,6 +443,13 @@ header {
     .section-2-home {
         display: flex;
         justify-content: space-around;
+
+        article {
+            
+            img {
+                border-radius: 100%;
+            }
+        }
     }
 }
 
