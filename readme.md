@@ -7,3 +7,5 @@
 * We can manage vocabulary and pictures about every moment we treasure, our trips together, in the admin part. It's much more easy and fast for us to update the content through a web interface.
 
 * 
+
+URL : http://localhost/fromScratch/tagalog/
