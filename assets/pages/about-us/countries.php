@@ -6,6 +6,7 @@
             <div class="flex">
                 <div class="map-about">
                     <img src="assets/pictures/home/philippines-map" alt="map of Philippines">
+                    <p><a href="#">Watch more pictures</a></p>
                 </div>
                 <article>
                     <div class="description-about">
@@ -14,13 +15,13 @@
                         <p>There are three geographic areas : Luçon, Visayas and Mindanao. Luzon is the largest and most northerly island, home to its capital, Manila, and the country's largest city, Quezon City.</p>
                         <p>Manila, is famous for its oceanfront walks and its centuries-old Chinatown, Binondo. Intramuros, the heart of the old town, was a fortified town during the colonial era. This neighborhood is home to the 17th-century Baroque Church of St. Augustin and Fort Santiago, a multi-story military prison and citadel.</p>
                     </div>
-                    <div>
-                        <p class="text-center"><a href="#">Wanna see more ?</a></p>
-                    </div>
-                    <div>
-                        <hr>
-                        <h4><button>What do we love in Philippines ?</button></h4>
-                    </div>
+                </article>
+            </div>
+            <div class="what-we-love">
+                <div class="separation-bar"></div>
+                <button>What do we love in Philippines ?</button>
+                <article>
+                    <p>I'm an article</p>
                 </article>
             </div>
         </section>
@@ -28,7 +29,7 @@
         <section class="about-france">
             <div class="flex">
                 <div class="map-about">
-                    <img src="assets/pictures/home/france-map" alt="map of France">
+                    <img src="assets/pictures/home/france-map.gif" alt="map of France">
                 </div>
                 <article>
                     <div class="description-about">

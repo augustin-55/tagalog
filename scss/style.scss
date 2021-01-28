@@ -909,7 +909,7 @@ header {
                 margin-bottom: 20px;
                 text-align: justify;
                 font-family: 'Playball-regular';
-                font-size: 18px;
+                font-size: 19px;
                 color: $main-hover;
 
                 .text-display {
@@ -976,16 +976,16 @@ header {
         padding: 20px;
 
         .menu-aboutUs {
-            
 
             ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
                 background-color: #000000a8;
-            box-shadow: 2px 2px 2px black;
-            border-radius: 5px;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5px;
                 position: fixed;
+                top: 300px;
 
                 li {
                     padding: 20px 40px;
@@ -1017,27 +1017,91 @@ header {
                 // background-color: black;
 
                 .about-philippines, .about-france {
-                    margin: 30px 0;
+                    margin: 50px 0;
 
                     .map-about {
                         // width: 100px;
     
                         img {
-                            height: 500px;
+                            width: 400px;
+                            margin-bottom: 40px;
+                            border-radius: 5px;
+                            box-shadow: 2px 2px 2px $pink-light;
+                        }
+
+                        p {
+                            text-align: center;
+
+                            a {
+                                font-family: 'Playball-regular';
+                                color: $pink-light;
+                                font-size: 22px;
+                                transition: 0.5s ease text-shadow;
+                            }
+
+                            a:hover,
+                            a:active,
+                            a:focus {
+                                text-decoration: none;
+                                text-shadow: 1px 1px 1px $pink-black;
+                                transition: 0.5s ease text-shadow;
+                            }
                         }
                     }
 
                     .description-about {
-                        padding: 20px 40px;
+                        padding: 0 60px;
 
                         img {
-                            height: 100px;
+                            height: 60px;
+                            display: block;
+                            margin: 0 auto 40px auto;
                         }
 
                         p {
                             color: $main-hover;
-                            // width: 400px;
                             text-align: justify;
+                            font-family: 'Quicksand-regular';
+                            text-shadow: 1px 1px 1px $pink-black;                        }
+                    }
+
+                    .what-we-love {
+                        display: flex;
+                        flex-direction: column;
+
+                        .separation-bar {
+                            height: 1px;
+
+                            background-color: #46464649;
+                            margin: 20px;
+                        }
+
+                        button {
+                            display: block;
+                            margin: auto;
+                            background-color: $pink-light;
+                            border-radius: 5px;
+                            border: none;
+                            padding: 5px;
+                            font-size: 13px;
+                            color: $main-hover;
+                            transition: 0.5s ease box-shadow;
+                            font-family: 'Quicksand-regular';
+                        }
+
+                        button:hover,
+                        button:active,
+                        button:focus {
+                            // background-color: $pink-black;
+                            box-shadow: 2px 2px 2px $pink-black;
+                            transition: 0.5s ease box-shadow;
+                        }
+
+                        article {
+                            // width: 200px;
+                            // height: 200px;
+                            border-radius: 5px;
+                            box-shadow: 2px 2px 2px $pink-black;
                         }
                     }
                 }
