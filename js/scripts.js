@@ -21,6 +21,22 @@ $(function() {
 
     /* ---------- 1 : Main functions ---------- */
 
+    // Toggle click
+
+    (function($) {
+        $.fn.clickToggle = function(func1, func2) {
+            var funcs = [func1, func2];
+            this.data('toggleclicked', 0);
+            this.click(function() {
+                var data = $(this).data();
+                var tc = data.toggleclicked;
+                $.proxy(funcs[tc], this)();
+                data.toggleclicked = (tc + 1) % 2;
+            });
+            return this;
+        };
+    }(jQuery));
+
     // Select $_GET on client side
 
     function $_GET(param) {
@@ -71,6 +87,7 @@ $(function() {
 
     /* ---------- 6 : About us ---------- */
 
+    // Left section
     if (profile == 'May') {
         // Profile picture
         $('.picture-Augustin').addClass('picture-none').removeClass('picture-display');
@@ -101,6 +118,17 @@ $(function() {
         $('.socials-May').addClass('socials-none').removeClass('socials-display');
         $('.socials-Augustin').addClass('socials-display').removeClass('socials-none');
     }
+
+    // Right section
+    $('.what-we-love button').clickToggle(function() {
+        // $(this).siblings('article').fadeIn('slow');
+        // $(this).siblings('article').removeClass('animate__animated animate__fadeOutRight');
+        $(this).siblings('article').addClass('d-block animate__animated animate__fadeIn');
+    }, function() {
+        // $(this).siblings('article').fadeOut();
+        $(this).siblings('article').removeClass('d-block animate__animated animate__fadeIn');
+        // $(this).siblings('article').addClass('animate__animated animate__fadeOutRight');
+    });
 
     /* ---------- 8 : Travels ---------- */
 

@@ -34,6 +34,9 @@
                 <li><a href="?page=meeting">Our meeting</a></li>
                 <li><a href="?page=countries">Our countries</a></li>
                 <li><a href="?page=songs">Favorite songs</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
             </ul>
         </div>
         <section class="content-aboutUs">
@@ -50,7 +53,7 @@
                     }
                 }
                 else {
-                    include_once('assets/about-us/pages/meeting.php');
+                    include_once('assets/pages/about-us/meeting.php');
                 }
                 
                 ?>

@@ -199,6 +199,10 @@ body {
                 a:focus,
                 a:active {
                     color: $main-hover;
+
+                    i {
+                        color: $main-purple;
+                    }
                 }
             }
         }
@@ -372,11 +376,13 @@ header {
                 color: white;
                 font-size: 15px;
                 font-family: 'Oswald-regular';
+                transition: 0.5s ease color;
 
                 i {
                     color: $main-purple;
                     margin: 0 8px 0 0;
                     font-size: 17px;
+                    transition: 0.5s ease color;
                 }
             }
 
@@ -384,6 +390,12 @@ header {
             a:focus,
             a:active {
                 color: $main-hover;
+                transition: 0.5s ease color;
+
+                i {
+                    color: $main-magenta;
+                    transition: 0.5s ease color;
+                }
             }
         }
     }
@@ -1071,14 +1083,13 @@ header {
 
                         .separation-bar {
                             height: 1px;
-
                             background-color: #46464649;
                             margin: 20px;
                         }
 
                         button {
                             display: block;
-                            margin: auto;
+                            margin: 0 auto 20px auto;
                             background-color: $pink-light;
                             border-radius: 5px;
                             border: none;
@@ -1092,16 +1103,23 @@ header {
                         button:hover,
                         button:active,
                         button:focus {
-                            // background-color: $pink-black;
                             box-shadow: 2px 2px 2px $pink-black;
                             transition: 0.5s ease box-shadow;
                         }
 
                         article {
-                            // width: 200px;
-                            // height: 200px;
+                            display: none;
                             border-radius: 5px;
                             box-shadow: 2px 2px 2px $pink-black;
+                            padding: 20px;
+                            border: 1px solid #46464649;
+
+                            p {
+                                color: $main-hover;
+                                text-align: justify;
+                                font-size: 15px;
+                                font-family: 'Quicksand-regular';
+                            }
                         }
                     }
                 }
@@ -1292,13 +1310,13 @@ footer {
 
 // 5.3 : Manage tables
 
-.main-container-mVocabulary, .main-container-mPortfolio {
+.main-container-mVocabulary, .main-container-mPortfolio, .main-container-mAboutUs {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
 
-    .menu-mVocabulary, .menu-mPortfolio {
+    .menu-mVocabulary, .menu-mPortfolio, .menu-mAboutUs {
         box-shadow: 2px 2px 2px black;
         border-radius: 5px;
         background-color: $main-pink;

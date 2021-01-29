@@ -1,5 +1,5 @@
 <div class="main-title-admin">
-    <h2>Manage Portfolio - Pictures and stories</h2>
+    <h2>Manage Portfolio - Pictures</h2>
 </div>
 
 <section>
