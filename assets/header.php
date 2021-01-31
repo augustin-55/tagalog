@@ -1,5 +1,3 @@
-<?php require('assets/functions/functions.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +13,7 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body class="<?php
+        // $current_page = '';
         // Body background
         if($current_page == 'numbers') {echo 'numbers-body';}
         elseif($current_page == 'index') {echo 'index-body';}

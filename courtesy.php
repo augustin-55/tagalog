@@ -1,5 +1,6 @@
 <!-- Header -->
 <?php
+    require('assets/functions/functions.php');
     $current_page = 'courtesy';
     include('assets/header.php');
 ?>

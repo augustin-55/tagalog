@@ -1,5 +1,6 @@
 <!-- Header -->
 <?php
+    require('assets/functions/functions.php');
     $current_page = 'numbers';
     include('assets/header.php');
 ?>

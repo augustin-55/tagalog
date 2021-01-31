@@ -1128,6 +1128,21 @@ header {
     }
 }
 
+.main-section-sm-countries {
+
+    .section-presentation-countries {
+        background-color: #0e0e1aa8;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    .btn-sm-countries {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
 // 3.10 : Portfolio
 
 .title-portfolio {

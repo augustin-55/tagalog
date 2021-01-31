@@ -1,5 +1,6 @@
 <!-- Header -->
 <?php
+    require('assets/functions/functions.php');
     $current_page = 'animals';
     include('assets/header.php');
     $sql = 'SELECT * FROM animals';

@@ -1,5 +1,6 @@
 <!-- Header -->
 <?php
+    require('assets/functions/functions.php');
     $current_page = 'cooking';
     include('assets/header.php');
     $sql = 'SELECT * FROM cooking';

@@ -6,7 +6,7 @@
             <div class="flex">
                 <div class="map-about">
                     <img src="assets/pictures/home/philippines-map" alt="map of Philippines">
-                    <p><a href="assets/pages/about-us/see-more/sm-philippines.php">Watch more pictures</a></p>
+                    <p><a href="sm-philippines.php">Watch more pictures</a></p>
                 </div>
                 <article>
                     <div class="description-about">
@@ -30,7 +30,7 @@
             <div class="flex">
                 <div class="map-about">
                     <img src="assets/pictures/home/france-map.gif" alt="map of France">
-                    <p><a href="assets/pages/about-us/see-more/sm-france.php">Watch more pictures</a></p>
+                    <p><a href="sm-france.php">Watch more pictures</a></p>
                 </div>
                 <article>
                     <div class="description-about">

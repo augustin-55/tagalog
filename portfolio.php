@@ -1,4 +1,5 @@
 <?php
+    require('assets/functions/functions.php');
     $current_page = 'portfolio';
     include('assets/header.php');
 ?>

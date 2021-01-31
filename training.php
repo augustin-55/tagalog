@@ -1,7 +1,8 @@
 <!-- Header -->
 <?php
-$current_page = 'training';
-include('assets/header.php');
+    require('assets/functions/functions.php');
+    $current_page = 'training';
+    include('assets/header.php');
 ?>
 
 <!-- Main body : Training -->
