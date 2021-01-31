@@ -278,6 +278,12 @@ h4 {
     margin: 5px 0 20px 0;
 }
 
+h5 {
+    font-family: 'Lobster-Regular';
+    color: #a7a7a7c4;
+    text-align: center; 
+}
+
 // 1.2 : Flex
 
 .flex {
@@ -1135,24 +1141,54 @@ header {
         padding: 20px;
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
+        width: 96%;
+        margin: 20px auto;
 
         article {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             border: 1px solid black;
 
             .left-part-article {
-                border: 1px solid black;
+                margin-right: 40px;
+
+                .bar-left-article {
+                    width: 2px;
+                    height: 50px;
+                    background-color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
 
                 .point-left-article {
-                    width: 2px;
-                    height: 2px;
+                    width: 100px;
+                    height: 6px;
                     background-color: black;
                 }
             }
 
-            .left-part-article {
-                border: 1px solid black;
+            .right-part-article {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    width: 600px;
+                    margin-right: 40px;
+                }
+
+                div {
+
+                    p {
+                        width: 300px;
+                        color: $main-hover;
+                        text-align: justify;
+                        font-family: 'Quicksand-regular';
+                        text-shadow: 1px 1px 1px $pink-black;
+                    }
+                }
             }
         }
     }

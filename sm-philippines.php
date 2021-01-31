@@ -10,11 +10,14 @@
         <article>
             <div class="left-part-article">
                 <div class="point-left-article"></div>
+                <div class="bar-left-article"></div>
             </div>
             <div class="right-part-article">
                 <img src="assets/pictures/lorem/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
-                <h5><?php echo $donnees['title']; ?></h5>
-                <p><?php echo $donnees['description']; ?></p>
+                <div>
+                    <h5><?php echo $donnees['title']; ?></h5>
+                    <p><?php echo $donnees['description']; ?></p>
+                </div>
             </div>
         </article>
     <?php } ?>

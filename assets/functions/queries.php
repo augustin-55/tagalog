@@ -55,6 +55,6 @@ $dream = $bdd->query('SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.
 
 /* ---------- 5 : About us ---------- */
 
-$smPhilippines = $bdd->query('SELECT * FROM articlescountries INNER JOIN countries ON articlescountries.country_id = countries.id WHERE country_id = "1"');
+$smPhilippines = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id WHERE country_id = "1"');
 
-$smFrance = $bdd->query('SELECT * FROM articlescountries INNER JOIN countries ON articlescountries.country_id = countries.id  WHERE country_id = "2"');
+$smFrance = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id  WHERE country_id = "2"');
