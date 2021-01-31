@@ -51,4 +51,10 @@ $category = $bdd->query('SELECT * FROM category');
 
 /* ---------- 4 : Trips ---------- */ 
 
-$dream = $bdd->query("SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.id = feedback.id_dreamplace");
+$dream = $bdd->query('SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.id = feedback.dreamplace_id');
+
+/* ---------- 5 : About us ---------- */
+
+$smPhilippines = $bdd->query('SELECT * FROM articlescountries INNER JOIN countries ON articlescountries.country_id = countries.id WHERE country_id = "1"');
+
+$smFrance = $bdd->query('SELECT * FROM articlescountries INNER JOIN countries ON articlescountries.country_id = countries.id  WHERE country_id = "2"');

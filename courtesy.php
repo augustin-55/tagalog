@@ -29,7 +29,7 @@
                 <li class="english-basics-courtesy"><?php echo $donnees['english']; ?></li>
             </ul>
         </div>
-        <?php } $req->closeCursor(); ?>
+        <?php } ?>
     </section>
 
     <!-- Words section : notes -->

@@ -1135,6 +1135,26 @@ header {
         padding: 20px;
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
+
+        article {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+
+            .left-part-article {
+                border: 1px solid black;
+
+                .point-left-article {
+                    width: 2px;
+                    height: 2px;
+                    background-color: black;
+                }
+            }
+
+            .left-part-article {
+                border: 1px solid black;
+            }
+        }
     }
 
     .btn-sm-countries {
