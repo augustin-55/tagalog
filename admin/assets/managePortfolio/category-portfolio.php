@@ -8,8 +8,8 @@
             <thead>
                 <tr>
                     <th>Category</th>
-                    <th>Modifier</th>
-                    <th>Supprimer</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>

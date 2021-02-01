@@ -9,7 +9,8 @@
     <?php while ($donnees = $smFrance->fetch()) { ?>
         <article>
             <div class="left-part-article">
-                <div class="bar-left-article"><div class="point-left-article"></div></div>
+                <div class="point-left-article"></div>
+                <div class="bar-left-article"></div>
             </div>
             <div class="right-part-article">
                 <img src="assets/pictures/lorem/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
@@ -22,8 +23,8 @@
     <?php } ?>
     </section>
     <section class="btn-sm-countries">
-        <a href="#">Go on top</a>
-        <a href="aboutUs.php?page=countries">Previous</a>
+        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        <a href="aboutUs.php?page=countries"><i class="fas fa-arrow-circle-left"></i></a>
     </section>
 </section>
 

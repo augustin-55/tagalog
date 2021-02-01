@@ -11,8 +11,8 @@
                     <th>Picture</th>
                     <th>Title</th>
                     <th>Description</th>
-                    <th>Modifier</th>
-                    <th>Supprimer</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>

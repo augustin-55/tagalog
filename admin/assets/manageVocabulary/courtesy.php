@@ -12,8 +12,8 @@
                     <th>English</th>
                     <th>Tagalog</th>
                     <th>French</th>
-                    <th>Modifier</th>
-                    <th>Supprimer</th>
+                    <th>Update</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>

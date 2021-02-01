@@ -76,6 +76,7 @@ $green-light: #3a683a;
 $main-magenta: #7e1f43;
 
 // 0.3 : Portals
+
 .section-error-message {
     display: flex;
     flex-direction: column;
@@ -1147,25 +1148,26 @@ header {
         article {
             display: flex;
             justify-content: center;
-            border: 1px solid black;
 
             .left-part-article {
-                margin-right: 40px;
+                margin-right: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
                 .bar-left-article {
                     width: 2px;
-                    height: 50px;
-                    background-color: black;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    height: 100%;
+                    background-color: $main-blue;
                 }
 
                 .point-left-article {
-                    width: 100px;
-                    height: 6px;
-                    background-color: black;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    background-color: #000000ab;
+                    position: absolute;
                 }
             }
 
@@ -1176,7 +1178,9 @@ header {
 
                 img {
                     width: 600px;
-                    margin-right: 40px;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 2px $main-blue;
+                    margin: 20px 60px 20px 0;
                 }
 
                 div {
@@ -1194,8 +1198,27 @@ header {
     }
 
     .btn-sm-countries {
-        border: 1px solid black;
-        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 98%;
+
+        a {
+            background-color: $main-pink;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black;
+            margin: 0 10px;
+            padding: 5px;
+            color: $main-hover;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            background-color: $pink-black;
+            text-decoration: none;
+        }
     }
 }
 
@@ -1360,14 +1383,16 @@ footer {
 
 /* ----- 5 : Admin ----- */
 
-// 5.1 : Main
-
-.main-title-admin {
-    
-    h2 {
-        text-align: center;
-    }
+mark {
+    background-color: #00000000;
+    color: $main-hover;
+    // margin: 0 20px;
+    display: inline-block;
+    width: 200px;
+    text-align: justify;
 }
+
+// 5.1 : Main
 
 
 
@@ -1385,12 +1410,13 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
 
     .menu-mVocabulary, .menu-mPortfolio, .menu-mAboutUs {
         box-shadow: 2px 2px 2px black;
         border-radius: 5px;
-        background-color: $main-pink;
+        background-color: $main-magenta;
+        margin-right: 20px;
 
         ul {
             list-style-type: none;
@@ -1422,19 +1448,39 @@ footer {
     }
 
     .content-mVocabulary, .content-mPortfolio {
-        padding: 0 40px;
+
+        .main-title-admin {
+    
+            h2 {
+                text-align: center;
+            }
+        }
+
+        form {
+            margin-bottom: 20px;
+
+            select {
+                background-color: $main-blue;
+                border: none;
+                color: $main-hover;
+                
+                option {
+                    text-align: center;
+                }
+            }
+        }
 
         section {
             display: flex;
             align-items: center;
 
-            .table-mVocabulary, .table-mPortfolio {
+            .table-mVocabulary, .table-mPortfolio, .table-mAboutUs {
                 // background-color: red;
                 text-align: center;
 
                 table {
                     border-collapse: collapse;
-                    margin: 0 20px;
+                    // margin: 0 20px;
                 }
 
                 th, td {
@@ -1443,12 +1489,12 @@ footer {
                 }
 
                 th {
-                    background-color: $main-pink;
+                    background-color: $main-magenta;
                     color: $main-hover;
                 }
 
                 td {
-                    background-color: #272730;
+                    background-color: #272730e7;
                     color: white;
 
                     img {
@@ -1456,7 +1502,7 @@ footer {
                     }
 
                     i {
-                        color: $main-pink;
+                        color: $main-magenta;
                     }
 
                     i:hover,
@@ -1467,12 +1513,13 @@ footer {
                 }
             }
 
-            .form-mVocabulary, .form-mPortfolio {
+            .form-mVocabulary, .form-mPortfolio, .form-mAboutUs {
                 text-align: center;
-                background-color: $main-pink;
-                padding-top: 10px;
+                background-color: $main-magenta;
+                padding: 10px 20px 0 20px;
                 border-radius: 5px;
                 box-shadow: 2px 2px 2px black;
+                margin-left: 20px;
 
 
                 form {

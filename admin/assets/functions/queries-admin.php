@@ -2,7 +2,11 @@
 
 /* -----  ----- */
 
-/* -----  ----- */
+/* ----- About us ----- */
+
+$countries = $bdd->query('SELECT * FROM countries');
+
+$smAll = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id');
 
 /* ----- Portfolio ----- */
 

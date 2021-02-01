@@ -23,8 +23,8 @@
     <?php } ?>
     </section>
     <section class="btn-sm-countries">
-        <a href="#">Go on top</a>
-        <a href="aboutUs.php?page=countries">Previous</a>
+        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        <a href="aboutUs.php?page=countries"><i class="fas fa-arrow-circle-left"></i></a>
     </section>
 </section>
 
