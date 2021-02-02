@@ -1,8 +1,19 @@
+<?php
+    if (isset($_GET['country'])) {
+        $countrySmSelect = 'ok';
+        var_dump($_GET);
+    }
+    else {
+        $countrySmSelect = 'non ok';
+        var_dump($_GET);
+    }
+?>
+
 <div class="main-title-admin">
     <h2>Manage About us - Countries</h2>
 </div>
 
-<form action="" method="GET">
+<form action="?country=" method="GET">
     <select name="country">
         <option value="default"> ----- </option>
         <?php while ($donnees = $countries->fetch()) { ?>
@@ -26,7 +37,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $smAll->fetch()) { ?>
+                <?php while ($donnees = $countrySmSelect->fetch()) { ?>
                     <tr>
                         <td><?php echo $donnees['country']; ?></td>
                         <td><?php echo $donnees['picture']; ?></td>

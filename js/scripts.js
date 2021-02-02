@@ -74,7 +74,7 @@ $(function() {
     // 4.3 : Courtesy
 
     $('.tagalog-basics-courtesy').hover(function() {
-        $(this).next().toggle();
+        $(this).nextAll().toggle();
     });
 
     /* ---------- 5 : Portfolio ---------- */

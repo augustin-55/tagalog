@@ -594,18 +594,17 @@ header {
             font-size: 18px;
             letter-spacing: 2px;
             text-align: center;
+            list-style-type: none;
             
             .tagalog-basics-courtesy {
                 color: #c78916;
                 margin: 0;
-                list-style-type: none;
             }
 
-            .english-basics-courtesy {
+            .english-basics-courtesy, .french-basics-courtesy {
                 color: #d6d6d6;
                 display: none;
                 margin: 0;
-                list-style-type: none;
             }
         }
     }
@@ -1353,30 +1352,50 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border: 1px solid black;
 
-    p {
-        margin: 0;
-        color: white;
-        font-family: 'Oswald-regular';
+    .login-admin-form {
+        border-radius: 5px;
+        background-color: black;
+        padding: 20px;
 
-        a {
-            color: white;
-            font-size: 15px;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            i {
-                color: $main-hover;
-                margin: 0 8px 0 0;
-                font-size: 17px;
-                opacity: 0;
+            div {
+                margin: 5px 0;
             }
         }
+    }
 
-        a:hover,
-        a:focus,
-        a:active {
-            color: $main-hover;
-            text-decoration: none;
+    section {
+
+        p {
+            margin: 0;
+            color: white;
+            font-family: 'Oswald-regular';
+    
+            a {
+                color: white;
+                font-size: 15px;
+    
+                i {
+                    color: $main-hover;
+                    margin: 0 8px 0 0;
+                    font-size: 17px;
+                    opacity: 0;
+                }
+            }
+    
+            a:hover,
+            a:focus,
+            a:active {
+                color: $main-hover;
+                text-decoration: none;
+            }
         }
     }
 }

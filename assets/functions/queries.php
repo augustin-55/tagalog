@@ -17,6 +17,8 @@ $categoryPortfolio = '';
 
 /* ---------- 0 : Learning ---------- */
 
+
+
 /* ----- 0.1 : Courtesy ----- */
 
 $courtesy = $bdd->query('SELECT * FROM courtesy');

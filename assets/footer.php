@@ -1,9 +1,22 @@
      <footer>
           <section>
+               <div class="login-admin-form">
+                    <form action="assets/pages/portals/controller/login.php" method="POST">
+                         <div>
+                              <input type="text" placeholder="Username" name="username">
+                         </div>
+                         <div>
+                              <input type="text" placeholder="Password" name="password">
+                         </div>
+                         <div>
+                              <input type="submit" value="Login">
+                         </div>
+                    </form>
+               </div>
                <p><a href="admin/" class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</a> Copyright. <?php echo date('Y'); ?></p>
           </section>
           <section>
-
+               <p>OK</p>
           </section>     
      </footer>
     

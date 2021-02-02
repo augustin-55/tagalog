@@ -25,8 +25,9 @@
         <?php while ($donnees = $courtesy->fetch()) { ?>
         <div class="flex-courtesy">
             <ul class="courtesy-article-words">
-                <li class="tagalog-basics-courtesy"><?php echo $donees['tagalog']; ?></li>
+                <li class="tagalog-basics-courtesy"><?php echo $donnees['tagalog']; ?></li>
                 <li class="english-basics-courtesy"><?php echo $donnees['english']; ?></li>
+                <li class="french-basics-courtesy"><?php echo $donnees['french']; ?></li>
             </ul>
         </div>
         <?php } ?>
