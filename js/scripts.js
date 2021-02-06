@@ -120,6 +120,12 @@ $(function() {
     }
 
     // Right section
+    $('.menu-aboutUs li').mouseenter(function() {
+        console.log('entré');
+    }).mouseleave(function() {
+        console.log('sorti');
+    });
+
     $('.what-we-love button').clickToggle(function() {
         // $(this).siblings('article').fadeIn('slow');
         // $(this).siblings('article').removeClass('animate__animated animate__fadeOutRight');

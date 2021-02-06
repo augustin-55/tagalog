@@ -3,6 +3,7 @@
     require('assets/functions/functions.php');
     $current_page = 'index';
     include('assets/header.php');
+    // var_dump($_SESSION);
 ?>
 
 <!-- Main body : Homepage -->

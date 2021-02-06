@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Import BDD
 
 require('env.php');
@@ -24,4 +26,3 @@ $datetime2 = new DateTime($end);
 $interval = $datetime1->diff($datetime2);
 $nbday= $interval->format('%m');
 
-// echo $end;

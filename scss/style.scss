@@ -1,8 +1,9 @@
 /*
-    0 : Fonts and var
+    0 : Bases
         0.1 : Fonts
         0.2 : Var
         0.3 : Portals
+        0.4 : Animations
 
     1 : Main body
         1.1 : Titles
@@ -32,7 +33,7 @@
         5.3 : Manage tables
 */ 
 
-/* ----- 0 : Fonts and var ----- */
+/* ----- 0 : Basis ----- */
 
 // 0.1 : Fonts
 
@@ -167,6 +168,10 @@ $main-magenta: #7e1f43;
         }
     }
 }
+
+// 0.4 : Animations
+
+
 
 /* ----- 1 : Main body ----- */ 
 
@@ -1003,10 +1008,11 @@ header {
                 box-shadow: 2px 2px 2px black;
                 border-radius: 5px;
                 position: fixed;
-                top: 300px;
+                top: 250px;
 
                 li {
                     padding: 20px 40px;
+                    transition: 0.5s ease background-color;
 
 
                     a {
@@ -1020,6 +1026,7 @@ header {
                 li:active {
                     background-color: $main-blue;
                     border-radius: 5px;
+                    transition: 0.5s ease background-color;
 
                     a {
                         text-decoration: none;
@@ -1062,7 +1069,6 @@ header {
                             a:focus {
                                 text-decoration: none;
                                 text-shadow: 1px 1px 1px $pink-black;
-                                transition: 0.5s ease text-shadow;
                             }
                         }
                     }
@@ -1345,6 +1351,29 @@ header {
 
 /* ----- 4 : Footer ----- */ 
 
+#login-admin-form {
+    border-radius: 5px;
+    background-color: $pink-black;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            margin: 5px 0;
+
+            input {
+                background-color: $main-blue;
+                border-radius: 5px;
+                color: $main-hover;
+            }
+        }
+    }
+}
+
 footer {
     background-color: #0e0e1aa8;
     margin: 20px;
@@ -1354,22 +1383,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     border: 1px solid black;
-
-    .login-admin-form {
-        border-radius: 5px;
-        background-color: black;
-        padding: 20px;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            div {
-                margin: 5px 0;
-            }
-        }
-    }
 
     section {
 
