@@ -7,21 +7,20 @@
     if (isset($_POST['username']) && isset($_POST['password'])) {
 
         if ($_POST['username'] != '' && $_POST['password'] != '') {
-            echo 'rempli';
 
-            $_SESSION['username'] == 'prout';
-            $_SESSION['password'] == 'prout 2';
+            while ($donnees = $user->fetch()) {
+                $username = $donnees['username'];
+                $password = $donnees['password'];
+            }
 
-            var_dump($_SESSION);
-
-            // if ($_SESSION['username'] == 'u') {
-            //     print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../admin/index.php\")');</script>");
-            // }
+            if ($username == $_POST['username'] && $password == $_POST['password']) {
+                print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../confirm-portal.php?message=You\'re now connected to the administration part of the website !\")');</script>");
+            }
+            else {
+                print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../error-portal.php?message=Your username or password seems wrong. May if it\'s you, please take contact with me very soon o.O\")');</script>");
+            }
         }
         else {
-            print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../admin/index.php\")');</script>");
+            print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../error-portal.php?message=You must fill all the fields there...\")');</script>");
         }
-    }
-    else {
-        print("<script type=\"text/javascript\">setTimeout('location=(\"../../../../admin/index.php\")');</script>");
     }

@@ -1,4 +1,4 @@
-<?php include('assets/header-admin.php'); var_dump($_SESSION);  ?>
+<?php include('assets/header-admin.php'); ?>
 
 <section class="main-container-admin-home main-container">
     

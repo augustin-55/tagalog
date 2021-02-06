@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo1.svg">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -144,9 +144,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="142.41168"
-     inkscape:cy="210.09519"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-10.302702"
+     inkscape:cy="167.31109"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -181,7 +181,7 @@
        sodipodi:nodetypes="ssscsscccscccccccscccccccccccccscsssssccsssss" />
     <path
        id="path2031"
-       style="fill:#0a0a0a;fill-opacity:0.554348;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1022-6)"
+       style="fill:#280000;fill-opacity:0.48913044;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1022-6);opacity:1"
        d="m 615.94697,220.2472 c -42.64481,9.13537 -44.96569,6.64197 -61.50584,8.39231 -44.26335,4.68411 -161.99777,2.96345 -161.99777,2.96345 l -29.28572,0.71428 c -54.05861,54.76397 -65.05739,97.3691 -104.77901,172.26646 -44.33108,83.58876 -82.90271,164.13664 -92.30636,202.64482 -7.9289,32.46902 -11.66454,32.19152 -11.76368,32.88476 l -8.08984,0.004 -40.34571,-0.90048 c -0.0595,0 -0.13771,1.14724 -0.4054,7.79384 -0.27507,6.8299 -1.24283,23.13888 -1.97155,36.70811 v 0 l 313.65234,0.50586 1.00977,-42.93164 v 0 0 c -29.50756,-0.64566 -41.07082,-0.32256 -57.57813,-0.50393 v 0 c -2.20951,-25.72726 53.01864,-142.36093 53.01864,-142.36093 v 0 0 l 39.48605,-0.33178 c 10.47338,27.39809 38.15976,85.05663 43.47188,143.83332 l -56.67969,-0.46295 v 0 l 0.54101,42.7832 197.19532,-0.27734 -0.8162,-39.04593 -50.20332,-0.92677 v 0 l -5.29548,-16.69089 -9.38169,-47.00139 c -6.71758,-55.23048 -13.63995,-111.94 -6.6663,-170.71568 7.44955,-62.7867 19.21603,-108.84651 50.69668,-189.3447 z m -71.50286,59.90501 v 0 0 0 0 0 c -31.33379,58.99502 -38.21721,83.96677 -45.7613,161.57797 l -71.00503,0.94158 v 0 c 2.53942,0 13.12055,-41.17769 38.93121,-78.02438 45.97747,-67.62936 77.78647,-84.46942 77.83512,-84.49517 z"
        transform="matrix(-0.26458333,0,0,0.26458333,210.31793,-0.85986936)"
        sodipodi:nodetypes="csccsscccsccccccccccccccccccccccscccccccccccc" />

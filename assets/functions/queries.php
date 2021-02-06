@@ -11,6 +11,7 @@
 * 3 : Category
 * 4 : Trips
 * 5 : About us
+* 6 : Portals
 */
 
 $categoryPortfolio = '';
@@ -60,3 +61,8 @@ $dream = $bdd->query('SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.
 $smPhilippines = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id WHERE country_id = "1"');
 
 $smFrance = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id  WHERE country_id = "2"');
+
+/* ---------- 6 : Portals ---------- */
+
+$user = $bdd->query('SELECT * FROM users');
+

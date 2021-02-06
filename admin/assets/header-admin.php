@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main logo -->
+    <link rel="icon" type="image/png" href="../assets/pictures/main-logo.png">
+    <!-- Main title -->
     <title>May & Augustin - Admin</title>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
@@ -30,6 +33,7 @@
                 <!-- Home -->
                 <li class="nav-item">
                     <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home</a>
+                    <div class="bar-nav-item"></div>
                 </li>
                 <!-- About us -->
                 <li class="nav-item">

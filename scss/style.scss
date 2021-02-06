@@ -199,6 +199,12 @@ body {
                     i {
                         color: $main-magenta;
                     }
+
+                    .bar-nav-item {
+                        width: 0;
+                        height: 1px;
+                        border-radius: 3px;
+                    }
                 }
     
                 a:hover,
@@ -208,6 +214,12 @@ body {
 
                     i {
                         color: $main-purple;
+                    }
+
+                    .bar-nav-item {
+                        width: 100%;
+                        background-color: $main-purple;
+                        transition: 0.5s ease width;
                     }
                 }
             }
@@ -248,7 +260,7 @@ body {
     background-image: url('../assets/pictures/vocabulary/courtesy/background.jpg');
 }
 
-.wishList-body, .people-body, .portfolio-body {
+.wishList-body, .people-body, .portfolio-body, .portals-body {
     background-color: #0a0a0a;
 }
 
@@ -390,6 +402,12 @@ header {
                 font-family: 'Oswald-regular';
                 transition: 0.5s ease color;
 
+                .bar-nav-item {
+                    width: 0;
+                    height: 1px;
+                    border-radius: 3px;
+                }
+
                 i {
                     color: $main-purple;
                     margin: 0 8px 0 0;
@@ -403,6 +421,12 @@ header {
             a:active {
                 color: $main-hover;
                 transition: 0.5s ease color;
+
+                .bar-nav-item {
+                    width: 100%;
+                    background-color: $main-magenta;
+                    transition: 0.5s ease width;
+                }
 
                 i {
                     color: $main-magenta;
@@ -1351,29 +1375,6 @@ header {
 
 /* ----- 4 : Footer ----- */ 
 
-#login-admin-form {
-    border-radius: 5px;
-    background-color: $pink-black;
-    padding: 20px;
-    margin-bottom: 10px;
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        div {
-            margin: 5px 0;
-
-            input {
-                background-color: $main-blue;
-                border-radius: 5px;
-                color: $main-hover;
-            }
-        }
-    }
-}
-
 footer {
     background-color: #0e0e1aa8;
     margin: 20px;
@@ -1386,14 +1387,47 @@ footer {
 
     section {
 
+        #login-admin-form {
+            display: none;
+            border-radius: 5px;
+            background-color: $pink-black;
+            padding: 20px;
+            margin-bottom: 10px;
+        
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+                div {
+                    margin: 5px 0;
+        
+                    input {
+                        background-color: $main-blue;
+                        border-radius: 5px;
+                        color: $main-hover;
+                        border-color: $main-yellow;
+                    }
+
+                    input:hover,
+                    input:focus,
+                    input:active {
+                        background-color: $main-pink;
+                    }
+                }
+            }
+        }
+
         p {
             margin: 0;
             color: white;
             font-family: 'Oswald-regular';
     
-            a {
+            .footer-link-admin {
                 color: white;
                 font-size: 15px;
+                border: none;
+                background-color: #00000000;
     
                 i {
                     color: $main-hover;
@@ -1403,11 +1437,11 @@ footer {
                 }
             }
     
-            a:hover,
-            a:focus,
-            a:active {
+            .footer-link-admin:hover,
+            .footer-link-admin:focus,
+            .footer-link-admin:active {
                 color: $main-hover;
-                text-decoration: none;
+                border: none;
             }
         }
     }

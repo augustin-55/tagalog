@@ -1,6 +1,5 @@
 <?php
-
-session_start();
+// session_start();
 
 // Import BDD
 
@@ -25,4 +24,9 @@ $datetime1 = new DateTime($start);
 $datetime2 = new DateTime($end);
 $interval = $datetime1->diff($datetime2);
 $nbday= $interval->format('%m');
+
+// User sessions
+
+// $_SESSION['username'] = '';
+// $_SESSION['password'] = '';
 

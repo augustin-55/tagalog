@@ -152,6 +152,12 @@ $(function() {
         $(this).children('i').addClass('animate__animated animate__fadeOutRight');
     });
 
+    $('.footer-link-admin').clickToggle(function() {
+        $('#login-admin-form').addClass('d-block animate__animated animate__fadeIn');
+    }, function() {
+        $('#login-admin-form').removeClass('d-block animate__animated animate__fadeIn');
+    });
+
     /* ---------- 10 : Admin ---------- */
 
 });

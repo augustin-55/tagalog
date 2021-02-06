@@ -3,7 +3,7 @@
 <section class="main-container-admin-portal main-container">
     <section class="section-confirm-message">
         <article>
-            <img src="../assets/pictures/portals/confirm.png" alt="Confirm picture">
+            <img src="../assets/pictures/portals/confirm-admin.png" alt="Confirm picture">
             <p><?php echo $_GET['message']; ?></p>
         </article>
         <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio']; ?>" method="POST">

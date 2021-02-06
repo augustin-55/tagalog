@@ -6,14 +6,15 @@
                               <input type="text" placeholder="Username" name="username">
                          </div>
                          <div>
-                              <input type="text" placeholder="Password" name="password">
+                              <input type="password" placeholder="Password" name="password">
                          </div>
                          <div>
                               <input type="submit" value="Login">
                          </div>
                     </form>
                </div>
-               <p><a href="admin/" class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</a> Copyright. <?php echo date('Y'); ?></p>
+               <p><button class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</button>Copyright <?php echo date('Y'); ?></p>
+               <!-- <p onClick="display()"><a href="javascript:void(0);" class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</a> Copyright. <?php echo date('Y'); ?></p> -->
           </section>
           <section>
                <p>OK</p>
