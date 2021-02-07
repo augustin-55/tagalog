@@ -7,6 +7,7 @@
     <section class="section-error-message">
         <article>
             <img src="assets/pictures/portals/error.png" alt="Error picture">
+            <h3>There's something wrong...</h3>
             <p><?php echo $_GET['message']; ?></p>
         </article>
         <form action="index.php" method="POST">

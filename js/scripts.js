@@ -57,11 +57,19 @@ $(function() {
     var $_GET = $_GET(),
         profile = $_GET['profile'];
 
+    // Smooth scrolling to page anchor on click
+    
+    // $('a[href^="#"]').click(function(){  
+    //     // var id = $(this).attr("href");
+    //     // var offset = $(id).offset().top 
+    //     var n = $(document).height();
+    //     $('html, body').animate({ scrollTop: n }, 50);
+    // }); 
+
     /* ---------- 3 : Homepage ---------- */
 
     $(document).ready(function() {
         $('.navbar-brand img').css({'opacity':'1'}).addClass('animate__animated animate__fadeInLeft');
-
         $('.underline-title-portfolio').css({'width':'200px', 'transition':'width 1s ease'});
     });
 
@@ -122,8 +130,12 @@ $(function() {
     // Right section
     $('.menu-aboutUs li').mouseenter(function() {
         console.log('entré');
+        // // $(this).removeClass('animate__animated animate__bounce');
+        // $(this).addClass('animate__animated animate__fadeIn');
     }).mouseleave(function() {
         console.log('sorti');
+        // $(this).removeClass('animate__animated animate__fadeIn');
+        // // $(this).addClass('animate__animated animate__fadeOutRight');
     });
 
     $('.what-we-love button').clickToggle(function() {
@@ -140,18 +152,29 @@ $(function() {
 
     /* ---------- 9 : Footer ---------- */
 
-    $('.footer-link-admin').mouseenter(function() {
-        $(this).children('i').removeClass('animate__animated animate__fadeOutRight');
-        $(this).children('i').addClass('animate__animated animate__fadeInRight');
+    $('.show-admin-btn i').mouseenter(function() {
+        $(this).parent().siblings('.info-form-admin').removeClass('d-none animate__animated animate__fadeOut');
+        $(this).parent().siblings('.info-form-admin').addClass('d-block animate__animated animate__fadeIn');
+
     }).mouseleave(function() {
-        $(this).children('i').removeClass('animate__animated animate__fadeInRight');
-        $(this).children('i').addClass('animate__animated animate__fadeOutRight');
+        $(this).parent().siblings('.info-form-admin').removeClass('d-block animate__animated animate__fadeIn');
+        $(this).parent().siblings('.info-form-admin').addClass('d-none animate__animated animate__fadeOut');
     });
 
-    $('.footer-link-admin').clickToggle(function() {
-        $('#login-admin-form').addClass('d-block animate__animated animate__fadeIn');
-    }, function() {
-        $('#login-admin-form').removeClass('d-block animate__animated animate__fadeIn');
+    $('.show-admin-btn i').click(function() {
+        $('.login-admin-form').css({'display':'block'}).removeClass('animate__animated animate__zoomOut').addClass('animate__animated animate__zoomIn');
+        $(this).parent().siblings('.info-form-admin-2').removeClass('d-none animate__animated animate__fadeOutRight');
+        $(this).parent().siblings('.info-form-admin-2').addClass('d-block animate__animated animate__fadeInRight');
+    });
+
+    $('.info-form-admin-2').click(function() {
+        $('.login-admin-form').removeClass('animate__animated animate__zoomIn').addClass('animate__animated animate__zoomOut');
+        setTimeout(function() {
+            $('.login-admin-form').css({'display':'none'});
+        }, 700);
+        $(this).hide
+        $(this).removeClass('d-none animate__animated animate__fadeInRight');
+        $(this).addClass('d-block animate__animated animate__fadeOutRight');
     });
 
     /* ---------- 10 : Admin ---------- */

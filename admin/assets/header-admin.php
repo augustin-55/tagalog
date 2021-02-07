@@ -55,6 +55,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="manageWishList.php"><i class="fas fa-globe-europe"></i>Trips</a>
                 </li>
+                <!-- Leave -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../index"><i class="fas fa-sign-out-alt"></i>Leave</a>
+                </li>
             </ul>
         </div>
     </nav>

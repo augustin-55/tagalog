@@ -7,7 +7,7 @@ var_dump($_POST);
 if (isset($_POST)) {
 
     if (isset($_GET['managePortfolio']) && $_GET['managePortfolio'] == 'pictures') {
-        if (isset($_POST['picture']) && $_POST['category'] != '') {
+        if (isset($_POST['picture']) && $_POST['picture'] != '') {
             $category = $_POST['category'];
             $picture = $_POST['picture'];
             $title = $_POST['title'];
@@ -23,18 +23,17 @@ if (isset($_POST)) {
                 'addDate' => $addDate,
                 'category_id' => $category
             ))) {
-                $confirmMessage = 'Congratulations : The article '.$title.' is well added in the database. Thanks for your add ! :D';
-                header('location: ../../../confirm-portal.php?managePortfolio=pictures&message='.$confirmMessage.'');
+                $confirmMessage = 'The article '.$title.' is well added in the database. Thanks for your add ! :D';
+                header('location: ../../../confirm-portal-admin.php?managePortfolio=pictures&message='.$confirmMessage.'');
             }
             else {
-            
-                $errorMessage = 'The article '.$title.' wasn\'t saved - Error while joining the database (or with queries) :/';
-                header('location: ../../../error-portal.php?managePortfolio=pictures&message='.$errorMessage.'');
+                $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
+                header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
             }
         }
         else {
-            $errorMessage = 'You must fill the picture input at least :)';
-            header('location: ../../../error-portal.php?managePortfolio=pictures&message='.$errorMessage.'');
+            $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
+            header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
         }
     }
 
@@ -47,17 +46,17 @@ if (isset($_POST)) {
             if ($add->execute(array(
                 'category' => $category
             ))) {
-                $confirmMessage = 'Congratulations : The category '.$category.' is well added in the database. Thanks for your add ! :D';
-                header('location: ../../../confirm-portal.php?managePortfolio=category&message='.$confirmMessage.'');
+                $confirmMessage = 'The category '.$category.' is well added in the database. Thanks for your add ! :D';
+                header('location: ../../../confirm-portal-admin.php?managePortfolio=category&message='.$confirmMessage.'');
             }
             else {
                 $errorMessage = 'The category '.$category.' wasn\'t saved - Error while joining the database (or with queries) :/';
-                header('location: ../../../error-portal.php?managePortfolio=category&message='.$errorMessage.'');
+                header('location: ../../../error-portal-admin.php?managePortfolio=category&message='.$errorMessage.'');
             }
         }
         else {
             $errorMessage = 'You must fill a category :/';
-            header('location: ../../../error-portal.php?managePortfolio=category&message='.$errorMessage.'');
+            header('location: ../../../error-portal-admin.php?managePortfolio=category&message='.$errorMessage.'');
         }
     }
 }

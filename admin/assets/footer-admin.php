@@ -1,10 +1,4 @@
     <footer class="footer-admin">
-        <section>
-            <p>May & Augustin. Copyright. <?php echo date('Y'); ?></p>
-        </section>
-        <section>
-            <p><a href="../index.php"><i class="fas fa-sign-out-alt"></i>Leave</a></p>
-        </section>
     </footer>
 
     <!-- Bootstrap & jQuery -->

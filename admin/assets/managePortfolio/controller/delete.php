@@ -12,11 +12,11 @@ if ($_GET['managePortfolio'] == 'pictures') {
 
     if ($delete->execute()) {
         $confirmMessage = 'The article is well deleted from the database !';
-        header('location: ../../../confirm-portal.php?managePortfolio=pictures&message='.$confirmMessage.'');
+        header('location: ../../../confirm-portal-admin.php?managePortfolio=pictures&message='.$confirmMessage.'');
     }
     else {
         $errorMessage = 'An error occured, this article can\'t be deleted';
-        header('location: ../../../error-portal.php?managePortfolio=pictures&message='.$errorMessage.'');
+        header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
     }
 }
 else if ($_GET['managePortfolio'] == 'category') {
@@ -29,10 +29,10 @@ else if ($_GET['managePortfolio'] == 'category') {
 
     if ($delete->execute()) {
         $confirmMessage = 'This category is well deleted from the database !';
-        header('location: ../../../confirm-portal.php?managePortfolio=category&message='.$confirmMessage.'');
+        header('location: ../../../confirm-portal-admin.php?managePortfolio=category&message='.$confirmMessage.'');
     }
     else {
         $errorMessage = 'An error occured, this category can\'t be deleted';
-        header('location: ../../../error-portal.php?managePortfolio=category&message='.$errorMessage.'');
+        header('location: ../../../error-portal-admin.php?managePortfolio=category&message='.$errorMessage.'');
     }
 }

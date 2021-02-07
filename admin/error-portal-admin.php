@@ -1,13 +1,14 @@
 <?php include('assets/header-admin.php'); ?>
 
 <section class="main-container-admin-portal main-container">
-    <section class="section-confirm-message">
+    <section class="section-error-message">
         <article>
-            <img src="../assets/pictures/portals/confirm-admin.png" alt="Confirm picture">
+            <img src="../assets/pictures/portals/error-admin.png" alt="Error picture">
+            <h3>There's something wrong...</h3>
             <p><?php echo $_GET['message']; ?></p>
         </article>
         <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio']; ?>" method="POST">
-            <input type="submit" value="Confirm">
+            <input type="submit" value="Previous">
         </form>
     </section>
 </section>

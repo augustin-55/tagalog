@@ -7,6 +7,7 @@
     <section class="section-confirm-message">
         <article>
             <img src="assets/pictures/portals/confirm.png" alt="Confirm picture">
+            <h3>Congratulations ! <i class="far fa-smile"></i></h3>
             <p><?php echo $_GET['message']; ?></p>
         </article>
         <form action="admin/index.php" method="POST">
