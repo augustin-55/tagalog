@@ -17,8 +17,17 @@
                <!-- <p onClick="display()"><a href="javascript:void(0);" class="footer-link-admin"><i class="fas fa-user"></i>May & Augustin.</a> Copyright. <?php echo date('Y'); ?></p> -->
           </section>
           <section>
-               <p>OK</p>
-          </section>     
+               <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="aboutUs.php">About us</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="wishList.php">Trips</a></li>
+                    <li><a href="training.php">Training</a></li>
+               </ul>
+          </section>  
+          <section>
+               
+          </section>   
      </footer>
     
     <!-- Bootstrap & jQuery -->

@@ -127,13 +127,9 @@ $(function() {
     });
 
     $('.what-we-love button').clickToggle(function() {
-        // $(this).siblings('article').fadeIn('slow');
-        // $(this).siblings('article').removeClass('animate__animated animate__fadeOutRight');
         $(this).siblings('article').addClass('d-block animate__animated animate__fadeIn');
     }, function() {
-        // $(this).siblings('article').fadeOut();
         $(this).siblings('article').removeClass('d-block animate__animated animate__fadeIn');
-        // $(this).siblings('article').addClass('animate__animated animate__fadeOutRight');
     });
 
     /* ---------- 8 : Travels ---------- */
