@@ -64,5 +64,5 @@ $smFrance = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries O
 
 /* ---------- 6 : Portals ---------- */
 
-$user = $bdd->query('SELECT * FROM users');
+$admin = $bdd->query('SELECT * FROM admin');
 

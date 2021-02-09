@@ -47,7 +47,7 @@
                 <input type="text" name="title" placeholder="Title">
             </div>
             <div>
-                <textarea name="description" placeholder="Description" cols="23" rows="9"></textarea>
+                <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>
             </div>
             <div>
                 <input type="submit" value="Add">

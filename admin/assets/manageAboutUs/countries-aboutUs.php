@@ -54,13 +54,19 @@
         <h4>Add an article - See more of our country</h4>
         <form action="assets/managePortfolio/controller/add.php?managePortfolio=category" method="POST">
             <div>
+                <select name="country">
+                    <option value="1">Philippines</option>
+                    <option value="2">France</option>
+                </select>
+            </div>
+            <div>
                 <input type="text" name="picture" placeholder="Picture.ext">
             </div>
             <div>
                 <input type="text" name="title" placeholder="Title">
             </div>
             <div>
-                <textarea name="description" placeholder="Description" cols="30" rows="10"></textarea>
+                <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>
             </div>
             <div>
                 <input type="submit" value="Add">

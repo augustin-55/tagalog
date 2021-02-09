@@ -2,13 +2,11 @@
 
     require('../../../../assets/functions/functions.php');
 
-    var_dump($_POST);
-
     if (isset($_POST['username']) && isset($_POST['password'])) {
 
         if ($_POST['username'] != '' && $_POST['password'] != '') {
 
-            while ($donnees = $user->fetch()) {
+            while ($donnees = $admin->fetch()) {
                 $username = $donnees['username'];
                 $password = $donnees['password'];
             }

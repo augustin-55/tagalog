@@ -1179,6 +1179,20 @@ header {
                     }
                 }
             }
+
+            .main-content-songs {
+
+                .content-songs-top {
+                    border:1px solid black;
+                }
+
+                .content-songs-bottom {
+                    border:1px solid black;
+                    height: 400px;
+                    width: 800px;
+                    background-color: grey;
+                }
+            }
         }
     }
 }
