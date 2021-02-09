@@ -179,4 +179,14 @@ $(function() {
 
     /* ---------- 10 : Admin ---------- */
 
+    // Homepage
+
+    $('.button-admin-home').click(function() {
+        $(this).next().toggle('slide', 400);
+    });
+
+    // Manage tables
+
+    
+
 });

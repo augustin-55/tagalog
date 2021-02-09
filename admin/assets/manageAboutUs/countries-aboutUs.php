@@ -37,7 +37,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $countrySmSelect->fetch()) { ?>
+                <?php while ($donnees = $smAll->fetch()) { ?>
                     <tr>
                         <td><?php echo $donnees['country']; ?></td>
                         <td><?php echo $donnees['picture']; ?></td>
@@ -52,10 +52,15 @@
     </article>
     <article class="form-mAboutUs">
         <h4>Add an article - See more of our country</h4>
-        <mark>I hope our babies are gonna discover lots of things about our countries as much as for our love</mark>
         <form action="assets/managePortfolio/controller/add.php?managePortfolio=category" method="POST">
             <div>
-                <input type="text" name="category-list" placeholder="Category">
+                <input type="text" name="picture" placeholder="Picture.ext">
+            </div>
+            <div>
+                <input type="text" name="title" placeholder="Title">
+            </div>
+            <div>
+                <textarea name="description" placeholder="Description" cols="30" rows="10"></textarea>
             </div>
             <div>
                 <input type="submit" value="Add">

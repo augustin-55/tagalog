@@ -4,4 +4,6 @@
 # V2 : "May and Augustin"
     * That's how I decided to call this blog. Our names together are the proves of my happiness, why I smile everyday. This blog will be consacrated to our life together. We're still apart, but we'll get there.
 
-**Markdown**
+# Things to improve :
+    * Add constraints if "description" fields are more than 255 caracters in admin part
+    * 

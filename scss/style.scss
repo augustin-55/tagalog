@@ -76,6 +76,7 @@ $pink-light: #582d35;
 $pink-black: #1f0c11;
 $main-green: #264226;
 $green-light: #3a683a;
+$green-black: #0f200f;
 $main-magenta: #7e1f43;
 
 // 0.3 : Portals
@@ -84,7 +85,7 @@ $main-magenta: #7e1f43;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.9;
 
 
     article {
@@ -99,12 +100,17 @@ $main-magenta: #7e1f43;
         img {
             height: 200px;
             margin-bottom: 50px;
+            border-radius: 5px;
         }
 
         p {
             color: $main-hover;
             margin: 20px 0;
             font-family: 'Oswald-Regular';
+            font-size: 13px;
+            background-color: $pink-black;
+            border-radius: 5px;
+            padding: 10px;
         }
     }
 
@@ -132,7 +138,7 @@ $main-magenta: #7e1f43;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.9;
 
 
     article {
@@ -153,6 +159,10 @@ $main-magenta: #7e1f43;
             color: $main-hover;
             margin: 20px 0;
             font-family: 'Oswald-Regular';
+            font-size: 13px;
+            background-color: $green-black;
+            border-radius: 5px;
+            padding: 10px;
         }
     }
 
@@ -1512,10 +1522,77 @@ mark {
 
 // 5.3 : Homepage
 
-.main-section-admin-home {
-    background-color: #2b2b2b;
+.main-section-admin {
+    background-color: #000000c4;
     box-shadow: 2px 2px 2px black;
     border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+
+    .intro-admin-home {
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px black;
+        background-color: $main-blue;
+        border-radius: 5px;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 150px;
+            margin-right: 50px;
+        }
+    }
+
+    .category-admin-home {
+        background-color: $pink-black;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            transition: 0.5s ease color;
+            border: none;
+            background-color: #00000000;
+            font-family: 'Oswald-Regular';
+            color: $main-hover;
+        }
+
+        button:hover,
+        button:focus,
+        button:active {
+            // text-shadow: 1px 1px 1px $main-blue;
+            color: $pink-light;
+            transition: 0.5s ease color;
+        }
+
+        div {
+            display: none;
+
+            .underline-admin-home {
+                height: 1px;
+                border-radius: 5px;
+                // width: 70%;
+                background-color: $main-hover;
+                margin: 10px auto 20px auto;
+                display: block;
+            }
+    
+            p {
+                text-align: center;
+                font-family: 'Oswald-Regular';
+                color: #a7a7a7c4;
+                font-size: 14px;
+                margin: 10px auto;
+            }
+        }
+    }
 }
 
 // 5.4 : Manage tables
@@ -1561,7 +1638,7 @@ mark {
         }
     }
 
-    .content-mVocabulary, .content-mPortfolio {
+    .content-mVocabulary, .content-mPortfolio, .content-mAboutUs {
 
         .main-title-admin {
     

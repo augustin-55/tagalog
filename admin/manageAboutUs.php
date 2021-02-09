@@ -8,7 +8,7 @@
             <li><a href="?manageAboutUs=songs">Our favorite songs</a></li>
         </ul>
     </div>
-    <div class="content-mPortfolio">
+    <div class="content-mAboutUs">
         <?php
             if (isset($_GET['manageAboutUs'])) {
                 if ($_GET['manageAboutUs'] == 'meeting') {

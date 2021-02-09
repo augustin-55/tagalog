@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" href="../assets/pictures/main-logo.png">
     <!-- Main title -->
     <title>May & Augustin - Admin</title>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -22,7 +24,7 @@
 <header class="header-admin">
     <nav class="navbar navbar-expand-lg">
         <div class="main-title">
-            <a class="navbar-brand" href="index.php">May & Augustin - Admin</a>
+            <a class="navbar-brand" href="index.php"><img src="../assets/pictures/logo.svg" alt="logo website"></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
