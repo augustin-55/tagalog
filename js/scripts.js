@@ -66,6 +66,8 @@ $(function() {
     //     $('html, body').animate({ scrollTop: n }, 50);
     // }); 
 
+    // Youtube API Default
+
     /* ---------- 3 : Homepage ---------- */
 
     $(document).ready(function() {

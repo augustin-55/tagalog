@@ -1182,15 +1182,52 @@ header {
 
             .main-content-songs {
 
-                .content-songs-top {
-                    border:1px solid black;
-                }
+                section {
 
-                .content-songs-bottom {
-                    border:1px solid black;
-                    height: 400px;
-                    width: 800px;
-                    background-color: grey;
+                    .select-user-songs {
+
+                        select {
+                            background-color: #000000b4;
+                            color: $main-hover;
+                            margin: 20px 0 10px 0;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 3px;
+                            font-family: 'Oswald-Regular';
+                            font-size: 14px;
+                        }
+                    }
+
+                    .content-songs-top {
+                    
+                        .carousel-songs {
+                            margin-bottom: 10px;
+    
+                            .carousel-videos {
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+    
+                    .content-songs-bottom {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 10px 0;
+                        overflow: auto;
+                        // scrollbar-color: black;
+    
+                        .show-videos-bottom {
+                            // width: 120px;
+                            // border: 1px solid black;
+                            margin: 0 10px;
+    
+                            
+                            img {
+                                border-radius: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }
