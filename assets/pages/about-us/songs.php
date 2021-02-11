@@ -26,10 +26,6 @@
             <?php while($donnees = $songs->fetch()) { ?>
             <div class="show-videos-bottom">
                 <img src="https://img.youtube.com/vi/<?php echo $donnees['link']; ?>/default.jpg" alt="">
-                <div class="description-songs">
-                    <h4><?php echo $donnees['title']; ?></h4>
-                    <p><?php echo $donnees['description']; ?></p>
-                </div>
             </div>
             <?php } ?>
         </section>

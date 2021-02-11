@@ -25,7 +25,7 @@ else if ($_GET['managePortfolio'] == 'category') {
 
     $id = $_GET['id'];
 
-    $delete = $bdd->prepare('DELETE FROM category WHERE id = "'.$id.'"');
+    $delete = $bdd->prepare('DELETE FROM categories_portfolio WHERE id = "'.$id.'"');
 
     if ($delete->execute()) {
         $confirmMessage = 'This category is well deleted from the database !';

@@ -4,7 +4,7 @@
 # V2 : "May and Augustin"
     * That's how I decided to call this blog. Our names together are the proves of my happiness, why I smile everyday. This blog will be consacrated to our life together. We're still apart, but we'll get there.
 
-# Things to improve :
+# Things to improve in V1.1 :
     * Add constraints if "description" fields are more than 255 caracters in admin part
     * Do sessions mecanism so that if there's no session at start of website -> redirect
     * Do verifications of form in add form (admin part)

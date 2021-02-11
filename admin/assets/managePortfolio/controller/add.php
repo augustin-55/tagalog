@@ -41,7 +41,7 @@ if (isset($_POST)) {
         if (isset($_POST['category-list']) && $_POST['category-list'] != '') {
             $category = $_POST['category-list'];
         
-            $add = $bdd->prepare('INSERT INTO category (category) VALUES (:category)');
+            $add = $bdd->prepare('INSERT INTO categories_portfolio (category) VALUES (:category)');
         
             if ($add->execute(array(
                 'category' => $category

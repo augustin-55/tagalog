@@ -15,7 +15,7 @@ $countVocabulary = $bdd->query('SELECT count(*) FROM cooking');
 
 /* ----- Portfolio ----- */
 
-$portfolio = $bdd->query('SELECT * FROM category INNER JOIN portfolio ON category.id = portfolio.category_id');
+$portfolio = $bdd->query('SELECT * FROM categories_portfolio INNER JOIN portfolio ON categories_portfolio.id = portfolio.category_id');
 
 $countPortfolio = $bdd->query('SELECT COUNT(*) FROM portfolio');
 $countPortfolioPhilippines = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "1"');

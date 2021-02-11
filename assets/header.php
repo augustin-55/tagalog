@@ -23,7 +23,7 @@
         elseif($current_page == 'cooking') {echo 'cooking-body';}
         elseif($current_page == 'courtesy') {echo 'courtesy-body';}
         elseif($current_page == 'animals') {echo 'animals-body';}
-        elseif($current_page == 'wishList') {echo 'wishList-body';}
+        elseif($current_page == 'travels') {echo 'travels-body';}
         elseif($current_page == 'people') {echo 'people-body';}
         elseif($current_page == 'portfolio') {echo 'portfolio-body';}
         elseif($current_page == 'aboutUs') {echo 'aboutUs-body';}
@@ -56,7 +56,7 @@
                     </li>
                     <!-- Bucket List -->
                     <li class="nav-item">
-                        <a class="nav-link" href="wishList.php"><i class="fas fa-route"></i>Trips<div class="bar-nav-item"></div></a>
+                        <a class="nav-link" href="travel-categories.php"><i class="fas fa-route"></i>Trips<div class="bar-nav-item"></div></a>
                     </li>
                     <!-- Vocabulary -->
                     <li class="nav-item dropdown">

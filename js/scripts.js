@@ -148,9 +148,9 @@ $(function() {
 
     /* ---------- 8 : Travels ---------- */
 
-    $('.linkToReality').click(function() {
-        $(this).parents('article').next().toggleClass('display-article');
-    });
+    // $('.linkToReality').click(function() {
+    //     $(this).parents('article').next().toggleClass('display-article');
+    // });
 
     /* ---------- 9 : Footer ---------- */
 

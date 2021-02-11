@@ -8,10 +8,9 @@
     * Animals
 * 1 : Training
 * 2 : Portfolio
-* 3 : Category
-* 4 : Trips
-* 5 : About us
-* 6 : Portals
+* 3 : Travels
+* 4 : About us
+* 5 : Portals
 */
 
 $categoryPortfolio = '';
@@ -44,19 +43,17 @@ else {
     $categoryPortfolio = '';
 }
 
-$query = 'SELECT * FROM portfolio INNER JOIN category ON portfolio.category_id = category.id'.' '.$categoryPortfolio.'';
+$query = 'SELECT * FROM portfolio INNER JOIN categories_portfolio ON portfolio.category_id = categories_portfolio.id'.' '.$categoryPortfolio.'';
 
 $portfolio = $bdd->query($query);
 
-/* ---------- 3 : Category ---------- */ 
+$categories_pf = $bdd->query('SELECT * FROM categories_portfolio');
 
-$category = $bdd->query('SELECT * FROM category');
+/* ---------- 3 : Travels ---------- */ 
 
-/* ---------- 4 : Trips ---------- */ 
+$categories_travel = $bdd->query('SELECT * FROM categories_travel');
 
-$dream = $bdd->query('SELECT * FROM dreamplace LEFT JOIN feedback ON dreamplace.id = feedback.dreamplace_id');
-
-/* ---------- 5 : About us ---------- */
+/* ---------- 4 : About us ---------- */
 
 // Countries
 
@@ -67,7 +64,7 @@ $smFrance = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries O
 
 $songs = $bdd->query('SELECT * FROM songs INNER JOIN users ON songs.user_id = users.id');
 
-/* ---------- 6 : Portals ---------- */
+/* ---------- 5 : Portals ---------- */
 
 $admin = $bdd->query('SELECT * FROM admin');
 
