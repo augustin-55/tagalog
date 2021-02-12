@@ -66,7 +66,7 @@
             </a>
         </div>
         <section class="intro-text-home">
-            <p><strong class="quote">"</strong> The use of traveling is to regulate imagination with reality, and instead of thinking of how things may be, see them as they are. <strong class="quote">"</strong></p>
+            <!-- <p><strong class="quote">"</strong>  <strong class="quote">"</strong></p> -->
         </section>
     </section>
     <section class="section-2-home">

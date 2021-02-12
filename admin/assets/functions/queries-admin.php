@@ -21,11 +21,11 @@ $countPortfolio = $bdd->query('SELECT COUNT(*) FROM portfolio');
 $countPortfolioPhilippines = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "1"');
 $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "2"');
 
-/* ----- Category ----- */
-
-$category = $bdd->query('SELECT * FROM category');
+$categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ----- Trips ----- */
 
-$countDreamplace = $bdd->query('SELECT COUNT(*) FROM dreamplace');
-$countFeedback = $bdd->query('SELECT COUNT(*) FROM feedback');
+$travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+
+$categories_travel = $bdd->query('SELECT * FROM categories_travel');
+

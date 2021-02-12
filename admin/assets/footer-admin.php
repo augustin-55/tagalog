@@ -10,6 +10,6 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- My scripts -->
-     <script src="../js/scripts.min.js"></script>
+    <script src="../js/scripts.min.js"></script>
 </body>
 </html>

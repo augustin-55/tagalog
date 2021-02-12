@@ -181,6 +181,8 @@ $(function() {
 
     /* ---------- 10 : Admin ---------- */
 
+    console.log('ok');
+
     // Homepage
 
     $('.button-admin-home').click(function() {

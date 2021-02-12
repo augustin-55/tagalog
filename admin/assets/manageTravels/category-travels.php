@@ -1,9 +1,9 @@
 <div class="main-title-admin">
-    <h2>Manage Portfolio - Categories</h2>
+    <h2>Manage Travels - Categories</h2>
 </div>
 
 <section>
-    <article class="table-mPortfolio">
+    <article class="table-mTravels">
         <table >
             <thead>
                 <tr>
@@ -13,19 +13,19 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $categories_portfolio->fetch()) { ?>
+                <?php while ($donnees = $categories_travel->fetch()) { ?>
                     <tr>
                         <td><?php echo $donnees['category']; ?></td>
                         <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><a href="assets/manageTravels/controller/delete.php?manageTravels=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>
             </tbody>
         </table>
     </article>
-    <article class="form-mPortfolio">
+    <article class="form-mTravels">
         <h4>Add a category</h4>
-        <form action="assets/managePortfolio/controller/add.php?managePortfolio=category" method="POST">
+        <form action="assets/manageTravels/controller/add.php?manageTravels=category" method="POST">
             <div>
                 <input type="text" name="category-list" placeholder="Category">
             </div>

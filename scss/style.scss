@@ -281,7 +281,8 @@ body {
 
 .admin-body {
     // background-color: #1b1b1b;
-    background-image: url('../assets/pictures/admin/background-admin.png');
+    background-image: url('../assets/pictures/admin/background-admin.jpg');
+    background-size: auto 1080px;
 }
 
 .main-container {
@@ -750,10 +751,6 @@ header {
                     position: absolute;
                     top: 0;
 
-                    // .bar-categories-travel {
-                    //     height: 2px
-                    // }
-
                     p {
                         color: $main-hover;
                         font-family: 'Quicksand-regular';
@@ -763,8 +760,7 @@ header {
                         color: $main-hover;
                         font-family: 'Quicksand-regular';
                         border-top: 1px solid $main-hover;
-                        padding: 0 10px 10px 10px;
-                        background-color: $green-light;
+                        padding: 10px;
                     }
 
                     a:hover,
@@ -775,6 +771,35 @@ header {
                         border: 2px solid $main-hover;
                     }
                 }
+            }
+        }
+    }
+
+    .section-articles-travels {
+
+        div {
+
+            a {
+                background-color: $main-pink;
+                transition: 0.5s ease background-color;
+                color: $main-hover;
+                border: 1px solid black;
+                border-radius: 10px 0 10px 0;
+                padding: 5px 10px;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+                background-color: $pink-black;
+                text-decoration: none;
+                transition: 0.5s ease background-color;
+            }
+
+            p {
+                color: $main-hover;
+                padding: 20px;
+                text-align: justify;
             }
         }
     }
@@ -1590,13 +1615,19 @@ mark {
 
 // 5.4 : Manage tables
 
-.main-container-mVocabulary, .main-container-mPortfolio, .main-container-mAboutUs {
+.main-container-mVocabulary,
+.main-container-mPortfolio,
+.main-container-mAboutUs,
+.main-container-mTravels {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px auto;
 
-    .menu-mVocabulary, .menu-mPortfolio, .menu-mAboutUs {
+    .menu-mVocabulary,
+    .menu-mPortfolio,
+    .menu-mAboutUs,
+    .menu-mTravels {
         box-shadow: 2px 2px 2px black;
         border-radius: 5px;
         background-color: $main-magenta;
@@ -1631,7 +1662,10 @@ mark {
         }
     }
 
-    .content-mVocabulary, .content-mPortfolio, .content-mAboutUs {
+    .content-mVocabulary,
+    .content-mPortfolio,
+    .content-mAboutUs,
+    .content-mTravels {
 
         .main-title-admin {
     
@@ -1658,7 +1692,10 @@ mark {
             display: flex;
             align-items: center;
 
-            .table-mVocabulary, .table-mPortfolio, .table-mAboutUs {
+            .table-mVocabulary,
+            .table-mPortfolio,
+            .table-mAboutUs,
+            .table-mTravels {
                 // background-color: red;
                 text-align: center;
 
@@ -1697,7 +1734,10 @@ mark {
                 }
             }
 
-            .form-mVocabulary, .form-mPortfolio, .form-mAboutUs {
+            .form-mVocabulary,
+            .form-mPortfolio,
+            .form-mAboutUs,
+            .form-mTravels {
                 text-align: center;
                 background-color: $main-magenta;
                 padding: 10px 20px 0 20px;

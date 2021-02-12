@@ -7,7 +7,7 @@
             <h3>There's something wrong...</h3>
             <p><?php echo $_GET['message']; ?></p>
         </article>
-        <form action="managePortfolio.php?managePortfolio=<?php echo $_GET['managePortfolio']; ?>" method="POST">
+        <form action="<?php echo $_SERVER['HTTP_REFERER']; ?>" method="POST">
             <input type="submit" value="Previous">
         </form>
     </section>

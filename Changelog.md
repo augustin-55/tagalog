@@ -8,3 +8,4 @@
     * Add constraints if "description" fields are more than 255 caracters in admin part
     * Do sessions mecanism so that if there's no session at start of website -> redirect
     * Do verifications of form in add form (admin part)
+    * Watch again about messages on portals (main and admin parts)
