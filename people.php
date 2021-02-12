@@ -37,6 +37,10 @@
             </div>
         </article>
     </section>
+    <h2>Love</h2>
+    <section class="words-section-love">
+        
+    </section>
     <h2>Jobs</h2>
     <section class="words-section-jobs">
         

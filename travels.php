@@ -53,7 +53,9 @@
             <section>
                 <?php while($donnees = $travels->fetch()) { ?>
                 <article>
-                
+                    <img src="assets/pictures/<?php echo $donnees['picture'];?>" alt="<?php echo $donnees['title']; ?>">
+                    <h5><?php echo $donnees['title']; ?></h5>
+                    <p><?php echo $donnees['description']; ?></p>
                 </article>
                 <?php } ?>
             </section>

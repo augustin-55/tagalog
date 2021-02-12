@@ -719,8 +719,7 @@ header {
 // 3.7 : Travels
 
 .main-container-travels {
-    // background-color: grey;
-    // width: 90%;
+
 
     .section-choose-category {
         margin-top: 50px;
@@ -786,6 +785,8 @@ header {
         //     }
         // }
 
+
+
         .section-previous-travels {
 
             a {
@@ -806,12 +807,31 @@ header {
             }
         }
 
-        .section-articles-carousel {
+        .section-articles-travels {
+            // border: 1px solid white;
+            display: flex;
+            justify-content: space-around;
 
-            p {
-                color: $main-hover;
-                padding: 20px;
-                text-align: justify;
+            aside {
+                border: 1px solid white;
+
+                p {
+                    font-family: 'Lobster-Regular';
+                    color: $main-hover;
+                }
+            }
+
+            section {
+                border: 1px solid white;
+
+                article {
+
+                    p {
+                        color: $main-hover;
+                        padding: 20px;
+                        text-align: justify;
+                    }
+                }
             }
         }
     }

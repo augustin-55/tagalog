@@ -25,7 +25,7 @@ $courtesy = $bdd->query('SELECT * FROM courtesy');
 
 /* ----- 0.2 : Food ----- */ 
 
-$food = $bdd->query('SELECT * FROM cooking');
+$cooking = $bdd->query('SELECT * FROM cooking');
 
 /* ----- 0.3 : Animals ----- */ 
 

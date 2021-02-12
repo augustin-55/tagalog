@@ -3,8 +3,6 @@
     require('assets/functions/functions.php');
     $current_page = 'animals';
     include('assets/header.php');
-    $sql = 'SELECT * FROM animals';
-    $req = $bdd->query($sql); 
 ?>
 
 <!-- Main body : Cooking -->
@@ -28,14 +26,14 @@
                         <th>Tagalog</th>
                         <th>French</th>
                     </tr>
-                    <?php while ($animals = $req->fetch()) { ?>
+                    <?php while ($donnees = $animals->fetch()) { ?>
                         <tr>
-                            <td><img src="assets/pictures/vocabulary/animals/<?php echo $animals['picture']; ?>" class="picture-animals" alt=""></td>
-                            <td class="english-trad"><p><?php echo $animals['english']; ?></p></td>
-                            <td class="tagalog-trad"><p><?php echo $animals['tagalog']; ?></p></td>
-                            <td class="french-trad"><p><?php echo $animals['french']; ?></p></td>
+                            <td><img src="assets/pictures/vocabulary/animals/<?php echo $donnees['picture']; ?>" class="picture-animals" alt=""></td>
+                            <td class="english-trad"><p><?php echo $donnees['english']; ?></p></td>
+                            <td class="tagalog-trad"><p><?php echo $donnees['tagalog']; ?></p></td>
+                            <td class="french-trad"><p><?php echo $donnees['french']; ?></p></td>
                         </tr>
-                    <?php }; $req->closeCursor(); ?>
+                    <?php } ?>
                 </table>
             </article>
         </section>
