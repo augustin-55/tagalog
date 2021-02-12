@@ -13,7 +13,7 @@
     <div class="main-menu-portfolio">
     <ul>
         <li><a href="#">View all</a></li>
-        <?php while ($donnees = $category->fetch()) { ?>
+        <?php while ($donnees = $categories_portfolio->fetch()) { ?>
             <li><a href="?category=<?php echo $donnees['category']; ?>"><?php echo $donnees['category']; ?></a></li>
         <?php } ?>
     </ul>

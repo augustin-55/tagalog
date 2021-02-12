@@ -777,7 +777,16 @@ header {
 
     .section-articles-travels {
 
-        div {
+        // .section-carousel-travels {
+        //     // width: 90%;
+
+        //     img {
+        //         max-height: 600px;
+        //         max-width: 1500px;
+        //     }
+        // }
+
+        .section-previous-travels {
 
             a {
                 background-color: $main-pink;
@@ -795,6 +804,9 @@ header {
                 text-decoration: none;
                 transition: 0.5s ease background-color;
             }
+        }
+
+        .section-articles-carousel {
 
             p {
                 color: $main-hover;

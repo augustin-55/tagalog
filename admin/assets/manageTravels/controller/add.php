@@ -6,24 +6,24 @@ var_dump($_POST);
 
 if (isset($_POST)) {
     if (isset($_GET['manageTravels']) && $_GET['manageTravels'] == 'content') {
-        if ($_POST['name'] != '') {
-            $category = $_POST['category'];
+        if (isset($_POST['title']) && $_POST['title'] != '') {
+            $addDate = date('d/m/Y');
             $picture = $_POST['picture'];
-            $name = $_POST['name'];
+            $title = $_POST['title'];
             $description = $_POST['description'];
-            $addDate = date('Y');
+            $category = $_POST['category'];
 
-            $add = $bdd->prepare('INSERT INTO travels (addDate, picture, name, description, category_id) VALUES (:addDate, :picture, : :name, :description, :category_id');
+            $add = $bdd->prepare('INSERT INTO travels (addDate, picture, title, description, category_id) VALUES (:addDate, :picture, :title, :description, :category_id)');
 
             if ($add->execute(array(
                 'addDate' => $addDate,
                 'picture' => $picture,
-                'name' => $name,
+                'title' => $title,
                 'description' => $description,
-                'category_id' => $category
+                'category_id' => $category,
             ))) {
                 $confirmMessage = 'The article '.$title.' is well added in the database. Thanks for your add ! :D';
-                // header('location: ../../../confirm-portal-admin.php?manageTravels=content&message='.$confirmMessage.'');
+                header('location: ../../../confirm-portal-admin.php?manageTravels=content&message='.$confirmMessage.'');
             }
             else {
                 $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
@@ -33,7 +33,7 @@ if (isset($_POST)) {
     }
     else {
         $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
-        // header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
+        header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
     }
 
     if (isset($_GET['manageTravels']) && $_GET['manageTravels'] == 'category') {
@@ -46,16 +46,16 @@ if (isset($_POST)) {
                 'category' => $category
             ))) {
                 $confirmMessage = 'The category '.$category.' is well added in the database. Thanks for your add ! :D';
-                header('location: ../../../confirm-portal-admin.php?managePortfolio=category&message='.$confirmMessage.'');
+                header('location: ../../../confirm-portal-admin.php?manageTravels=category&message='.$confirmMessage.'');
             }
             else {
                 $errorMessage = 'The category '.$category.' wasn\'t saved - Error while joining the database (or with queries) :/';
-                header('location: ../../../error-portal-admin.php?managePortfolio=category&message='.$errorMessage.'');
+                header('location: ../../../error-portal-admin.php?manageTravels=category&message='.$errorMessage.'');
             }
         }
         else {
             $errorMessage = 'You must fill a category :/';
-            header('location: ../../../error-portal-admin.php?managePortfolio=category&message='.$errorMessage.'');
+            header('location: ../../../error-portal-admin.php?manageTravels=category&message='.$errorMessage.'');
         }
     }
 }

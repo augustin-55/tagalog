@@ -9,3 +9,4 @@
     * Do sessions mecanism so that if there's no session at start of website -> redirect
     * Do verifications of form in add form (admin part)
     * Watch again about messages on portals (main and admin parts)
+    * Checkbox in admin part and logic to choose what image we display on the carousel (travels page)

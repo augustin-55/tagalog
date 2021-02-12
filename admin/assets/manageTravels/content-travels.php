@@ -20,10 +20,10 @@
                 <tr>
                     <td><?php echo $donnees['category']; ?></td>
                     <td><?php echo $donnees['picture']; ?></td>
-                    <td><?php echo $donnees['name']; ?></td>
+                    <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
                     <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="assets/manageTravels/controller/delete.php?manageTravels=pictures&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -44,7 +44,7 @@
                 <input type="text" name="picture" placeholder="Picture.ext">
             </div>
             <div>
-                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="title" placeholder="Title">
             </div>
             <div>
                 <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>

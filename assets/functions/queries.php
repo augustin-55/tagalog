@@ -47,9 +47,11 @@ $query = 'SELECT * FROM portfolio INNER JOIN categories_portfolio ON portfolio.c
 
 $portfolio = $bdd->query($query);
 
-$categories_pf = $bdd->query('SELECT * FROM categories_portfolio');
+$categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ---------- 3 : Travels ---------- */ 
+
+$travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id');
 
 $categories_travel = $bdd->query('SELECT * FROM categories_travel');
 

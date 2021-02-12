@@ -21,8 +21,6 @@ if ($_GET['managePortfolio'] == 'pictures') {
 }
 else if ($_GET['managePortfolio'] == 'category') {
 
-    echo 'category';
-
     $id = $_GET['id'];
 
     $delete = $bdd->prepare('DELETE FROM categories_portfolio WHERE id = "'.$id.'"');
