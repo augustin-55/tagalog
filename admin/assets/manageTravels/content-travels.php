@@ -43,7 +43,7 @@
                 </select>
             </div>
             <div>
-                <input type="text" name="picture" placeholder="Picture.ext">
+                <input type="file" name="picture">
             </div>
             <div>
                 <input type="text" name="title" placeholder="Title">

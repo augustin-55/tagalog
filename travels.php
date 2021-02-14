@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="section-intro-travels">
-            <p>In this part of the wesbite, we can find all the places we discover and recommand to each one to visit atleast one time
+            <p>In this part of the website, we can find all the places we discover and recommand to each one to visit atleast one time
                 on his life. We enjoyed so much and we share these experiences here !<br>"The use of traveling is to regulate imagination
                 with reality, and instead of thinking of how things may be, see them as they are."
             </p>

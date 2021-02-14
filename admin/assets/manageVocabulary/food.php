@@ -35,7 +35,7 @@
         <h4>Add a word</h4>
         <form action="#" method="POST">
             <div>
-                <input type="text" name="upload-picture" placeholder="Picture.ext" class="upload-picture">
+                <input type="file" name="upload-picture" class="upload-picture">
             </div>
             <div>
                 <input type="text" name="english" placeholder="English word">

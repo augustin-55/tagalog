@@ -887,7 +887,7 @@ header {
     }
 
     .section-display-article {
-        
+
         .section-previous-travels {
             display: flex;
             justify-content: center;
@@ -1867,6 +1867,7 @@ mark {
                             color: #a3a3a3;
                             border: 1px solid $main-yellow;
                             padding: 5px 10px;
+                            max-width: 200px;
                         }
 
                         input:hover,
