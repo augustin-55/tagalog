@@ -11,6 +11,7 @@
                     <th>Picture</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Display in carousel</th>
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
@@ -22,7 +23,8 @@
                     <td><?php echo $donnees['picture']; ?></td>
                     <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
-                    <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                    <td><?php echo $donnees['display_carousel']; ?></td>
+                    <td><a href="assets/manageTravels/controller/update.php?manageTravels=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
                     <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>
@@ -48,6 +50,10 @@
             </div>
             <div>
                 <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>
+            </div>
+            <div>
+                <label for="display-carousel">Display in carousel :</label>
+                <input type="checkbox" name="display-carousel" placeholder="Choose if display in carousel">
             </div>
             <div>
                 <input type="submit" value="Add">

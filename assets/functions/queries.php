@@ -51,9 +51,22 @@ $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ---------- 3 : Travels ---------- */ 
 
-$travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id');
-
 $categories_travel = $bdd->query('SELECT * FROM categories_travel');
+
+if (isset($current_page) && $current_page == 'travels') {
+    if (isset($_GET['category'])) {
+        $category = $_GET['category'];
+        $travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE category_id = "'.$category.'"');
+        $carousel_travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE category_id = "'.$category.'" AND display_carousel = "1"');
+    }
+}
+
+if (isset($current_page) && $current_page == 'display-article-travel') {
+    if (isset($_GET['article'])) {
+        $article = $_GET['article'];
+        $display_article = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE travels.id = "'.$article.'"');
+    }
+}
 
 /* ---------- 4 : About us ---------- */
 

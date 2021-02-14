@@ -148,9 +148,8 @@ $(function() {
 
     /* ---------- 8 : Travels ---------- */
 
-    // $('.linkToReality').click(function() {
-    //     $(this).parents('article').next().toggleClass('display-article');
-    // });
+    $(".carousel-item").first().addClass("active");
+    $("ol.carousel-indicators").find("li").eq(0).addClass("active");
 
     /* ---------- 9 : Footer ---------- */
 
@@ -190,6 +189,8 @@ $(function() {
     });
 
     // Manage tables
+
+    // Update buttons
 
     
 

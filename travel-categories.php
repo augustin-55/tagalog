@@ -7,13 +7,12 @@
 
 <!-- Main body : Wish List -->
 <div class="main-container main-container-travels">
-    
     <section class="section-choose-category">
         <form method="POST">
             <section>
                 <?php while($donnees = $categories_travel->fetch()) { ?>
                 <div>
-                    <img src="assets/pictures/travels/categories/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['category']; ?>">
+                    <img src="assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>" alt="<?php echo $donnees['category']; ?>">
                     <article>
                         <p><?php echo $donnees['category']; ?></p>
                         <div class="bar-categories-travel"></div>
@@ -24,7 +23,6 @@
             </section>
         </form>
     </section>
-
 </div>
 
 <!-- Footer -->

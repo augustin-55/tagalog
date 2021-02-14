@@ -27,6 +27,9 @@
         <h4>Add a category</h4>
         <form action="assets/manageTravels/controller/add.php?manageTravels=category" method="POST">
             <div>
+                <input type="text" name="thumbnail" placeholder="Picture.ext">
+            </div>
+            <div>
                 <input type="text" name="category-list" placeholder="Category">
             </div>
             <div>

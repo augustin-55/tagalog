@@ -1,4 +1,4 @@
-# ABout the versions
+# About the versions
 
 ## V1 : Complete version of the website like May advice me
     * We did a great website about "learn Tagalog". Gradually, she's becoming my existence, what I learn from life. This website will be dedicated to us.
@@ -17,6 +17,7 @@
 
 ## Things to improve in V1.2 :
     * Checkbox in admin part and logic to choose what image we display on the carousel (travels page)
+    * Updates pages in admin
 
 ## Things to improve in V2 :
     * Start to enter content together in the website

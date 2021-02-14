@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body class="<?php
-        // $current_page = '';
         // Body background
         if($current_page == 'numbers') {echo 'numbers-body';}
         elseif($current_page == 'index') {echo 'index-body';}
@@ -24,6 +23,7 @@
         elseif($current_page == 'courtesy') {echo 'courtesy-body';}
         elseif($current_page == 'animals') {echo 'animals-body';}
         elseif($current_page == 'travels') {echo 'travels-body';}
+        elseif($current_page == 'display-article-travel') {echo 'travels-body';}
         elseif($current_page == 'people') {echo 'people-body';}
         elseif($current_page == 'portfolio') {echo 'portfolio-body';}
         elseif($current_page == 'aboutUs') {echo 'aboutUs-body';}
@@ -56,7 +56,7 @@
                     </li>
                     <!-- Bucket List -->
                     <li class="nav-item">
-                        <a class="nav-link" href="travel-categories.php"><i class="fas fa-route"></i>Trips<div class="bar-nav-item"></div></a>
+                        <a class="nav-link" href="travel-categories.php"><i class="fas fa-route"></i>Travels<div class="bar-nav-item"></div></a>
                     </li>
                     <!-- Vocabulary -->
                     <li class="nav-item dropdown">
