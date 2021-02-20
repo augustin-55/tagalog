@@ -9,8 +9,9 @@
 <div class="main-container main-container-travels">
     <section class="section-display-article">
         <?php while($donnees = $display_article->fetch()) { ?>
-        <div>
+        <div class="div-display-article">
             <h5><?php echo $donnees['title']; ?></h5>
+            <img src="assets/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
             <p><?php echo $donnees['description']; ?></p>
         </div>
         <div class="section-previous-travels">

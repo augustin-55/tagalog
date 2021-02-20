@@ -2,13 +2,24 @@
     <h2>Manage Travels - Articles</h2>
 </div>
 
+<form action="#" method="GET">
+<select name="select_category">
+        <option value="default"> ----- </option>
+        <?php while ($donnees = $categories_travel->fetch()) { ?>
+            <option value="<?php echo $donnees['category']; ?>"><?php echo $donnees['category'] ?></option>
+        <?php } ?>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
 <section>
     <article class="table-mTravels">
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>Category</th>
-                    <th>Picture</th>
+                    <th>Preview picture</th>
+                    <th>Pictures</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Display in carousel</th>
@@ -21,6 +32,7 @@
                 <tr>
                     <td><?php echo $donnees['category']; ?></td>
                     <td><?php echo $donnees['picture']; ?></td>
+                    <td><?php echo $donnees['pictures_id'] ?></td>
                     <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
                     <td><?php echo $donnees['display_carousel']; ?></td>
@@ -43,7 +55,12 @@
                 </select>
             </div>
             <div>
-                <input type="file" name="picture">
+                <label for="file" class="label-file-input">Choose preview picture</label>
+                <input id="file" type="file" name="picture" style="display: none;">
+            </div>
+            <div>
+                <label for="file" class="label-file-input">Choose picture 1</label>
+                <input id="file" type="file" name="picture1" style="display: none;">
             </div>
             <div>
                 <input type="text" name="title" placeholder="Title">

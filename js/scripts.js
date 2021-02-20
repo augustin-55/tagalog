@@ -190,6 +190,11 @@ $(function() {
 
     // Manage tables
 
+    // $("#file").change(function() {
+    //     filename = this.files[0].name
+    //     $('.label-choose-picture').val('OK');
+    // });
+
     // Update buttons
 
     

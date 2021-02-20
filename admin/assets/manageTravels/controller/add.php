@@ -9,6 +9,7 @@ if (isset($_POST)) {
         if (isset($_POST['title']) && $_POST['title'] != '') {
             $addDate = date('d/m/Y');
             $picture = $_POST['picture'];
+            $picture1 = $_POST['picture1'];
             $title = $_POST['title'];
             $description = $_POST['description'];
             $category = $_POST['category'];
@@ -24,6 +25,7 @@ if (isset($_POST)) {
             if ($add->execute(array(
                 'addDate' => $addDate,
                 'picture' => $picture,
+                'pictures' => $picture1,
                 'title' => $title,
                 'description' => $description,
                 'display_carousel' => $display_carousel,

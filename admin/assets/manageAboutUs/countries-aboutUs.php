@@ -14,7 +14,7 @@
 </div>
 
 <form action="?country=" method="GET">
-    <select name="country">
+    <select name="select_country">
         <option value="default"> ----- </option>
         <?php while ($donnees = $countries->fetch()) { ?>
             <option value="<?php echo $donnees['country']; ?>"><?php echo $donnees['country'] ?></option>

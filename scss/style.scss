@@ -892,6 +892,10 @@ header {
             display: flex;
             justify-content: center;
 
+            // .div-display-article {
+                
+            // }
+
             a {
                 font-family: 'Oswald-Regular';
                 font-size: 14px;
@@ -1787,13 +1791,31 @@ mark {
             margin-bottom: 20px;
 
             select {
+                border-radius: 5px;
+                padding: 5px 10px;
                 background-color: $main-blue;
-                border: none;
+                border: 1px solid black;
                 color: $main-hover;
-                
+
                 option {
                     text-align: center;
                 }
+            }
+
+            input[type=submit] {
+                border-radius: 5px;
+                border: 1px solid black;
+                background-color: $main-magenta;
+                padding: 5px 10px;
+                color: $main-hover;
+                transition: 0.5s ease background-color;
+            }
+
+            input[type=submit]:hover,
+            input[type=submit]:focus,
+            input[type=submit]:active {
+                background-color: $main-purple;
+                transition: 0.5s ease background-color;
             }
         }
 
@@ -1860,6 +1882,14 @@ mark {
 
                     div {
                         margin: 20px 0;
+
+                        .label-file-input {
+                            color: #a3a3a3;
+                            border: 1px solid $main-yellow;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            background-color: #0b0b0e;
+                        }
 
                         input, textarea, select {
                             border-radius: 5px;
