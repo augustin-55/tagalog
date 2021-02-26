@@ -1114,7 +1114,6 @@ header {
     .aside-profile {
         display: flex;
         justify-content: space-around;
-        // align-items: center;
         width: 70%;
         border-radius: 5px;
         box-shadow: 2px 2px 2px black;
@@ -1266,16 +1265,38 @@ header {
 
                     .select-user-songs {
 
-                        select {
+                        select, input {
                             background-color: #000000b4;
+                            transition: 0.5s ease background-color;
                             color: $main-hover;
-                            margin: 20px 0 10px 0;
-                            border: none;
+                            margin: 20px 10px;
+                            border: 1px solid #000000d2;
+                            box-shadow: 2px 2px 2px black;
                             border-radius: 5px;
-                            padding: 3px;
+                            padding: 3px 10px;
                             font-family: 'Oswald-Regular';
                             font-size: 14px;
                         }
+
+                        input:focus,
+                        input:hover,
+                        input:active {
+                            background-color: $main-magenta;
+                            transition: 0.5s ease background-color;
+                        }
+
+                        // input[type=submit] {
+                        //     background-color: #000000b4;
+                        //     color: $main-hover;
+                        //     font-family: 'Oswald-Regular';
+                        //     border-radius: 5px;
+                        //     border: none;
+                        //     padding: 3px 10px;
+                        // }
+
+                        // input[type=submit] {
+                            
+                        // }
                     }
 
                     .content-songs-top {
@@ -1883,15 +1904,34 @@ mark {
                     div {
                         margin: 20px 0;
 
-                        .label-file-input {
+                        .add-pictures-link {
+                            border-radius: 5px;
+                            background-color: #0b0b0e;
                             color: #a3a3a3;
                             border: 1px solid $main-yellow;
-                            border-radius: 5px;
                             padding: 5px 10px;
-                            background-color: #0b0b0e;
                         }
 
-                        input, textarea, select {
+                        .add-pictures-input {
+                            display: none;
+                        }
+
+                        .label-file-input {
+                            color: #a3a3a3;
+                            border-radius: 5px;
+                            padding: 3px 10px;
+                            background-color: #0b0b0e;
+                            font-size: 12px;
+                        }
+
+                        .label-file-input:hover,
+                        .label-file-input:focus,
+                        .label-file-input:active {
+                            cursor: pointer;
+                            background-color: $pink-black;
+                        }
+
+                        input, textarea, select, .label-file-input-preview {
                             border-radius: 5px;
                             background-color: #0b0b0e;
                             color: #a3a3a3;
@@ -1915,11 +1955,12 @@ mark {
                         input::placeholder,
                         textarea::placeholder,
                         select::placeholder {
-                            color: #363636;
+                            color: $main-hover;
                         }
 
                         label {
-                            color: #999999;
+                            // color: #999999;
+                            color: $main-hover;
                         }
                     }
                 }

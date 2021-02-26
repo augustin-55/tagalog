@@ -9,7 +9,9 @@ if (isset($_POST)) {
         if (isset($_POST['title']) && $_POST['title'] != '') {
             $addDate = date('d/m/Y');
             $picture = $_POST['picture'];
-            $picture1 = $_POST['picture1'];
+            $picture1 = $_POST['picture_1'];
+            $picture2 = $_POST['picture_2'];
+            $picture3 = $_POST['picture_3'];
             $title = $_POST['title'];
             $description = $_POST['description'];
             $category = $_POST['category'];
@@ -20,12 +22,14 @@ if (isset($_POST)) {
                 $display_carousel = '0';
             }
 
-            $add = $bdd->prepare('INSERT INTO travels (addDate, picture, title, description, display_carousel, category_id) VALUES (:addDate, :picture, :title, :description, :display_carousel, :category_id)');
+            $add = $bdd->prepare('INSERT INTO travels (addDate, picture, picture_1, picture_2, picture_3, title, description, display_carousel, category_id) VALUES (:addDate, :picture, :picture_1, :picture_2, :picture_3, :title, :description, :display_carousel, :category_id)');
 
             if ($add->execute(array(
                 'addDate' => $addDate,
                 'picture' => $picture,
-                'pictures' => $picture1,
+                'picture_1' => $picture1,
+                'picture_2' => $picture2,
+                'picture_3' => $picture3,
                 'title' => $title,
                 'description' => $description,
                 'display_carousel' => $display_carousel,
@@ -35,8 +39,8 @@ if (isset($_POST)) {
                 header('location: ../../../confirm-portal-admin.php?manageTravels=content&message='.$confirmMessage.'');
             }
             else {
-                $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
-                header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
+                $errorMessage = 'There\'s a problem while entering the entry in the database <i class="fas fa-frown-open"></i>';
+                // header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
             }
         }
     }

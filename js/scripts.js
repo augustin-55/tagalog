@@ -197,6 +197,23 @@ $(function() {
 
     // Update buttons
 
-    
+    // Input file + show more button : Add pictures
+
+    $('.add-pictures-link').clickToggle(function() {
+        $(this).next().addClass('d-block');
+    }, function() {
+        $(this).next().removeClass('d-block');
+    });
+
+    $('input[type="file"]').change(function(e) {
+        var file = e.target.files[0].name;
+        // alert('Le fichier "' + file + '" a été sélectionné.');
+
+        // $(this).text('ok');
+
+        $(this).siblings('.label-file-input').text('ok');
+
+        console.log($(this).siblings('label-file-input'));
+    });
 
 });

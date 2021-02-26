@@ -11,6 +11,7 @@
                     <option value="may">May</option>
                     <option value="augustin">Augustin</option>
                 </select>
+                <input type="submit" value="See our preferences">
             </form>
         </div>
         <article class="content-songs-top">
