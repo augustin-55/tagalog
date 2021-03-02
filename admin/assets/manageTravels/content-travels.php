@@ -32,9 +32,10 @@
                 <tr>
                     <td><?php echo $donnees['category']; ?></td>
                     <td><?php echo $donnees['picture']; ?></td>
-                    <td>
-                        <?php echo $donnees['picture_1']; ?>
-                    </td>
+                    <td class="display-pictures-admin">
+                        <img src="assets/pictures/<?php echo $donnees['picture_1']; ?>">
+                        <img src="assets/pictures/<?php echo $donnees['picture_2']; ?>">
+                        <img src="assets/pictures/<?php echo $donnees['picture_3']; ?>">                    </td>
                     <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
                     <td><?php echo $donnees['display_carousel']; ?></td>

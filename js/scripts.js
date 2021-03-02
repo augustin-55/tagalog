@@ -211,9 +211,10 @@ $(function() {
 
         // $(this).text('ok');
 
+        // -3
         $(this).siblings('.label-file-input').text('ok');
 
-        console.log($(this).siblings('label-file-input'));
+        console.log($(this).siblings());
     });
 
 });

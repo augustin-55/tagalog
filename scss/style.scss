@@ -776,15 +776,6 @@ header {
 
     .section-articles-travels {
 
-        // .section-carousel-travels {
-        //     // width: 90%;
-
-        //     img {
-        //         max-height: 600px;
-        //         max-width: 1500px;
-        //     }
-        // }
-
         .section-intro-travels {
             margin: 40px 60px;
             
@@ -887,14 +878,40 @@ header {
     }
 
     .section-display-article {
+        // display: flex;
+        // flex-direction: column;
+
+        .div-display-article {
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                margin: 10px 0;
+                padding: 20px 0;
+                background-color: $pink-black;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 200px;
+                    margin: 20px;
+                }
+            }
+
+            p {
+                border: 1px solid white;
+                color: $main-hover;
+                text-align: justify;
+                font-family: 'Oswald-Regular';
+            }
+        }
 
         .section-previous-travels {
             display: flex;
             justify-content: center;
-
-            // .div-display-article {
-                
-            // }
 
             a {
                 font-family: 'Oswald-Regular';
@@ -1856,8 +1873,15 @@ mark {
                     // margin: 0 20px;
                 }
 
+                .display-pictures-admin {
+                    
+                    img {
+                        margin: 5px 0;
+                        width: 50px;
+                    }
+                }
+
                 th, td {
-                    border: 1px solid #030303;
                     padding: 10px 30px;
                 }
 

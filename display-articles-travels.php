@@ -11,7 +11,12 @@
         <?php while($donnees = $display_article->fetch()) { ?>
         <div class="div-display-article">
             <h5><?php echo $donnees['title']; ?></h5>
-            <img src="assets/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
+            <img src="assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
+            <div>
+                <img src="assets/pictures/travels/content/<?php echo $donnees['picture_1']; ?>">
+                <img src="assets/pictures/travels/content/<?php echo $donnees['picture_2']; ?>">
+                <img src="assets/pictures/travels/content/<?php echo $donnees['picture_3']; ?>">
+            </div>
             <p><?php echo $donnees['description']; ?></p>
         </div>
         <div class="section-previous-travels">
