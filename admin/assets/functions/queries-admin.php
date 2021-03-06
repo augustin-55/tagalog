@@ -27,9 +27,15 @@ $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 $travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
 
-// $categories_travel = $bdd->query('SELECT * FROM categories_travel');
-
 $categories_travel_select = $bdd->query('SELECT * FROM categories_travel');
-
 $categories_travel_add = $bdd->query('SELECT * FROM categories_travel');
 
+if (isset($_GET['idArticle']) && $_GET['idArticle'] != '') {
+    $id_article = $_GET['idArticle'];
+}
+else {
+    $id_article = '1';
+}
+
+$update_travels_content = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+$update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id = "'.$id_article.'"');

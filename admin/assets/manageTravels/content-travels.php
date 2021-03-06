@@ -59,29 +59,39 @@
                     <?php } ?>
                 </select>
             </div>
-            <div>
-                <label for="file" class="label-file-input-preview">Choose preview picture</label>
-                <input id="file" type="file" name="picture" style="display: none;">
+            <div class="d-flex justify-content-center">
+                <label class="btn-file-input-preview">
+                    <i class="fa fa-image"></i><span>Choose preview picture</span><input type="file" style="display: none;" name="picture">
+                </label>
+                <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
             </div>
             <div class="choose-pictures-input">
                 <a href="javascript:void(0)" class="add-pictures-link">Add pictures</a>
                 <div class="add-pictures-input" style="display: none;">
                     <hr>
                     <div>
-                        <label for="file" class="label-file-input">Choose picture 1</label>
-                        <input id="file" type="file" name="picture_1" style="display: none;">
+                        <label class="btn-file-input">
+                            <i class="fa fa-image"></i><span>Choose picture 1</span><input type="file" style="display: none;" name="picture_1">
+                        </label>
+                        <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
-                        <label for="file" class="label-file-input">Choose picture 2</label>
-                        <input id="file" type="file" name="picture_2">
+                        <label class="btn-file-input">
+                            <i class="fa fa-image"></i><span>Choose picture 2</span><input type="file" style="display: none;" name="picture_2">
+                        </label>
+                        <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
-                        <label for="file" class="label-file-input">Choose picture 3</label>
-                        <input id="file" type="file" name="picture_3">
+                        <label class="btn-file-input">
+                            <i class="fa fa-image"></i><span>Choose picture 3</span><input type="file" style="display: none;" name="picture_3">
+                        </label>
+                        <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
-                        <label for="file" class="label-file-input">Choose picture 4</label>
-                        <input id="file" type="file" name="picture_4">
+                        <label class="btn-file-input">
+                            <i class="fa fa-image"></i><span>Choose picture 4</span><input type="file" style="display: none;" name="picture_4">
+                        </label>
+                        <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <hr>
                 </div>

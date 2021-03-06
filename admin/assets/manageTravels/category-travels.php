@@ -16,7 +16,7 @@
                 <?php while ($donnees = $categories_travel_select->fetch()) { ?>
                     <tr>
                         <td><?php echo $donnees['category']; ?></td>
-                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="update-form-admin.php?update=travels&display=category&idArticle=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
                         <td><a href="assets/manageTravels/controller/delete.php?manageTravels=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>

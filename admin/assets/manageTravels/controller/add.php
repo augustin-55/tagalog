@@ -40,7 +40,7 @@ if (isset($_POST)) {
             }
             else {
                 $errorMessage = 'There\'s a problem while entering the entry in the database <i class="fas fa-frown-open"></i>';
-                // header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
+                header('location: ../../../error-portal-admin.php?manageTravels=content&message='.$errorMessage.'');
             }
         }
     }

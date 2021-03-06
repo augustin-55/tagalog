@@ -199,13 +199,6 @@ $(function() {
         $(this).next().toggle('slide', 400);
     });
 
-    // Manage tables
-
-    // $("#file").change(function() {
-    //     filename = this.files[0].name
-    //     $('.label-choose-picture').val('OK');
-    // });
-
     // Buttons
     $('.add-pictures-link').clickToggle(function() {
         $(this).next().addClass('d-block');
@@ -213,19 +206,16 @@ $(function() {
         $(this).next().removeClass('d-block');
     });
 
-    // Travels
-    $('input[type="file"]').change(function(e) {
-        var file = e.target.files[0].name;
-        // alert('Le fichier "' + file + '" a été sélectionné.');
-
-        // $(this).text('ok');
-
-        // -3
-        $(this).siblings('.label-file-input').text('ok');
-
-        console.log($(this).siblings());
+    // Add picture - input file
+    $('.btn-delete-picture').click(function() {
+        $('input[type="file"]').val('');
+        $(this).prev().find('span').html('');
     });
 
-    
+    $('input[type="file"]').on('change', function(e) {
+        var file = e.target.files[0].name;
+
+        $(this).siblings('span').text(file);
+    });
 
 });

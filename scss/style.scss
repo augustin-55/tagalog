@@ -1786,9 +1786,96 @@ mark {
 // 5.4 : Manage tables
 
 .main-container-update {
+    margin-top: 50px;
+    width: 50%;
 
     .form-update {
-        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $main-blue;
+        opacity: 0.8;
+        padding: 10px 20px 0 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+
+        h4 {
+            margin: 20px 0;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            width: 30%;
+            background-color: $main-yellow;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .label-file-input-preview {
+                border-radius: 5px;
+                background-color: #0b0b0e;
+                color: #a3a3a3;
+                border: 1px solid $main-yellow;
+                padding: 5px 10px;
+                margin: 10px 0;
+            }
+
+            .display-pictures-update {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                }
+            }
+
+            label {
+                color: $main-hover;
+            }
+
+            input, select, textarea {
+                border-radius: 5px;
+                background-color: #0b0b0e;
+                color: #a3a3a3;
+                border: 1px solid $main-yellow;
+                padding: 5px 10px;
+                margin: 10px 0;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type=submit]:hover,
+            input[type=submit]:focus,
+            input[type=submit]:active {
+                background-color: $main-pink;
+                transition: background-color 0.3s ease;
+            }
+        }
+
+        a {
+            margin: 20px 0;
+            font-family: 'Oswald-Regular';
+            font-size: 14px;
+            background-color: $main-pink;
+            transition: 0.5s ease background-color;
+            color: $main-hover;
+            border: 1px solid black;
+            border-radius: 10px 0 10px 0;
+            padding: 5px 10px;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+            background-color: $pink-black;
+            text-decoration: none;
+            transition: 0.5s ease background-color;
+        }
+         
     }
 }
 
@@ -1817,6 +1904,8 @@ mark {
 
             li {
                 text-align: center;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
 
                 a {
                     color: white;
@@ -1834,7 +1923,8 @@ mark {
             li:hover,
             li:focus,
             li:active {
-                background-color: #0b0c11;
+                background-color: $main-blue;
+                transition: background-color 0.5s ease;
             }
         }
     }
@@ -1872,14 +1962,14 @@ mark {
                 background-color: $main-magenta;
                 padding: 5px 10px;
                 color: $main-hover;
-                transition: 0.5s ease background-color;
+                transition: 0.3s ease background-color;
             }
 
             input[type=submit]:hover,
             input[type=submit]:focus,
             input[type=submit]:active {
-                background-color: $main-purple;
-                transition: 0.5s ease background-color;
+                background-color: $main-blue;
+                transition: 0.3s ease background-color;
             }
         }
 
@@ -1962,25 +2052,69 @@ mark {
                             color: #a3a3a3;
                             border: 1px solid $main-yellow;
                             padding: 5px 10px;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .btn-file-input-preview {
+                            color: #a3a3a3;
+                            border-radius: 5px;
+                            padding: 3px 10px;
+                            background-color: #0b0b0e;
+                            border: 1px solid $main-yellow;
+
+                            span {
+                                margin-left: 10px;
+                            }
+                        }
+
+                        .add-pictures-link:hover {
+                            text-decoration: none;
+                            background-color: $main-blue;
+                            transition: background-color 0.3s ease;
                         }
 
                         .add-pictures-input {
                             display: none;
                         }
 
-                        .label-file-input {
+                        .btn-file-input {
                             color: #a3a3a3;
                             border-radius: 5px;
                             padding: 3px 10px;
                             background-color: #0b0b0e;
                             font-size: 12px;
+
+                            span {
+                                margin-left: 10px;
+                            }
                         }
 
-                        .label-file-input:hover,
-                        .label-file-input:focus,
-                        .label-file-input:active {
+                        .btn-file-input:hover,
+                        .btn-file-input:focus,
+                        .btn-file-input:active {
                             cursor: pointer;
                             background-color: $pink-black;
+                        }
+
+                        .btn-delete-picture {
+                            border: none;
+                            background-color: #00000000;
+
+                            i {
+                                color: $main-blue;
+                                transition: color 0.3s ease;
+                            }
+                        }
+
+                        .btn-delete-picture:hover,
+                        .btn-delete-picture:focus,
+                        .btn-delete-picture:active {
+                            border: none;
+
+                            i {
+                                color: $main-hover;
+                                transition: color 0.3s ease;
+                            }
                         }
 
                         input, textarea, select, .label-file-input-preview {
@@ -1990,6 +2124,7 @@ mark {
                             border: 1px solid $main-yellow;
                             padding: 5px 10px;
                             max-width: 200px;
+                            transition: background-color 0.3s ease;
                         }
 
                         input:hover,
@@ -2001,7 +2136,8 @@ mark {
                         select:hover,
                         select:focus,
                         select:active {
-                            background-color: #121218;
+                            background-color: $main-blue;
+                            transition: background-color 0.3s ease;
                         }
 
                         input::placeholder,
@@ -2011,7 +2147,6 @@ mark {
                         }
 
                         label {
-                            // color: #999999;
                             color: $main-hover;
                         }
                     }

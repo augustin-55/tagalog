@@ -5,12 +5,12 @@
     </div>
 
     <article class="form-update">
-        <h4>update article</h4>
+        <h4>Update article</h4>
         <form action="assets/manageTravels/controller/add.php?manageTravels=content" method="POST">
             <div>
                 <select name="category">
                     <option value="0">---</option>
-                    <?php while ($donnees = $categories_travel_add->fetch()) { ?>
+                    <?php while ($donnees = $categories_travel_select->fetch()) { ?>
                         <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
                     <?php } ?>
                 </select>
@@ -20,7 +20,7 @@
                 <input id="file" type="file" name="picture" style="display: none;">
             </div>
             <div class="choose-pictures-input">
-                <a href="javascript:void(0)" class="add-pictures-link">Add pictures</a>
+                <a href="javascript:void(0)" class="add-pictures-link">Update pictures</a>
                 <div class="add-pictures-input" style="display: none;">
                     <hr>
                     <div>
@@ -46,22 +46,43 @@
                 <input type="text" name="title" placeholder="Title">
             </div>
             <div>
-                <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>
+                <textarea name="description" placeholder="Description" cols="30" rows="8"></textarea>
             </div>
             <div>
                 <label for="display-carousel">Display in carousel :</label>
                 <input type="checkbox" name="display-carousel" placeholder="Choose if display in carousel">
             </div>
             <div>
-                <input type="submit" value="Add">
+                <input type="submit" value="Update">
             </div>
         </form>
+        <a href="manageTravels.php?manageTravels=content">Previous</a>
     </article>
 
 <?php } else if ($_GET['display'] == 'category') { ?>
 
-<form action="#" method="POST">
+    <div class="main-title-admin">
+        <h2>Manage Travels - Categories</h2>
+    </div>
 
-</form>
+    <article class="form-update">
+        <?php while($donnees = $update_travels_category->fetch()) { ?>
+        <h4>Update <?php echo $donnees['category']; ?> category</h4>
+        <form action="assets/manageTravels/controller/update.php?manageTravels=category&idArticle=<?php echo $donnees['id']; ?>" method="POST">
+            <div class="display-pictures-update">
+                <img src="../assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>" alt="thumbnail of <?php echo $donnees['category']; ?> - travels category">
+                <input type="text" name="thumbnail" placeholder="Picture.ext" value="<?php echo $donnees['thumbnail']; ?>">
+            </div>
+            <div>
+                <input type="text" name="category-list" placeholder="Category" value="<?php echo $donnees['category']; ?>">
+            </div>
+            <div>
+                <input type="submit" value="Update">
+            </div>
+        </form>
+        <?php } ?>
+        <hr>
+        <a href="manageTravels.php?manageTravels=category">Previous</a>
+    </article>
 
 <?php } ?>

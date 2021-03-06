@@ -5,7 +5,7 @@
     include_once('assets/manageTravels/update-travels.php');
 }
 else if ($_GET['update'] == 'portfolio') {
-
+    include_once('assets/manageTravels/update-portfolio.php');
 }
 
 ?>
