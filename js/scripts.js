@@ -148,8 +148,19 @@ $(function() {
 
     /* ---------- 8 : Travels ---------- */
 
+    // Carousel animations
     $(".carousel-item").first().addClass("active");
     $("ol.carousel-indicators").find("li").eq(0).addClass("active");
+
+    // Choose category animations on pictures hover 
+
+    $('.section-choose-category div').mouseenter(function() {
+        $(this).children('article').animate({opacity: 1});
+        $(this).css({'transform':'scale(1.05)', 'transition':'transform 0.4s ease'});
+    }).mouseleave(function() {
+        $(this).children('article').animate({opacity: 0});
+        $(this).css({'transform':'scale(1)', 'transition':'transform 0.4s ease'});
+    });
 
     /* ---------- 9 : Footer ---------- */
 
@@ -195,16 +206,14 @@ $(function() {
     //     $('.label-choose-picture').val('OK');
     // });
 
-    // Update buttons
-
-    // Input file + show more button : Add pictures
-
+    // Buttons
     $('.add-pictures-link').clickToggle(function() {
         $(this).next().addClass('d-block');
     }, function() {
         $(this).next().removeClass('d-block');
     });
 
+    // Travels
     $('input[type="file"]').change(function(e) {
         var file = e.target.files[0].name;
         // alert('Le fichier "' + file + '" a été sélectionné.');
@@ -216,5 +225,7 @@ $(function() {
 
         console.log($(this).siblings());
     });
+
+    
 
 });

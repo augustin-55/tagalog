@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $categories_travel->fetch()) { ?>
+                <?php while ($donnees = $categories_travel_select->fetch()) { ?>
                     <tr>
                         <td><?php echo $donnees['category']; ?></td>
                         <td><a href="#"><i class="fas fa-edit"></i></a></td>

@@ -740,6 +740,7 @@ header {
 
                 article {
                     background-color: #0000009c;
+                    opacity: 0;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -760,14 +761,16 @@ header {
                         font-family: 'Quicksand-regular';
                         border-top: 1px solid $main-hover;
                         padding: 10px;
+                        transition: all 0.2s ease;
                     }
 
                     a:hover,
                     a:focus,
                     a:active {
+                        transition: all 0.2s ease;
+                        color: $main-magenta;
+                        text-shadow: 1px 1px 1px $pink-black;
                         text-decoration: none;
-                        border-radius: 10px;
-                        border: 2px solid $main-hover;
                     }
                 }
             }
@@ -884,28 +887,44 @@ header {
         .div-display-article {
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             h5 {
                 margin: 10px 0;
                 padding: 20px 0;
                 background-color: $pink-black;
+                width: 100%;
             }
 
-            div {
+            img {
+                width: 100%;
+            }
+
+            .div-display-pictures {
                 display: flex;
                 justify-content: center;
 
                 img {
                     width: 200px;
                     margin: 20px;
+                    transition: transform 0.4s ease;
+                }
+
+                img:hover,
+                img:focus,
+                img:active {
+                    transform:scale(1.1);
                 }
             }
 
-            p {
-                border: 1px solid white;
+            .div-description-article {
                 color: $main-hover;
                 text-align: justify;
                 font-family: 'Oswald-Regular';
+                margin: 20px 0 40px 0;
+                width: 60%;
+                font-family: 'Playball-Regular';
+                font-size: 17px;
             }
         }
 
@@ -1766,6 +1785,13 @@ mark {
 
 // 5.4 : Manage tables
 
+.main-container-update {
+
+    .form-update {
+        border: 1px solid black;
+    }
+}
+
 .main-container-mVocabulary,
 .main-container-mPortfolio,
 .main-container-mAboutUs,
@@ -1865,20 +1891,12 @@ mark {
             .table-mPortfolio,
             .table-mAboutUs,
             .table-mTravels {
-                // background-color: red;
+                box-shadow: 2px 2px 2px black;
                 text-align: center;
 
                 table {
                     border-collapse: collapse;
                     // margin: 0 20px;
-                }
-
-                .display-pictures-admin {
-                    
-                    img {
-                        margin: 5px 0;
-                        width: 50px;
-                    }
                 }
 
                 th, td {
@@ -1888,6 +1906,16 @@ mark {
                 th {
                     background-color: $main-magenta;
                     color: $main-hover;
+                }
+
+                .display-pictures-admin {
+                    // display: flex;
+                    // align-items: center;
+                
+                    img {
+                        margin: 5px;
+                        // width: 50px;
+                    }
                 }
 
                 td {

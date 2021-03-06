@@ -12,11 +12,11 @@
             <section>
                 <?php while($donnees = $categories_travel->fetch()) { ?>
                 <div>
-                    <img src="assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>" alt="<?php echo $donnees['category']; ?>">
+                    <img class="select-category-picture" src="assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>" alt="display <?php echo $donnees['category']; ?> page">
                     <article>
                         <p><?php echo $donnees['category']; ?></p>
                         <div class="bar-categories-travel"></div>
-                        <a href="travels.php?category=<?php echo $donnees['id']; ?>">Take a look...</a>
+                        <a href="travels.php?category=<?php echo $donnees['id']; ?>"><i class="fas fa-plane-arrival"></i> Take a look...</a>
                     </article>
                 </div>
                 <?php } ?>

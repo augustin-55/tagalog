@@ -10,7 +10,7 @@
     <!-- Main title -->
     <title>May & Augustin - Admin</title>
     <!-- jQuery UI -->
-    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/libraries/jquery-ui-1.12.1/jquery-ui.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
