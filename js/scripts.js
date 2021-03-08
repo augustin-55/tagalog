@@ -1,6 +1,5 @@
 $(function() {
     /*
-        0 : Var
         1 : Main functions
         2 : Header
         3 : Homepage
@@ -16,8 +15,6 @@ $(function() {
         10 : Admin
 
     */ 
-
-    /* ---------- 0 : Var ---------- */
 
     /* ---------- 1 : Main functions ---------- */
 
@@ -167,7 +164,6 @@ $(function() {
     $('.show-admin-btn i').mouseenter(function() {
         $(this).parent().siblings('.info-form-admin').removeClass('d-none animate__animated animate__fadeOut');
         $(this).parent().siblings('.info-form-admin').addClass('d-block animate__animated animate__fadeIn');
-
     }).mouseleave(function() {
         $(this).parent().siblings('.info-form-admin').removeClass('d-block animate__animated animate__fadeIn');
         $(this).parent().siblings('.info-form-admin').addClass('d-none animate__animated animate__fadeOut');
@@ -191,11 +187,9 @@ $(function() {
 
     /* ---------- 10 : Admin ---------- */
 
-    console.log('ok');
-
     // Homepage
-
-    $('.button-admin-home').click(function() {
+    $('.button-admin-home').on('click', function() {
+        console.log('ok');
         $(this).next().toggle('slide', 400);
     });
 
@@ -207,15 +201,44 @@ $(function() {
     });
 
     // Add picture - input file
+    var path = $('input[name="path_pictures"]').val();
+
     $('.btn-delete-picture').click(function() {
-        $('input[type="file"]').val('');
-        $(this).prev().find('span').html('');
+        var original_picture = $(this).prev().children('.span-no-choice').text();
+        $('input[type=file').val(''); 
+        $(this).prev().find('.span-file-chosen').html('');
+        $(this).prev().find('.span-no-choice').show();
+        $(this).parent().siblings('img').attr('src', path+''+original_picture);
+        console.log(original_picture);
     });
 
     $('input[type="file"]').on('change', function(e) {
+        $(this).siblings('.span-no-choice').hide();
         var file = e.target.files[0].name;
-
-        $(this).siblings('span').text(file);
+        $(this).siblings('.span-file-chosen').html(file);
+        $('.display-pictures-update').children('img').attr('src', path+''+file);
     });
+
+    // Update picture - if picture is not found : error
+    $('.display-pictures-update').children('img').on('error', function() {
+        $(this).attr('src', '../assets/pictures/errors/error404.jpg');
+    });
+
+    // Hide pictures with false link or no link in display tables
+    $(document).ready(function() {
+        $('img').on('error', function() {
+            console.log('ok');
+            // $(this).attr('src');
+        });
+    });
+
+    // $('').on('error', function() {
+    //     console.log('ok');
+    //     // $(this).attr('src');
+    // });
+
+    // if ($('.display-pictures-admin').children('img').attr('src') == '') {
+    //     $(this).css({'display':'none'});
+    // }
 
 });

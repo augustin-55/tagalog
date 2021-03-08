@@ -13,12 +13,14 @@
     * Do sessions mecanism so that if there's no session at start of website -> redirect
     * Do verifications of form in add form (admin part)
     * Watch again about messages on portals (main and admin parts)
-    * Modify every "donnees" by "data" in all pages
+    * Also change pictures on them
+    * Modify every "donnees" by "data" in all pages (English trad only)
 
 ## Things to improve in V1.2 :
     * Checkbox in admin part and logic to choose what image we display on the carousel (travels page)
     * Updates pages in admin
     * Put input file for "learning" pages add in admin part
+    * Add counter and addDate cells in manage travels page
 
 ## Things to improve in V2 :
     * Start to enter content together in the website

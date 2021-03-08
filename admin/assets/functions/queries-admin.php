@@ -23,15 +23,36 @@ $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE catego
 
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
-/* ----- Trips ----- */
+/* ----- Travels ----- */
 
-$travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+$countTravelsArticle = $bdd->query('SELECT COUNT(*) FROM travels');
 
 $categories_travel_select = $bdd->query('SELECT * FROM categories_travel');
 $categories_travel_add = $bdd->query('SELECT * FROM categories_travel');
 
-if (isset($_GET['idArticle']) && $_GET['idArticle'] != '') {
-    $id_article = $_GET['idArticle'];
+if (isset($_GET['select_category_travels'])) {
+    $choose_category = '';
+    // var_dump($_GET);
+
+    if ($_GET['select_category_travels'] == 'default') {
+        $choose_category = '';
+    }
+    else {
+        $category_travels = $_GET['select_category_travels'];
+        // $choose_category = ' WHERE id = "'.$category_travels.'"';
+    }
+
+    // echo $category_travels;
+
+    return $choose_category;
+}
+
+$travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+
+// echo $travels;
+
+if (isset($_GET['id']) && $_GET['id'] != '') {
+    $id_article = $_GET['id'];
 }
 else {
     $id_article = '1';
@@ -39,3 +60,8 @@ else {
 
 $update_travels_content = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
 $update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id = "'.$id_article.'"');
+
+// while ($donnees = $update_travels_content->fetch()) {
+//     var_dump($donnees);
+//     echo $donnees['id'];
+// }

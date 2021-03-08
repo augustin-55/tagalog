@@ -19,7 +19,10 @@
                 <img src="assets/pictures/travels/content/<?php echo $donnees['picture_3']; ?>">
                 <img src="assets/pictures/travels/content/<?php echo $donnees['picture_4']; ?>">
             </div>
-            <div class="div-description-article"><?php echo $donnees['description']; ?></div>
+            <div class="div-description-article">
+                <?php echo $donnees['description']; ?>
+                <p><?php echo $donnees['addDate']; ?></p>
+            </div>
         </div>
         <div class="section-previous-travels">
             <a href="travels.php?category=<?php echo $donnees['category_id']; ?>"><i class="fas fa-arrow-left"></i> Previous</a>

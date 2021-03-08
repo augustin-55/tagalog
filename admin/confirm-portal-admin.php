@@ -1,6 +1,11 @@
 <?php include('assets/header-admin.php'); ?>
 
 <section class="main-container-admin-portal main-container">
+    <section class="section-validation-message">
+        <h4>Do you really want to delete it ?</h4>
+        <button>Obviously not !</button>
+        <button>I'm sure</button>
+    </section>
     <section class="section-confirm-message">
         <article>
             <img src="../assets/pictures/portals/confirm-admin.png" alt="Confirm picture">

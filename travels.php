@@ -3,11 +3,13 @@
     $current_page = 'travels';
     require('assets/functions/functions.php');
     include('assets/header.php');
+    $display_category = $bdd->query('SELECT category FROM categories_travel WHERE id = "'.$_GET['category'].'"');
+    $data = $display_category->fetch();
 ?>
 
 <!-- Main body : Travels -->
 <div class="main-container main-container-travels">
-    <section class="section-articles-travels">
+    <section class="main-articles-travels">
         <div class="section-carousel-travels">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -38,22 +40,30 @@
         </div>
         <div class="section-title-travels">
             <div class="bar-title-travels"></div>
-            <h4>See all articles from</h4>
+                <h4>See all articles - <?php echo $data['category']; ?></h4>
             <div class="bar-title-travels"></div>
         </div>
         <div class="section-articles-travels">
             <section>
                 <?php while($donnees = $travels->fetch()) { ?>
                 <article>
-                    <img src="assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
-                    <h5><?php echo $donnees['title']; ?></h5>
-                    <p><?php echo $donnees['description']; ?></p>
-                    <a href="display-articles-travels.php?article=<?php echo $donnees[0]; ?>"><i class="far fa-hand-point-right"></i> See more</a>
+                    <div>
+                        <img src="assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
+                        <span><?php echo $donnees['addDate']; ?></span>
+                    </div>
+                    <div>
+                        <h5><?php echo $donnees['title']; ?></h5>
+                        <p><?php echo $donnees['description']; ?></p>
+                        <a href="display-articles-travels.php?article=<?php echo $donnees[0]; ?>"><i class="far fa-hand-point-right"></i> See more pictures...</a>
+                    </div>
                 </article>
                 <?php } ?> 
             </section>
         </div>
     </section>
+    <div>
+        <p>I'm a counter</p>
+    </div>
 </div>
 
 <!-- Footer -->

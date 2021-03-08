@@ -3,10 +3,10 @@
 </div>
 
 <form action="#" method="GET">
-<select name="select_category">
+<select name="select_category_travels">
         <option value="default"> ----- </option>
         <?php while ($donnees = $categories_travel_select->fetch()) { ?>
-            <option value="<?php echo $donnees['category']; ?>"><?php echo $donnees['category'] ?></option>
+            <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
         <?php } ?>
     </select>
     <input type="submit" value="Select">
@@ -61,7 +61,7 @@
             </div>
             <div class="d-flex justify-content-center">
                 <label class="btn-file-input-preview">
-                    <i class="fa fa-image"></i><span>Choose preview picture</span><input type="file" style="display: none;" name="picture">
+                    <i class="fa fa-image"></i><span class="span-no-choice">Choose preview picture</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture">
                 </label>
                 <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
             </div>
@@ -71,25 +71,25 @@
                     <hr>
                     <div>
                         <label class="btn-file-input">
-                            <i class="fa fa-image"></i><span>Choose picture 1</span><input type="file" style="display: none;" name="picture_1">
+                            <i class="fa fa-image"></i><span class="span-no-choice">Choose picture 1</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture_1">
                         </label>
                         <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
                         <label class="btn-file-input">
-                            <i class="fa fa-image"></i><span>Choose picture 2</span><input type="file" style="display: none;" name="picture_2">
+                            <i class="fa fa-image"></i><span class="span-no-choice">Choose picture 2</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture_2">
                         </label>
                         <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
                         <label class="btn-file-input">
-                            <i class="fa fa-image"></i><span>Choose picture 3</span><input type="file" style="display: none;" name="picture_3">
+                            <i class="fa fa-image"></i><span class="span-no-choice">Choose picture 3</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture_3">
                         </label>
                         <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div>
                         <label class="btn-file-input">
-                            <i class="fa fa-image"></i><span>Choose picture 4</span><input type="file" style="display: none;" name="picture_4">
+                            <i class="fa fa-image"></i><span class="span-no-choice">Choose picture 4</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture_4">
                         </label>
                         <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>

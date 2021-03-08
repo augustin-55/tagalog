@@ -68,6 +68,10 @@ if (isset($current_page) && $current_page == 'display-article-travel') {
     }
 }
 
+$count_articles_travel = $bdd->query('SELECT COUNT(*) travels');
+$data = $count_articles_travel->fetch();
+var_dump($data);
+
 /* ---------- 4 : About us ---------- */
 
 // Countries

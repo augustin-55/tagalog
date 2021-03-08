@@ -42,40 +42,7 @@
                     <button class="button-admin-home">Counter - Trips <i class="fas fa-chevron-down"></i></button>
                     <div>
                         <div class="underline-admin-home"></div>
-                        <p>Total of places we plan to discover : <span><?php while ($donnees = $countDreamplace->fetch()) { echo $donnees[0]; } ?></span></p>
-                        <p>Total of places we knew together : <span><?php while ($donnees = $countFeedback->fetch()) { echo $donnees[0]; } ?></span></p>
-                    </div>
-                </article>
-            </div>
-            <div class="flex-fill">
-                <article class="category-admin-home">
-                    <button class="button-admin-home">Trafic - Visitors on the website <i class="fas fa-chevron-down"></i></button>
-                    <div>
-                        <p>Soon...</p>
-                    </div>
-                </article>
-                <article class="category-admin-home">
-                    <button class="button-admin-home">Counter - About us <i class="fas fa-chevron-down"></i></button>
-                    <div>
-                        
-                    </div>
-                </article>
-                <article class="category-admin-home">
-                    <button class="button-admin-home">Counter - Vocabulary <i class="fas fa-chevron-down"></i></button>
-                    <div>
-                        
-                    </div>
-                </article>
-                <article class="category-admin-home">
-                    <button class="button-admin-home">Counter - Portfolio <i class="fas fa-chevron-down"></i></button>
-                    <div>
-                        
-                    </div>
-                </article>
-                <article class="category-admin-home">
-                    <button class="button-admin-home">Counter - Trips <i class="fas fa-chevron-down"></i></button>
-                    <div>
-                        
+                        <p>Total of articles in this part : <span><?php while ($donnees = $countTravelsArticle->fetch()) { echo $donnees[0]; } ?></span></p>
                     </div>
                 </article>
             </div>

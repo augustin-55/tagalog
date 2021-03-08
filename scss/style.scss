@@ -777,7 +777,7 @@ header {
         }
     }
 
-    .section-articles-travels {
+    .main-articles-travels {
 
         .section-intro-travels {
             margin: 40px 60px;
@@ -828,7 +828,7 @@ header {
         }
 
         .section-articles-travels {
-            margin: 40px;
+            margin: 40px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -836,44 +836,53 @@ header {
             section {
 
                 article {
-                    border: 1px solid #252525d0;
+                    // background-color: #0a0002;
+                    // border: 1px solid #252525d0;
                     box-shadow: 2px 2px 2px #252525d0;
-                    border-radius: 5px;
-                    margin: 20px 0;
+                    // border-radius: 5px;
+                    margin: 40px 0;
                     padding: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    h5 {
-                        margin: 20px;
-                    }
 
                     img {
                         max-width: 1200px;
                         border-radius: 5px;
                     }
 
-                    p {
+                    span {
+                        color: grey;
                         font-family: 'Playball-Regular';
-                        font-size: 18px;
-                        color: $main-hover;
-                        padding: 20px;
-                        text-align: justify;
-                        max-width: 1200px;
+                        margin-top: 2px;
                     }
 
-                    a {
-                        float: right;
-                        font-family: 'Oswald-Regular';
-                        color: #444444;
-                    }
+                    div {
+                        display: flex;
+                        flex-direction: column;
 
-                    a:hover,
-                    a:focus,
-                    a:active {
-                        text-decoration: none;
-                        color: $main-magenta;
+                        h5 {
+                            margin: 20px;
+                        }
+
+                        p {
+                            font-family: 'Playball-Regular';
+                            font-size: 18px;
+                            color: $main-hover;
+                            padding: 20px;
+                            text-align: justify;
+                            max-width: 1200px;
+                        }
+    
+                        a {
+                            font-family: 'Oswald-Regular';
+                            color: #444444;
+                            text-align: center;
+                        }
+    
+                        a:hover,
+                        a:focus,
+                        a:active {
+                            text-decoration: none;
+                            color: $main-magenta;
+                        }
                     }
                 }
             }
@@ -925,6 +934,13 @@ header {
                 width: 60%;
                 font-family: 'Playball-Regular';
                 font-size: 17px;
+
+                p {
+                    color: grey;
+                    font-size: 14px;
+                    text-align: right;
+                    margin-top: 5px;
+                }
             }
         }
 
@@ -1831,6 +1847,25 @@ mark {
 
                 img {
                     width: 300px;
+                    margin-bottom: 20px;
+                }
+
+                .btn-file-input-preview,
+                .btn-delete-picture {
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    color: #a3a3a3;
+                    border-radius: 5px;
+                    padding: 3px 10px;
+                    background-color: #0b0b0e;
+                    border: 1px solid $main-yellow;
+                    margin: 10px 5px;
+                }
+
+                .btn-file-input-preview:hover,
+                .btn-delete-picture:hover {
+                    background-color: $main-pink;
+                    transition: background-color 0.3s ease;
                 }
             }
 
@@ -2067,10 +2102,12 @@ mark {
                             }
                         }
 
-                        .add-pictures-link:hover {
+                        .add-pictures-link:hover,
+                        .btn-file-input-preview:hover {
                             text-decoration: none;
                             background-color: $main-blue;
                             transition: background-color 0.3s ease;
+                            cursor: pointer;
                         }
 
                         .add-pictures-input {
@@ -2143,7 +2180,7 @@ mark {
                         input::placeholder,
                         textarea::placeholder,
                         select::placeholder {
-                            color: $main-hover;
+                            color: grey;
                         }
 
                         label {
