@@ -40,7 +40,7 @@ if (isset($_POST['thumbnail'])) {
 }
 else if (isset($_POST['picture'])) {
 
-
+    if (isset($_POST['']))
 
 }
 

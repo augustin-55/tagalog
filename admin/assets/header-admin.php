@@ -59,7 +59,7 @@
                 </li>
                 <!-- Leave -->
                 <li class="nav-item">
-                    <a class="nav-link" href="../index"><i class="fas fa-sign-out-alt"></i>Leave</a>
+                    <a class="nav-link" href="logout.php?message=You're now deconnected from your administrator session !"><i class="fas fa-sign-out-alt"></i>Leave</a>
                 </li>
             </ul>
         </div>

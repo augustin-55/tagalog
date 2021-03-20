@@ -15,49 +15,29 @@
                     <?php } ?>
                 </select>
             </div>
-            <?php while($donnees = $update_travels_content->fetch()) { ?>
-            <div>
-                <label for="file" class="label-file-input-preview">Choose preview picture</label>
-                <input id="file" type="file" name="picture" style="display: none;">
-            </div>
-            <div class="choose-pictures-input">
-                <a href="javascript:void(0)" class="add-pictures-link">Update pictures</a>
-                <div class="add-pictures-input" style="display: none;">
-                    <hr>
-                    <div>
-                        <label for="file" class="label-file-input">Choose picture 1</label>
-                        <input id="file" type="file" name="picture_1" style="display: none;">
+            <?php while($donnees = $update_travels_content->fetch()) { var_dump($donnees); ?>
+                <div class="display-pictures-update d-none">
+                    <input type="hidden" name="path_pictures" value="../assets/pictures/travels/content/">
+                    <img src="../assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="thumbnail of <?php echo $donnees['title']; ?> - travels articles">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <label class="btn-file-input-preview">
+                            <i class="fa fa-image mr-2"></i><span class="span-no-choice"><?php echo $donnees['thumbnail']; ?></span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="thumbnail">
+                        </label>
+                        <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
                     </div>
-                    <div>
-                        <label for="file" class="label-file-input">Choose picture 2</label>
-                        <input id="file" type="file" name="picture_2">
-                    </div>
-                    <div>
-                        <label for="file" class="label-file-input">Choose picture 3</label>
-                        <input id="file" type="file" name="picture_3">
-                    </div>
-                    <div>
-                        <label for="file" class="label-file-input">Choose picture 4</label>
-                        <input id="file" type="file" name="picture_4">
-                    </div>
-                    <hr>
                 </div>
-                <?php } ?>
-            </div>
-            <div>
-                <input type="text" name="title" placeholder="Title">
-            </div>
-            <div>
-                <textarea name="description" placeholder="Description" cols="30" rows="8"></textarea>
-            </div>
-            <div>
-                <label for="display-carousel">Display in carousel :</label>
-                <input type="checkbox" name="display-carousel" placeholder="Choose if display in carousel">
-            </div>
+                <div class="other-pictures-update">
+                    
+                </div>
+                <div>
+                    <textarea name="description" placeholder="Description" cols="18" rows="8"></textarea>
+                </div>
+            <?php } ?>
             <div>
                 <input type="submit" value="Update">
             </div>
         </form>
+        <hr>
         <a href="manageTravels.php?manageTravels=content">Previous</a>
     </article>
 

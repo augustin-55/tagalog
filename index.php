@@ -93,7 +93,7 @@
                 <img src="assets/pictures/lorem/lorem.jpg" alt="couple picture home">
             </article>
             <article>
-                <p>In  relationship for <?php echo $nbday; ?> months now, </p>
+                <p>We know each other for <?php echo $nbDayRelationship; ?> months now, and we're in couple for <?php echo $nbDayLove; ?> months</p>
             </article>
         </section> 
    </section>

@@ -8,7 +8,7 @@
     </section>
     <section class="section-confirm-message">
         <article>
-            <img src="../assets/pictures/portals/confirm-admin.png" alt="Confirm picture">
+            <img src="../assets/pictures/portals/confirm-admin.png?session=connected" alt="Confirm picture">
             <h3>Success... <i class="far fa-grin-hearts"></i></h3>
             <p><?php echo $_GET['message']; ?></p>
         </article>

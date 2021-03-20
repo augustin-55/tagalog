@@ -1,5 +1,4 @@
 <?php 
-
 /**
  * Var
 * 0 : Learning
@@ -58,6 +57,7 @@ if (isset($current_page) && $current_page == 'travels') {
         $category = $_GET['category'];
         $travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE category_id = "'.$category.'"');
         $carousel_travels = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE category_id = "'.$category.'" AND display_carousel = "1"');
+        $count_articles_travel = $bdd->query('SELECT COUNT(*) FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE category_id = "'.$category.'"');
     }
 }
 
@@ -67,10 +67,6 @@ if (isset($current_page) && $current_page == 'display-article-travel') {
         $display_article = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE travels.id = "'.$article.'"');
     }
 }
-
-$count_articles_travel = $bdd->query('SELECT COUNT(*) travels');
-$data = $count_articles_travel->fetch();
-var_dump($data);
 
 /* ---------- 4 : About us ---------- */
 
@@ -85,5 +81,13 @@ $songs = $bdd->query('SELECT * FROM songs INNER JOIN users ON songs.user_id = us
 
 /* ---------- 5 : Portals ---------- */
 
-$admin = $bdd->query('SELECT * FROM admin');
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $admin = $bdd->query('SELECT COUNT(*) FROM admin WHERE username = "'.$username.'" AND password = "'.$password.'"');
+    var_dump($username);
+    var_dump($password);
+}
 
+
+// var_dump($_POST);

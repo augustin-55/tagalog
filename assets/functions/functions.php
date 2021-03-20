@@ -1,5 +1,4 @@
 <?php
-// session_start();
 
 // Var
 
@@ -22,17 +21,16 @@ require('queries.php');
 
 // Count number of months together
 
-$start = '2020-03-29';
-$end = date('Y-m-d');
-$datetime1 = new DateTime($start);
-$datetime2 = new DateTime($end);
+$startRelationship = '2020-03-29';
+$startLove = '2020-06-08';
+$now = date('Y-m-d');
+$datetime1 = new DateTime($startRelationship);
+$datetime2 = new DateTime($now);
+$datetime3 = new DateTime($startLove);
 $interval = $datetime1->diff($datetime2);
-$nbday= $interval->format('%m');
-
-// User sessions
-
-// $_SESSION['username'] = '';
-// $_SESSION['password'] = '';
+$interval1 = $datetime3->diff($datetime2);
+$nbDayRelationship = $interval->format('%m');
+$nbDayLove = $interval1->format('%m');
 
 // function video_img_YT($video_url)
 // {
@@ -56,5 +54,15 @@ $nbday= $interval->format('%m');
 
 // Display articles in different pages - Travel
 
+if (isset($count_articles_travel)) {
+    while ($data = $count_articles_travel->fetch()) {
+        $nb_articles = $data[0];
+        $nb_pages = ceil($nb_articles/3);
 
+        // echo $nb_articles;
+        // echo $nb_pages;
+    }
+}
+
+// var_dump($_SESSION);
 

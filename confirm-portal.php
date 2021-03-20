@@ -11,7 +11,7 @@
             <p><?php echo $_GET['message']; ?></p>
         </article>
         <form action="admin/index.php" method="POST">
-            <input type="submit" value="Enter in admin part">
+            <input type="submit" value="Enter in admin part" name="confirm-admin">
         </form>
     </section>
 </section>

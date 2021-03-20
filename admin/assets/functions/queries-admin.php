@@ -1,19 +1,31 @@
 <?php 
+/**
+ * Var
+* 0 : Learning
+    * Courtesy
+    * Food
+    * Animals
+* 1 : Training
+* 2 : Portfolio
+* 3 : Travels
+* 4 : About us
+* 5 : Portals
+*/
 
-/* ----- About us ----- */
+/* ----- 1 : About us ----- */
 
 $countries = $bdd->query('SELECT * FROM countries');
 $smAll = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id');
 
 $countCountriesArticles = $bdd->query('SELECT COUNT(*) FROM countries_articles');
 
-/* ----- Vocabulary ----- */
+/* ----- 2 : Vocabulary ----- */
 
 $countVocabulary = $bdd->query('SELECT count(*) FROM cooking');
 
-/* ----- Training ----- */
+/* ----- 3 : Training ----- */
 
-/* ----- Portfolio ----- */
+/* ----- 4 : Portfolio ----- */
 
 $portfolio = $bdd->query('SELECT * FROM categories_portfolio INNER JOIN portfolio ON categories_portfolio.id = portfolio.category_id');
 
@@ -23,7 +35,7 @@ $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE catego
 
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
-/* ----- Travels ----- */
+/* ----- 5 : Travels ----- */
 
 $countTravelsArticle = $bdd->query('SELECT COUNT(*) FROM travels');
 
@@ -65,3 +77,7 @@ $update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id
 //     var_dump($donnees);
 //     echo $donnees['id'];
 // }
+
+/* ----- 6 : Portals ----- */
+
+$admin = $bdd->query('SELECT * FROM admin');

@@ -21,6 +21,7 @@
             </div>
             <div class="div-description-article">
                 <?php echo $donnees['description']; ?>
+                <p><?php echo $donnees['addBy']; ?>.</p>
                 <p><?php echo $donnees['addDate']; ?></p>
             </div>
         </div>

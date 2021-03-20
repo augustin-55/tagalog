@@ -62,7 +62,7 @@
         </div>
     </section>
     <div>
-        <p>I'm a counter</p>
+        <p></p>
     </div>
 </div>
 

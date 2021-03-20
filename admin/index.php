@@ -4,7 +4,10 @@
     <section class="main-section-admin">
         <article class="intro-admin-home">
             <img src="../assets/pictures/admin/home/lovingkisses.png" alt="Loving kisses">
-            <h4>We can update content of the website in this administration part my May <i class="fas fa-heartbeat"></i></h4>
+            <div>
+                <h4>We can update content of the website in this administration part my May <i class="fas fa-heartbeat"></i></h4>
+                <p>Connected : <?php echo $connected_admin; ?></p>
+            </div>
         </article>
         <div class="d-flex">
             <div class="flex-fill">

@@ -9,6 +9,7 @@ if (isset($_POST)) {
         
         if (isset($_POST['title']) && $_POST['title'] != '') {
             $addDate = date('d/m/Y');
+            $addBy = $connected_admin;
             $picture = $_POST['picture'];
             $picture1 = $_POST['picture_1'];
             $picture2 = $_POST['picture_2'];
@@ -23,10 +24,11 @@ if (isset($_POST)) {
                 $display_carousel = '0';
             }
 
-            $add = $bdd->prepare('INSERT INTO travels (addDate, picture, picture_1, picture_2, picture_3, title, description, display_carousel, category_id) VALUES (:addDate, :picture, :picture_1, :picture_2, :picture_3, :title, :description, :display_carousel, :category_id)');
+            $add = $bdd->prepare('INSERT INTO travels (addDate, addBy, picture, picture_1, picture_2, picture_3, title, description, display_carousel, category_id) VALUES (:addDate, :addBy, :picture, :picture_1, :picture_2, :picture_3, :title, :description, :display_carousel, :category_id)');
 
             if ($add->execute(array(
                 'addDate' => $addDate,
+                'addBy' => $addBy,
                 'picture' => $picture,
                 'picture_1' => $picture1,
                 'picture_2' => $picture2,
