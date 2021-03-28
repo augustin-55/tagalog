@@ -16,21 +16,21 @@ require('queries-admin.php');
 
 // User sessions
 
-if (isset($_POST['confirm-admin']) && $_POST['confirm-admin'] == 'Enter in admin part') {
-    $username = $_SESSION['username'];
-    $password = $_SESSION['password'];
+$username = $_SESSION['username'];
+$password = $_SESSION['password'];
 
-    if ($username != '' && $password != '') {
-        if (isset($username) && $username == 'augustin') {
-            $_SESSION['connected_admin'] = 'Augustin';
-        }
-        else if (isset($username) && $username == 'may') {
-            $_SESSION['connected_admin'] = 'May';
-        };
-
-        $connected_admin = $_SESSION['connected_admin'];
+if ($username != '' && $password != '') {
+    if (isset($username) && $username == 'augustin') {
+        $_SESSION['connected_admin'] = 'Augustin';
     }
+    else if (isset($username) && $username == 'may') {
+        $_SESSION['connected_admin'] = 'May';
+    };
+
+    $connected_admin = $_SESSION['connected_admin'];
 }
-// else {
-//     print("<script type=\"text/javascript\">setTimeout('location=(\"error-portal-admin.php?message=Good try... !\")');</script>");
-// }
+else {
+    session_destroy();
+    header('location: ../index.php');
+}
+

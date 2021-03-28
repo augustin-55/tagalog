@@ -35,7 +35,14 @@
         <h4>Add a word</h4>
         <form action="#" method="POST">
             <div>
-                <input type="file" name="upload-picture" class="upload-picture">
+                <input type="hidden" name="path_pictures" value="../assets/pictures/travels/content/">
+                <img src="../assets/pictures/vocabulary/cooking/<?php echo $donnees['picture']; ?>" alt="thumbnail of <?php echo $donnees['title']; ?> - travels article">
+                <div class="d-flex justify-content-center align-items-center">
+                    <label class="btn-file-input-preview">
+                        <i class="fa fa-image mr-2"></i><span class="span-no-choice"><?php echo $donnees['picture']; ?></span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture">
+                    </label>
+                    <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
+                </div>
             </div>
             <div>
                 <input type="text" name="english" placeholder="English word">

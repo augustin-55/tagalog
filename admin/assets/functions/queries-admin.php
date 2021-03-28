@@ -70,7 +70,7 @@ else {
     $id_article = '1';
 }
 
-$update_travels_content = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+$update_travels_content = $bdd->query('SELECT * FROM travels WHERE id ="'.$id_article.'"');
 $update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id = "'.$id_article.'"');
 
 // while ($donnees = $update_travels_content->fetch()) {

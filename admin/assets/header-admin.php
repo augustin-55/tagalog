@@ -57,6 +57,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="manageTravels.php"><i class="fas fa-globe-europe"></i>Travels</a>
                 </li>
+                <!-- Bucket List -->
+                <li class="nav-item">
+                    <a class="nav-link" href="manageAccount.php"><i class="fas fa-globe-europe"></i>Manage account</a>
+                </li>
                 <!-- Leave -->
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php?message=You're now deconnected from your administrator session !"><i class="fas fa-sign-out-alt"></i>Leave</a>
