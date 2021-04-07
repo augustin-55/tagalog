@@ -22,6 +22,7 @@
     * Updates pages in admin
     * Put input file for "learning" pages add in admin part
     * Add counter and addDate cells in manage travels page
+    * Portals : add emojis on every page
 
 ## Things to improve in V2 :
     * Start to enter content together in the website

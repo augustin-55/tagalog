@@ -7,8 +7,10 @@
     <h2>Manage your account</h2>
     <section>
         <h3>Modify your profile picture</h3>
-        <form action="#" method="POST">
-            
+        <?php while ($data = $connected_admin_query->fetch()) { ?>
+        <img src="../assets/pictures/admin/profile-pictures/<?php echo $data['profile_picture']; ?>" alt="Your profile picture" class="profile-picture-admin">
+        <?php } ?>
+        <form action="assets/manageAccount/controller/update-password.php" method="POST">
             <input type="submit" value="Apply modifications">
         </form>
     </section>  

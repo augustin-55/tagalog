@@ -1,6 +1,6 @@
 <?php 
 /**
- * Var
+* Var
 * 0 : Learning
     * Courtesy
     * Food
@@ -9,23 +9,24 @@
 * 2 : Portfolio
 * 3 : Travels
 * 4 : About us
-* 5 : Portals
+* 5 : Portals - Admin account
+* 6 : 
 */
 
-/* ----- 1 : About us ----- */
+/* -----  : About us ----- */
 
 $countries = $bdd->query('SELECT * FROM countries');
 $smAll = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries ON countries_articles.country_id = countries.id');
 
 $countCountriesArticles = $bdd->query('SELECT COUNT(*) FROM countries_articles');
 
-/* ----- 2 : Vocabulary ----- */
+/* -----  : Vocabulary ----- */
 
 $countVocabulary = $bdd->query('SELECT count(*) FROM cooking');
 
-/* ----- 3 : Training ----- */
+/* -----  : Training ----- */
 
-/* ----- 4 : Portfolio ----- */
+/* -----  : Portfolio ----- */
 
 $portfolio = $bdd->query('SELECT * FROM categories_portfolio INNER JOIN portfolio ON categories_portfolio.id = portfolio.category_id');
 
@@ -35,7 +36,7 @@ $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE catego
 
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
-/* ----- 5 : Travels ----- */
+/* ----- 4 : Travels ----- */
 
 $countTravelsArticle = $bdd->query('SELECT COUNT(*) FROM travels');
 
@@ -78,6 +79,10 @@ $update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id
 //     echo $donnees['id'];
 // }
 
-/* ----- 6 : Portals ----- */
+/* -----  : Portals - Admin account ----- */
 
 $admin = $bdd->query('SELECT * FROM admin');
+
+if (isset($_SESSION['connected_admin']) && $_SESSION['connected_admin'] != '') {
+    $connected_admin_query = $bdd->query('SELECT * FROM admin WHERE username = "'.$_SESSION['username'].'"');
+}

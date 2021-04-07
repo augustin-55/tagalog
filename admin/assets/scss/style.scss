@@ -31,7 +31,7 @@ mark {
 .header-admin {
 
     .navbar-nav {
-        margin-left: 35%;
+        margin-left: 40%;
     }
 }
 
@@ -525,6 +525,13 @@ mark {
         border-radius: 5px;
         background-color: #0e0e1aa8;
         box-shadow: 2px 2px 2px black;
+
+        .profile-picture-admin {
+            width: 200px;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+        }
 
         form {
             display: flex;

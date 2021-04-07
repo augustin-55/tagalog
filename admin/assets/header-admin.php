@@ -59,7 +59,7 @@
                 </li>
                 <!-- Bucket List -->
                 <li class="nav-item">
-                    <a class="nav-link" href="manageAccount.php"><i class="fas fa-globe-europe"></i>Manage account</a>
+                    <a class="nav-link" href="manageAccount.php"><i class="fas fa-users-cog"></i>Account</a>
                 </li>
                 <!-- Leave -->
                 <li class="nav-item">

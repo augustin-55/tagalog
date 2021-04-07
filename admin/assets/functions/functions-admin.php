@@ -16,6 +16,7 @@ require('queries-admin.php');
 
 // User sessions
 
+// $id_admin = $_SESSION['id'];
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 
@@ -28,6 +29,8 @@ if ($username != '' && $password != '') {
     };
 
     $connected_admin = $_SESSION['connected_admin'];
+
+    // var_dump($_SESSION);
 }
 else {
     session_destroy();
