@@ -15,7 +15,7 @@
     * Watch again about messages on portals (main and admin parts)
     * Also change pictures on them
     * Modify every "donnees" by "data" in all pages (English trad only)
-    * Bloc this possibility to go in admin part by link "http://fromscratch/tagalog/admin/"
+    * Bloc this possibility to go in admin part by link "http://fromscratch/tagalog/admin"
 
 ## Things to improve in V1.2 :
     * Checkbox in admin part and logic to choose what image we display on the carousel (travels page)

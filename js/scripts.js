@@ -228,7 +228,7 @@ $(function() {
     $(document).ready(function() {
         $('img').on('error', function() {
             console.log('ok');
-            // $(this).attr('src');
+            $(this).attr('src');
         });
     });
 

@@ -8,7 +8,6 @@ if (isset($_POST['thumbnail'])) {
 
     if (isset($_POST['category-list']) && $_POST['category-list'] != '') {
         $id = $_GET['id'];
-        // $thumbnail = $_POST['thumbnail'];
 
         if ($_POST['thumbnail'] != '') {
             $thumbnail = $_POST['thumbnail'];  
@@ -38,9 +37,9 @@ if (isset($_POST['thumbnail'])) {
     }
 
 }
-else if (isset($_POST['picture'])) {
+// else if (isset($_POST['picture'])) {
 
-    if (isset($_POST['']))
+//     if (isset($_POST['']))
 
-}
+// }
 

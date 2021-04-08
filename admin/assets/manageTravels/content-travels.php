@@ -41,7 +41,7 @@
                     <td><?php echo $donnees['title']; ?></td>
                     <td class="text-justify"><?php echo $donnees['description']; ?></td>
                     <td><?php echo $donnees['display_carousel']; ?></td>
-                    <td><a href="update-form-admin.php?update=travels&display=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                    <td><a href="update-forms-admin.php?update=travels&display=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
                     <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>

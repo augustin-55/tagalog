@@ -18,7 +18,7 @@
                     <tr>
                         <td><img src="../assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>"></td>
                         <td><?php echo $donnees['category']; ?></td>
-                        <td><a href="update-form-admin.php?update=travels&display=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="update-forms-admin.php?update=travels&display=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
                         <td><a href="assets/manageTravels/controller/delete.php?manageTravels=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>
