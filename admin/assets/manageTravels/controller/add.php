@@ -51,7 +51,7 @@ if (isset($_POST)) {
     else if (isset($_GET['manageTravels']) && $_GET['manageTravels'] == 'category') {
         
         if (isset($_POST['category-list']) && $_POST['category-list'] != '' && isset($_POST['thumbnail']) && $_POST['thumbnail'] != '') {
-            $category = $_POST['category-list'];
+            $category = ucfirst($_POST['category-list']);
             $thumbnail = $_POST['thumbnail'];
         
             $add = $bdd->prepare('INSERT INTO categories_travel (category, thumbnail) VALUES (:category, :thumbnail)');

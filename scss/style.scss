@@ -189,7 +189,7 @@ $main-magenta: #7e1f43;
 
 // 0.4 : Animations
 
-/* ----- 1 : Main body ----- */ 
+/* ----- 1 : Main body ----- */
 
 body {
     display: flex;
@@ -517,6 +517,60 @@ header {
             
             img {
                 border-radius: 100%;
+            }
+        }
+    }
+
+    .section-3-home {
+
+        h4 {
+            text-align: center;
+        }
+
+        .section-display-articles-home {
+            // padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // margin: 10px;
+            
+            article {
+                // margin: 0 40px;
+                // padding: 10px;
+                display: flex;
+
+                div {
+                    margin: 10px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 200px;
+                        border-radius: 5px;
+                    }
+
+                    .title-articles-home {
+                        color: $main-hover;
+                        // text-align: center;
+                    }
+
+                    .description-articles-home {
+                        color: $main-hover;
+                        text-align: justify;
+                        // padding: 0 40px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        .see-more-home {
+
+            .hover-sm-home {
+                width: 0%;
+                position: absolute;
+                display: none;
             }
         }
     }
@@ -1564,7 +1618,7 @@ header {
                
                .division-bar-portfolio {
                    height: 2px;
-                   background-color: $main-hover;
+                   background-color: $main-magenta;
                    width: 100%;
                    margin-bottom: 10px;
                }
@@ -1697,9 +1751,20 @@ footer {
             }
         }
     }
+
+    .section-copyright-footer {
+
+        p {
+            margin: 0;
+            color: #272727;
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
 }
 
 /* ----- 5 : Admin ----- */
 
-@import '../admin/assets/scss/style.css';
+@import '../admin/assets/scss/style-admin.css';
 

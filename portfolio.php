@@ -13,21 +13,21 @@
     <div class="main-menu-portfolio">
     <ul>
         <li><a href="#">View all</a></li>
-        <?php while ($donnees = $categories_portfolio->fetch()) { ?>
-            <li><a href="?category=<?php echo $donnees['category']; ?>"><?php echo $donnees['category']; ?></a></li>
+        <?php while ($data = $categories_portfolio->fetch()) { ?>
+            <li><a href="?category=<?php echo $data['category']; ?>"><?php echo $data['category']; ?></a></li>
         <?php } ?>
     </ul>
     </div>
     <div class="main-container-portfolio">
-        <?php while ($donnees = $portfolio->fetch()) { ?>
+        <?php while ($data = $portfolio->fetch()) { ?>
         <section class="section-portfolio">
             <article>
-                <img class="picture-portfolio" src="assets/pictures/portfolio/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
+                <img class="picture-portfolio" src="assets/pictures/portfolio/<?php echo $data['picture']; ?>" alt="<?php echo $data['title']; ?>">
             </article>
             <article class="aside-portfolio">
                 <div class="division-bar-portfolio"></div>
-                <p class="title-portfolio"><?php echo $donnees['title']; ?></p>
-                <p class="description-portfolio"><?php echo $donnees['description']; ?></p>
+                <p class="title-portfolio"><?php echo $data['title']; ?></p>
+                <p class="description-portfolio"><?php echo $data['description']; ?></p>
             </article>
         </section>
         <?php } ?>

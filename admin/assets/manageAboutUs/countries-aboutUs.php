@@ -16,8 +16,8 @@
 <form action="?country=" method="GET">
     <select name="select_country">
         <option value="default"> ----- </option>
-        <?php while ($donnees = $countries->fetch()) { ?>
-            <option value="<?php echo $donnees['country']; ?>"><?php echo $donnees['country'] ?></option>
+        <?php while ($data = $countries->fetch()) { ?>
+            <option value="<?php echo $data['country']; ?>"><?php echo $data['country'] ?></option>
         <?php } ?>
     </select>
     <input type="submit" value="Submit">
@@ -37,14 +37,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $smAll->fetch()) { ?>
+                <?php while ($data = $smAll->fetch()) { ?>
                     <tr>
-                        <td><?php echo $donnees['country']; ?></td>
-                        <td><?php echo $donnees['picture']; ?></td>
-                        <td><?php echo $donnees['title']; ?></td>
-                        <td><?php echo $donnees['description']; ?></td>
+                        <td><?php echo ucfirst($data['country']); ?></td>
+                        <td><img src="../assets/pictures/about-us/countries/<?php echo $data['picture']; ?>"></td>
+                        <td><?php echo $data['title']; ?></td>
+                        <td><?php echo $data['description']; ?></td>
                         <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>
             </tbody>
@@ -59,8 +59,11 @@
                     <option value="2">France</option>
                 </select>
             </div>
-            <div>
-                <input type="text" name="picture" placeholder="Picture.ext">
+            <div class="d-flex justify-content-center">
+                <label class="btn-file-input-preview">
+                    <i class="fa fa-image"></i><span class="span-no-choice">Choose preview picture</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture">
+                </label>
+                <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
             </div>
             <div>
                 <input type="text" name="title" placeholder="Title">

@@ -16,14 +16,14 @@
                 </tr>
             </thead>
             <tbody>
-            <?php while ($donnees = $portfolio->fetch()) { ?>
+            <?php while ($data = $portfolio->fetch()) { ?>
                 <tr>
-                    <td><?php echo $donnees['category']; ?></td>
-                    <td><?php echo $donnees['picture']; ?></td>
-                    <td><?php echo $donnees['title']; ?></td>
-                    <td class="text-justify"><?php echo $donnees['description']; ?></td>
-                    <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=pictures&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><?php echo $data['category']; ?></td>
+                    <td><img src="../assets/pictures/portfolio/<?php echo $data['picture']; ?>"></td>
+                    <td><?php echo $data['title']; ?></td>
+                    <td class="text-justify"><?php echo $data['description']; ?></td>
+                    <td><a href="update-forms-admin.php?update=portfolio&display=content&id=<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                    <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=pictures&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -35,13 +35,16 @@
             <div>
                 <select name="category">
                     <option value="0">---</option>
-                    <?php while ($donnees = $categories_portfolio->fetch()) { ?>
-                        <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
+                    <?php while ($data = $categories_portfolio->fetch()) { ?>
+                        <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
                     <?php } ?>
                 </select>
             </div>
-            <div>
-                <input type="file" name="picture">
+            <div class="d-flex justify-content-center">
+                <label class="btn-file-input-preview">
+                    <i class="fa fa-image"></i><span class="span-no-choice">Choose preview picture</span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture">
+                </label>
+                <button type="button" class="btn-delete-picture"><i class="far fa-times-circle"></i></button>
             </div>
             <div>
                 <input type="text" name="title" placeholder="Title">

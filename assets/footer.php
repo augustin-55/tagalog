@@ -1,33 +1,36 @@
-     <footer>
-          <section class="section-login-footer">
-               <div class="show-admin-btn">
-                         <a href="#admin-form" class="anchor-scroll"><i class="fas fa-user"></i></a>
-                         <span class="info-form-admin">May & Augustin - Admin</span>
-                         <span class="info-form-admin-2">
-                              <button><i class="far fa-times-circle"></i>Close</button>
-                         </span>
-               </div>
-               <div class="login-admin-form">
-                    <form action="assets/pages/portals/controller/login.php" method="POST">
+<footer>
+     <section class="section-login-footer">
+          <div class="show-admin-btn">
+                    <a href="#admin-form" class="anchor-scroll"><i class="fas fa-user"></i></a>
+                    <span class="info-form-admin">May & Augustin - Admin</span>
+                    <span class="info-form-admin-2">
+                         <button><i class="far fa-times-circle"></i>Close</button>
+                    </span>
+          </div>
+          <div class="login-admin-form">
+               <form action="assets/pages/portals/controller/login.php" method="POST">
+                    <div>
+                         <img src="assets/pictures/portals/login.png" alt="Login form picture">
+                    </div>
+                    <div class="fields-login-form">
                          <div>
-                              <img src="assets/pictures/portals/login.png" alt="Login form picture">
+                              <input type="text" placeholder="Username" name="username">
                          </div>
-                         <div class="fields-login-form">
-                              <div>
-                                   <input type="text" placeholder="Username" name="username">
-                              </div>
-                              <div>
-                                   <input type="password" placeholder="Password" name="password">
-                              </div>
-                              <div>
-                                   <input type="submit" value="Login">
-                              </div>
+                         <div>
+                              <input type="password" placeholder="Password" name="password">
                          </div>
-                    </form>
-               </div>
-          </section>
-          <div id="admin-form"></div>  
-     </footer>
+                         <div>
+                              <input type="submit" value="Login">
+                         </div>
+                    </div>
+               </form>
+          </div>
+     </section>
+     <div id="admin-form"></div>
+     <section class="section-copyright-footer">
+          <p>© <?php echo date('Y'); ?> / May & Augustin</p>
+     </section>  
+</footer>
 
      <!-- Bootstrap & jQuery -->
      <script src="js/libraries/jquery-3.5.1.min.js"></script>

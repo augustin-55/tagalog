@@ -6,17 +6,17 @@
 
 <section class="main-section-sm-countries">
     <section class="section-presentation-countries">
-    <?php while ($donnees = $smFrance->fetch()) { ?>
+    <?php while ($data = $smFrance->fetch()) { ?>
         <article>
             <div class="left-part-article">
                 <div class="point-left-article"></div>
                 <div class="bar-left-article"></div>
             </div>
             <div class="right-part-article">
-                <img src="assets/pictures/lorem/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
+                <img src="assets/pictures/about-us/countries/<?php echo $data['picture']; ?>" alt="<?php echo $data['title']; ?>">
                 <div>
-                    <h5><?php echo $donnees['title']; ?></h5>
-                    <p><?php echo $donnees['description']; ?></p>
+                    <h5><?php echo $data['title']; ?></h5>
+                    <p><?php echo $data['description']; ?></p>
                 </div>
             </div>
         </article>

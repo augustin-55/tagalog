@@ -5,8 +5,8 @@
 <form action="#" method="GET">
 <select name="select_category_travels">
         <option value="default"> ----- </option>
-        <?php while ($donnees = $categories_travel_select->fetch()) { ?>
-            <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
+        <?php while ($data = $categories_travel_select->fetch()) { ?>
+            <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
         <?php } ?>
     </select>
     <input type="submit" value="Select">
@@ -28,21 +28,21 @@
                 </tr>
             </thead>
             <tbody>
-            <?php while ($donnees = $travels->fetch()) { ?>
+            <?php while ($data = $travels->fetch()) { ?>
                 <tr>
-                    <td><?php echo $donnees['category']; ?></td>
-                    <td><img src="../assets/pictures/travels/content/<?php echo $donnees['picture']; ?>"></td>
+                    <td><?php echo $data['category']; ?></td>
+                    <td><img src="../assets/pictures/travels/content/<?php echo $data['picture']; ?>"></td>
                     <td class="display-pictures-admin">
-                        <img src="../assets/pictures/travels/content/<?php echo $donnees['picture_1']; ?>">
-                        <img src="../assets/pictures/travels/content/<?php echo $donnees['picture_2']; ?>">
-                        <img src="../assets/pictures/travels/content/<?php echo $donnees['picture_3']; ?>">
-                        <img src="../assets/pictures/travels/content/<?php echo $donnees['picture_4']; ?>">
+                        <img src="../assets/pictures/travels/content/<?php echo $data['picture_1']; ?>">
+                        <img src="../assets/pictures/travels/content/<?php echo $data['picture_2']; ?>">
+                        <img src="../assets/pictures/travels/content/<?php echo $data['picture_3']; ?>">
+                        <img src="../assets/pictures/travels/content/<?php echo $data['picture_4']; ?>">
                     </td>
-                    <td><?php echo $donnees['title']; ?></td>
-                    <td class="text-justify"><?php echo $donnees['description']; ?></td>
-                    <td><?php echo $donnees['display_carousel']; ?></td>
-                    <td><a href="update-forms-admin.php?update=travels&display=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><?php echo $data['title']; ?></td>
+                    <td class="text-justify"><?php echo $data['description']; ?></td>
+                    <td><?php echo $data['display_carousel']; ?></td>
+                    <td><a href="update-forms-admin.php?update=travels&display=content&id=<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                    <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -54,8 +54,8 @@
             <div>
                 <select name="category">
                     <option value="0">---</option>
-                    <?php while ($donnees = $categories_travel_add->fetch()) { ?>
-                        <option value="<?php echo $donnees['id']; ?>"><?php echo $donnees['category']; ?></option>
+                    <?php while ($data = $categories_travel_add->fetch()) { ?>
+                        <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
                     <?php } ?>
                 </select>
             </div>

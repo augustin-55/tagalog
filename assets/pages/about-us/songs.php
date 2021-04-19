@@ -18,15 +18,15 @@
             <div class="carousel-songs">
                 <div class="left-controller-carousel"></div>
                 <div class="carousel-videos embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/<?php echo $donnees['link']; ?>" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/<?php echo $data['link']; ?>" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="right-controller-carousel"></div>
             </div>
         </article>
         <section class="content-songs-bottom">
-            <?php while($donnees = $songs->fetch()) { ?>
+            <?php while($data = $songs->fetch()) { ?>
             <div class="show-videos-bottom">
-                <img src="https://img.youtube.com/vi/<?php echo $donnees['link']; ?>/default.jpg" alt="">
+                <img src="https://img.youtube.com/vi/<?php echo $data['link']; ?>/default.jpg" alt="">
             </div>
             <?php } ?>
         </section>

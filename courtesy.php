@@ -22,12 +22,12 @@
     <!-- Words section : basic talk -->
     <section class="section-courtesy-basics">
         <h2>Courtesy vocabulary : Basic talk</h2>
-        <?php while ($donnees = $courtesy->fetch()) { ?>
+        <?php while ($data = $courtesy->fetch()) { ?>
         <div class="flex-courtesy">
             <ul class="courtesy-article-words">
-                <li class="tagalog-basics-courtesy"><?php echo $donnees['tagalog']; ?></li>
-                <li class="english-basics-courtesy"><?php echo $donnees['english']; ?></li>
-                <li class="french-basics-courtesy"><?php echo $donnees['french']; ?></li>
+                <li class="tagalog-basics-courtesy"><?php echo $data['tagalog']; ?></li>
+                <li class="english-basics-courtesy"><?php echo $data['english']; ?></li>
+                <li class="french-basics-courtesy"><?php echo $data['french']; ?></li>
             </ul>
         </div>
         <?php } ?>

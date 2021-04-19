@@ -26,12 +26,12 @@
                         <th>Tagalog</th>
                         <th>French</th>
                     </tr>
-                    <?php while ($donnees = $animals->fetch()) { ?>
+                    <?php while ($data = $animals->fetch()) { ?>
                         <tr>
-                            <td><img src="assets/pictures/vocabulary/animals/<?php echo $donnees['picture']; ?>" class="picture-animals" alt=""></td>
-                            <td class="english-trad"><p><?php echo $donnees['english']; ?></p></td>
-                            <td class="tagalog-trad"><p><?php echo $donnees['tagalog']; ?></p></td>
-                            <td class="french-trad"><p><?php echo $donnees['french']; ?></p></td>
+                            <td><img src="assets/pictures/vocabulary/animals/<?php echo $data['picture']; ?>" class="picture-animals" alt=""></td>
+                            <td class="english-trad"><p><?php echo $data['english']; ?></p></td>
+                            <td class="tagalog-trad"><p><?php echo $data['tagalog']; ?></p></td>
+                            <td class="french-trad"><p><?php echo $data['french']; ?></p></td>
                         </tr>
                     <?php } ?>
                 </table>

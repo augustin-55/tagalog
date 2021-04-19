@@ -13,11 +13,11 @@
                 </tr>
             </thead>
             <tbody>
-                <?php while ($donnees = $categories_portfolio->fetch()) { ?>
+                <?php while ($data = $categories_portfolio->fetch()) { ?>
                     <tr>
-                        <td><?php echo $donnees['category']; ?></td>
-                        <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $donnees['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                        <td><?php echo $data['category']; ?></td>
+                        <td><a href="update-forms-admin.php?update=portfolio&display=category&id=<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php } ?>
             </tbody>

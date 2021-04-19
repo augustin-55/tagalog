@@ -14,8 +14,8 @@
             </div>
             <div class="select-profile-link"><img class="flower-picture" src="assets/pictures/about-us/flower.png" alt="flower"><img class="butterfly-picture picture-none" src="assets/pictures/about-us/butterfly.png" alt="butterfly"><a href="?profile=May" class="profile-May">May </a><span> & </span><a href="?profile=Augustin" class="profile-Augustin">Augustin</a></div>
             <div class="profile-presentation">
-                <p class="description-May">I'm a ravishing woman coming from Philippines. My life is being full of beautiful accomplishments, how can I be this beautiful ? this is the biggest question of my life. I'm just wonderful and so lovable. (I belong to Augustin).</p>
-                <p class="description-Augustin text-none">Coming from France, passionnated by IT and farming. I live my passion fully at the best, especially making websites. Member of IT support for 2 years in Daimler buses company.</p>
+                <p class="description-May">I'm a ravishing woman coming from Philippines. My life is being full of beautiful accomplishments, how can I be this beautiful ? this is the biggest question of my life. I'm just wonderful and so lovable. (I belong to Augustin). Be aware, he's a smoker, his teeth could get stuck in your skin.</p>
+                <p class="description-Augustin text-none">Coming from France, passionnated by IT and farming. I live my passion fully at the best, especially making websites. Member of IT support for 2 years in Daimler buses company. I like bananas and fluids. Unless you are a cockroach, my wife will show her ferocious tigress fangs, and let's hope it's for a smile.</p>
             </div>
             <div class="profile-socials">
                 <ul class="socials-May">

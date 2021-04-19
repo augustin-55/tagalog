@@ -69,7 +69,6 @@ $(function() {
 
     $(document).ready(function() {
         $('.navbar-brand img').css({'opacity':'1'}).addClass('animate__animated animate__fadeInLeft');
-        $('.underline-title-portfolio').css({'width':'200px', 'transition':'width 1s ease'});
     });
 
     /* ---------- 4 : Vocabulary ---------- */ 
@@ -90,6 +89,12 @@ $(function() {
         $(this).children('.aside-portfolio').addClass('aside-portfolio-display animate__animated animate__zoomIn');
     }).mouseleave(function() {
         $(this).children('.aside-portfolio').removeClass('aside-portfolio-display animate__animated animate__zoomIn');
+    });
+
+    $(document).ready(function(){
+        setTimeout(function() {
+            $('.underline-title-portfolio').css({'width':'200px', 'transition':'width 1s ease'});
+        }, 800);
     });
 
     /* ---------- 6 : About us ---------- */

@@ -4,7 +4,7 @@
     require('assets/functions/functions.php');
     include('assets/header.php');
     $display_category = $bdd->query('SELECT category FROM categories_travel WHERE id = "'.$_GET['category'].'"');
-    $data = $display_category->fetch();
+    $dataC = $display_category->fetch();
 ?>
 
 <!-- Main body : Travels -->
@@ -13,9 +13,9 @@
         <div class="section-carousel-travels">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <?php while($donnees = $carousel_travels->fetch()) { ?>
+                    <?php while($data = $carousel_travels->fetch()) { ?>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?> - Carousel">
+                        <img class="d-block w-100" src="assets/pictures/travels/content/<?php echo $data['picture']; ?>" alt="<?php echo $data['title']; ?> - Carousel">
                     </div>
                     <?php } ?>
                 </div>
@@ -40,21 +40,21 @@
         </div>
         <div class="section-title-travels">
             <div class="bar-title-travels"></div>
-                <h4>See all articles - <?php echo $data['category']; ?></h4>
+                <h4>See all articles - <?php echo $dataC['category']; ?></h4>
             <div class="bar-title-travels"></div>
         </div>
         <div class="section-articles-travels">
             <section>
-                <?php while($donnees = $travels->fetch()) { ?>
+                <?php while($data = $travels->fetch()) { ?>
                 <article>
                     <div>
-                        <img src="assets/pictures/travels/content/<?php echo $donnees['picture']; ?>" alt="<?php echo $donnees['title']; ?>">
-                        <span><?php echo $donnees['addDate']; ?></span>
+                        <img src="assets/pictures/travels/content/<?php echo $data['picture']; ?>" alt="<?php echo $data['title']; ?>">
+                        <span><?php echo $data['addDate']; ?></span>
                     </div>
                     <div>
-                        <h5><?php echo $donnees['title']; ?></h5>
-                        <p><?php echo $donnees['description']; ?></p>
-                        <a href="display-articles-travels.php?article=<?php echo $donnees[0]; ?>"><i class="far fa-hand-point-right"></i> See more pictures...</a>
+                        <h5><?php echo $data['title']; ?></h5>
+                        <p><?php echo $data['description']; ?></p>
+                        <a href="display-articles-travels.php?article=<?php echo $data[0]; ?>"><i class="far fa-hand-point-right"></i> See more pictures...</a>
                     </div>
                 </article>
                 <?php } ?> 

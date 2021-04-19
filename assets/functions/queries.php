@@ -46,6 +46,8 @@ $query = 'SELECT * FROM portfolio INNER JOIN categories_portfolio ON portfolio.c
 
 $portfolio = $bdd->query($query);
 
+$portfolio_home = $bdd->query('SELECT * FROM portfolio LIMIT 3');
+
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ---------- 3 : Travels ---------- */ 
@@ -68,6 +70,8 @@ if (isset($current_page) && $current_page == 'display-article-travel') {
     }
 }
 
+$travels_home = $bdd->query('SELECT * FROM travels LIMIT 3');
+
 /* ---------- 4 : About us ---------- */
 
 // Countries
@@ -88,6 +92,5 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     var_dump($username);
     var_dump($password);
 }
-
 
 // var_dump($_POST);

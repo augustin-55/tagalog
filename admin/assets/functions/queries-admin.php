@@ -1,17 +1,26 @@
 <?php 
 /**
 * Var
-* 0 : Learning
+*  : Learning
     * Courtesy
     * Food
     * Animals
-* 1 : Training
-* 2 : Portfolio
-* 3 : Travels
-* 4 : About us
-* 5 : Portals - Admin account
-* 6 : 
+*  : Training
+*  : Portfolio
+*  : Travels
+*  : About us
+*  : Portals - Admin account
+*  : 
 */
+
+/* -----  : Updates ID ----- */
+
+if (isset($_GET['id']) && $_GET['id'] != '') {
+    $id_article = $_GET['id'];
+}
+else {
+    $id_article = '1';
+}
 
 /* -----  : About us ----- */
 
@@ -23,6 +32,10 @@ $countCountriesArticles = $bdd->query('SELECT COUNT(*) FROM countries_articles')
 /* -----  : Vocabulary ----- */
 
 $countVocabulary = $bdd->query('SELECT count(*) FROM cooking');
+
+$update_vocabulary_courtesy = $bdd->query('SELECT * FROM courtesy WHERE id = "'.$id_article.'"');
+$update_vocabulary_food = $bdd->query('SELECT * FROM cooking WHERE id = "'.$id_article.'"');
+$update_vocabulary_animals = $bdd->query('SELECT * FROM animals WHERE id = "'.$id_article.'"');
 
 /* -----  : Training ----- */
 
@@ -63,13 +76,6 @@ if (isset($_GET['select_category_travels'])) {
 $travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
 
 // echo $travels;
-
-if (isset($_GET['id']) && $_GET['id'] != '') {
-    $id_article = $_GET['id'];
-}
-else {
-    $id_article = '1';
-}
 
 $update_travels_content = $bdd->query('SELECT * FROM travels WHERE id ="'.$id_article.'"');
 $update_travels_category = $bdd->query('SELECT * FROM categories_travel WHERE id = "'.$id_article.'"');

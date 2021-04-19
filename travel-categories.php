@@ -10,13 +10,13 @@
     <section class="section-choose-category">
         <form method="POST">
             <section>
-                <?php while($donnees = $categories_travel->fetch()) { ?>
+                <?php while($data = $categories_travel->fetch()) { ?>
                 <div>
-                    <img class="select-category-picture" src="assets/pictures/travels/categories/<?php echo $donnees['thumbnail']; ?>" alt="display <?php echo $donnees['category']; ?> page">
+                    <img class="select-category-picture" src="assets/pictures/travels/categories/<?php echo $data['thumbnail']; ?>" alt="display <?php echo $data['category']; ?> page">
                     <article>
-                        <p><?php echo $donnees['category']; ?></p>
+                        <p><?php echo $data['category']; ?></p>
                         <div class="bar-categories-travel"></div>
-                        <a href="travels.php?category=<?php echo $donnees['id']; ?>"><i class="fas fa-plane-arrival"></i> Take a look...</a>
+                        <a href="travels.php?category=<?php echo $data['id']; ?>"><i class="fas fa-plane-arrival"></i> Take a look...</a>
                     </article>
                 </div>
                 <?php } ?>

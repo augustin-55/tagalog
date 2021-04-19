@@ -97,6 +97,35 @@
             </article>
         </section> 
    </section>
+   <section class="section-3-home">
+       <h4>Latest articles...</h4>
+        <div class="d-flex justify-content-center">
+            <section class="section-display-articles-home">
+            <article>
+                <?php while ($data = $portfolio_home->fetch()) { ?>
+                <div>
+                    <img src="assets/pictures/travels/content/<?php echo $data ['picture']; ?>" alt="Article <?php echo $data['title']; ?> from portfolio">
+                    <p class="title-articles-home"><?php echo $data['title']; ?></p>
+                    <p class="description-articles-home"><?php echo substr($data['description'], 0, 100).'...'; ?><a href="#"> See more</a></p>
+                </div>
+                <?php } ?>
+            </article>
+            <p class="see-more-home">Find more in <span><a href="travel-categories.php">travels</a><a href="travel-categories.php" class="hover-sm-home">travels</a></p>
+            </section>
+            <section class="section-display-articles-home">
+                <article>
+                    <?php while ($data = $travels_home->fetch()) { ?>
+                    <div>
+                        <img src="assets/pictures/portfolio/<?php echo $data['picture']; ?>" alt="Article <?php echo $data['title']; ?> from travels">
+                        <p class="title-articles-home"><?php echo $data['title']; ?></p>
+                        <p class="description-articles-home"><?php echo substr($data['description'], 0, 100).'...'; ?><a href="display-articles-travels.php">See more</a></p>
+                    </div>
+                    <?php } ?>
+                </article>
+                <p class="see-more-home">Find more in <span><a href="portfolio.php">portfolio</a><a href="portfolio.php" class="hover-sm-home">portfolio</a></p>
+            </section>
+        </div>
+   </section>
 </div>
 
 <!-- Footer -->

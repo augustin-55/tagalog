@@ -22,30 +22,30 @@
                     <button class="button-admin-home">Counter - About us <i class="fas fa-chevron-down"></i></button>
                     <div>
                         <div class="underline-admin-home"></div>
-                        <p>Total number : <span><?php while ($donnees = $countCountriesArticles->fetch()) { echo $donnees[0]; } ?></span></p>
+                        <p>Total number : <span><?php while ($data = $countCountriesArticles->fetch()) { echo $data[0]; } ?></span></p>
                     </div>
                 </article>
                 <article class="category-admin-home">
                     <button class="button-admin-home">Counter - Vocabulary <i class="fas fa-chevron-down"></i></button>
                     <div>
                         <div class="underline-admin-home"></div>
-                        <p>Total number of words : <span><?php while ($donnees = $countVocabulary->fetch()) { echo $donnees[0]; } ?></span></p>
+                        <p>Total number of words : <span><?php while ($data = $countVocabulary->fetch()) { echo $data[0]; } ?></span></p>
                     </div>
                 </article>
                 <article class="category-admin-home">
                     <button class="button-admin-home">Counter - Portfolio <i class="fas fa-chevron-down"></i></button>
                     <div>
                         <div class="underline-admin-home"></div>
-                        <p>Total number : <span><?php while ($donnees = $countPortfolio->fetch()) { echo $donnees[0]; } ?></span></p>
-                        <p>Number in Philippines part : <span><?php while ($donnees = $countPortfolioPhilippines->fetch()) { echo $donnees[0]; } ?></span></p>
-                        <p>Number in France part : <span><?php while ($donnees = $countPortfolioFrance->fetch()) { echo $donnees[0]; } ?></span></p>
+                        <p>Total number : <span><?php while ($data = $countPortfolio->fetch()) { echo $data[0]; } ?></span></p>
+                        <p>Number in Philippines part : <span><?php while ($data = $countPortfolioPhilippines->fetch()) { echo $data[0]; } ?></span></p>
+                        <p>Number in France part : <span><?php while ($data = $countPortfolioFrance->fetch()) { echo $data[0]; } ?></span></p>
                     </div>
                 </article>
                 <article class="category-admin-home">
                     <button class="button-admin-home">Counter - Trips <i class="fas fa-chevron-down"></i></button>
                     <div>
                         <div class="underline-admin-home"></div>
-                        <p>Total of articles in this part : <span><?php while ($donnees = $countTravelsArticle->fetch()) { echo $donnees[0]; } ?></span></p>
+                        <p>Total of articles in this part : <span><?php while ($data = $countTravelsArticle->fetch()) { echo $data[0]; } ?></span></p>
                     </div>
                 </article>
             </div>

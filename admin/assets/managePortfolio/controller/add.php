@@ -38,7 +38,7 @@ if (isset($_POST)) {
 
     if (isset($_GET['managePortfolio']) && $_GET['managePortfolio'] == 'category') {
         if (isset($_POST['category-list']) && $_POST['category-list'] != '') {
-            $category = $_POST['category-list'];
+            $category = ucfirst($_POST['category-list']);
         
             $add = $bdd->prepare('INSERT INTO categories_portfolio (category) VALUES (:category)');
         
