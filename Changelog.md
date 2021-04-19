@@ -14,7 +14,7 @@
     * Do verifications of form in add form (admin part)
     * Watch again about messages on portals (main and admin parts)
     * Also change pictures on them
-    * ~~ Modify every "donnees" by "data" in all pages (English trad only) ~~
+    * ~Modify every "donnees" by "data" in all pages (English trad only)~
     * Bloc this possibility to go in admin part by link "http://fromscratch/tagalog/admin"
 
 ## Things to improve in V1.2 :
@@ -23,7 +23,7 @@
     * Put input file for "learning" pages add in admin part
     * Add counter and addDate cells in manage travels page
     * Portals : add emojis on every page
-    * ~~ Maj / Min auto at form add and update in admin part ~~
+    * ~Maj / Min auto at form add and update in admin part~
 
 ## Things to improve in V2 :
     * Start to enter content together in the website
