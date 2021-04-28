@@ -982,19 +982,38 @@ header {
             }
 
             .div-description-article {
-                color: $main-hover;
-                text-align: justify;
-                font-family: 'Oswald-Regular';
-                margin: 20px 0 40px 0;
-                width: 60%;
+                // margin: 20px 0 40px 0;
+                // width: 60%;
                 font-family: 'Playball-Regular';
-                font-size: 17px;
+                width: 70%;
 
-                p {
-                    color: grey;
-                    font-size: 14px;
-                    text-align: right;
-                    margin-top: 5px;
+                .p-description-article {
+                    margin: 20px auto 40px auto;
+                    font-size: 17px;
+                    text-align: justify;
+                    // color: lightgrey;
+                    // background-color: #141414;
+                    // padding: 20px;
+                    color: lightgrey;                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    p {
+                        color: grey;
+                        font-size: 14px;
+                        margin-top: 5px;
+                        text-align: justify;
+                    }
+    
+                    img {
+                        width: 50px;
+                        background-color: white;
+                        height: 50px;
+                        border-radius: 100%;
+                    }
                 }
             }
         }

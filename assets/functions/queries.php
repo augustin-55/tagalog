@@ -67,6 +67,10 @@ if (isset($current_page) && $current_page == 'display-article-travel') {
     if (isset($_GET['article'])) {
         $article = $_GET['article'];
         $display_article = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE travels.id = "'.$article.'"');
+        
+
+        
+        // $profile_picture_article = $bdd->query('SELECT profile_picture FROM admin INNER JOIN travels ON admin.id = travels. WHERE admin = "'..'"');
     }
 }
 
@@ -83,7 +87,7 @@ $smFrance = $bdd->query('SELECT * FROM countries_articles INNER JOIN countries O
 
 $songs = $bdd->query('SELECT * FROM songs INNER JOIN users ON songs.user_id = users.id');
 
-/* ---------- 5 : Portals ---------- */
+/* ---------- 5 : Accounts ---------- */
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];

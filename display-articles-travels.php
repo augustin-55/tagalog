@@ -20,9 +20,13 @@
                 <img src="assets/pictures/travels/content/<?php echo $data['picture_4']; ?>">
             </div>
             <div class="div-description-article">
-                <?php echo $data['description']; ?>
-                <p><?php echo $data['addBy']; ?>.</p>
-                <p><?php echo $data['addDate']; ?></p>
+                <p class="p-description-article"><?php echo $data['description']; ?></p>
+                <div>
+                    <p><?php echo $data['addBy']; ?>.</p>
+
+                    <img src="assets/pictures/<?php echo $data[''] ; ?>" alt="profile picture - <?php echo $data['addBy']; ?>">
+                    <p><?php echo $data['addDate']; ?></p>
+                </div>
             </div>
         </div>
         <div class="section-previous-travels">

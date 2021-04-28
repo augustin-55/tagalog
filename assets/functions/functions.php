@@ -64,5 +64,23 @@ if (isset($count_articles_travel)) {
     }
 }
 
+// Display profile picture in travels articles
+
+// if ($current_page == 'display-article-travel') {
+//     echo 'ok';
+
+//     // var_dump($data);
+
+//     if (isset($data['addBy']) && $data['addBy'] == 'May') {
+//         echo 'boule';
+//     }
+//     else if (isset($data['addBy']) && $data['addBy'] == 'Augustin') {
+//         echo 'Auugustinenea';
+//     }
+//     else {
+//         echo ' - prouit';
+//     }
+// }
+
 // var_dump($_SESSION);
 
