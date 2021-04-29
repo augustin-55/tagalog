@@ -64,11 +64,40 @@ if (isset($current_page) && $current_page == 'travels') {
 }
 
 if (isset($current_page) && $current_page == 'display-article-travel') {
+
     if (isset($_GET['article'])) {
         $article = $_GET['article'];
         $display_article = $bdd->query('SELECT * FROM travels INNER JOIN categories_travel ON travels.category_id = categories_travel.id WHERE travels.id = "'.$article.'"');
-        
 
+        if ($_GET['article'] != '') {
+
+            // if ($data['addBy'] == 'May') {
+            //     //         // $profile_picture_article = $bdd->query('SELECT * FROM admin WHERE username = "may"');
+    
+            //         echo 'ok May';
+    
+            //     //         // while ($data = $profile_picture_article->fetch()) {
+            //     //         //     $profile_picture = $data['profile_picture'];
+            //     //         //     echo $profile_picture;
+            //     //         // }
+            // }
+
+            // while ($picture = $display_article->fetch()) {
+
+            //     
+            //     else if (isset($data['addBy']) && $data['addBy'] == 'Augustin') {
+            //         // $profile_picture_article = $bdd->query('SELECT * FROM admin WHERE username = "augustin"');
+
+            //         // while ($data = $profile_picture_article->fetch()) {
+            //         //     $profile_picture = $data['profile_picture'];
+            //         // }
+
+            //         echo 'ok Augustin';
+            //     }
+            // }
+        }
+
+        // $profile_picture_article = $bdd->query('');
         
         // $profile_picture_article = $bdd->query('SELECT profile_picture FROM admin INNER JOIN travels ON admin.id = travels. WHERE admin = "'..'"');
     }

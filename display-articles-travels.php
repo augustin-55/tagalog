@@ -24,7 +24,7 @@
                 <div>
                     <p><?php echo $data['addBy']; ?>.</p>
 
-                    <img src="assets/pictures/<?php echo $data[''] ; ?>" alt="profile picture - <?php echo $data['addBy']; ?>">
+                    <img src="assets/pictures/yes.jpg" alt="profile picture - <?php echo $data['addBy']; ?>">
                     <p><?php echo $data['addDate']; ?></p>
                 </div>
             </div>
