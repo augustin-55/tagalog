@@ -47,6 +47,7 @@ $countPortfolio = $bdd->query('SELECT COUNT(*) FROM portfolio');
 $countPortfolioPhilippines = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "1"');
 $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "2"');
 
+$categories_portfolio_select = $bdd->query('SELECT * FROM categories_portfolio');
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ----- 4 : Travels ----- */

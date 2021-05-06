@@ -2,9 +2,19 @@
     <h2>Manage Portfolio - Pictures</h2>
 </div>
 
+<form action="#" method="GET">
+<select name="select_category_portfolio">
+        <option value="default"> ----- </option>
+        <?php while ($data = $categories_travel_select->fetch()) { ?>
+            <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
+        <?php } ?>
+    </select>
+    <input type="submit" value="Select">
+</form>
+
 <section>
     <article class="table-mPortfolio">
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>Category</th>

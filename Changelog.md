@@ -1,3 +1,7 @@
+# About the formats used in that file
+
+    * When we put "~" it's when things are realised
+
 # About the versions
 
 ## V1 : Version of the website like May advice me
@@ -24,6 +28,7 @@
     * Add counter and addDate cells in manage travels page
     * Portals : add emojis on every page
     * ~Maj / Min auto at form add and update in admin part~
+    * Add "order by" in every select form queries
 
 ## Things to improve in V2 :
     * Start to enter content together in the website
