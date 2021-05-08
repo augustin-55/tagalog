@@ -9,14 +9,12 @@
     <link rel="icon" type="image/png" href="../assets/pictures/main-logo.png">
     <!-- Main title -->
     <title>May & Augustin - Admin</title>
-    <!-- jQuery UI -->
-    <link rel="stylesheet" href="../js/libraries/jquery-ui-1.12.1/jquery-ui.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- My stylesheet -->
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../assets/scss/style.css">
 </head>
 <body class="admin-body">
     
@@ -38,26 +36,43 @@
                     <div class="bar-nav-item"></div>
                 </li>
                 <!-- About us -->
-                <li class="nav-item">
-                    <a class="nav-link" href="manageAboutUs.php"><i class="fas fa-grin-hearts"></i>About us</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-heart"></i>About us<div class="bar-nav-item"></div></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=category">Our meeting</a>
+                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=content">Content</a>
+                    </div>
+                </li>
+                <!-- Portfolio -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-images"></i>Portfolio<div class="bar-nav-item"></div></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=category">Categories</a>
+                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=content">Content</a>
+                    </div>
+                </li>
+                <!-- Travels -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-route"></i>Travels<div class="bar-nav-item"></div></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="manageTravels.php?manageTravels=category">Categories</a>
+                        <a class="dropdown-item" href="manageTravels.php?manageTravels=content">Content</a>
+                    </div>
                 </li>
                 <!-- Vocabulary -->
-                <li class="nav-item">
-                    <a class="nav-link" href="manageVocabulary.php"><i class="fas fa-language"></i>Vocabulary</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-language"></i>Learning<div class="bar-nav-item"></div></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="manageVocabulary.php?manageVocabulary=courtesy">Courtesy</a>
+                        <a class="dropdown-item" href="manageVocabulary.php?manageVocabulary=food">Food</a>
+                        <a class="dropdown-item" href="manageVocabulary.php?manageVocabulary=animals">Animals</a>
+                    </div>
                 </li>
                 <!-- Training -->
                 <li class="nav-item">
                     <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>Training</a>
                 </li>
-                <!-- Portfolio -->
-                <li class="nav-item">
-                    <a class="nav-link" href="managePortfolio.php"><i class="fas fa-graduation-cap"></i>Portfolio</a>
-                </li>
-                <!-- Bucket List -->
-                <li class="nav-item">
-                    <a class="nav-link" href="manageTravels.php"><i class="fas fa-globe-europe"></i>Travels</a>
-                </li>
-                <!-- Bucket List -->
+                <!-- Account -->
                 <li class="nav-item">
                     <a class="nav-link" href="manageAccount.php"><i class="fas fa-users-cog"></i>Account</a>
                 </li>

@@ -23,16 +23,16 @@ if (isset($_POST)) {
                 'category_id' => $category
             ))) {
                 $confirmMessage = 'The article '.$title.' is well added in the database. Thanks for your add ! :D';
-                header('location: ../../../confirm-portal-admin.php?managePortfolio=pictures&message='.$confirmMessage.'');
+                header('location: ../../../confirm-portal-admin.php?managePortfolio=content&message='.$confirmMessage.'');
             }
             else {
                 $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
-                header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
+                header('location: ../../../error-portal-admin.php?managePortfolio=content&message='.$errorMessage.'');
             }
         }
         else {
             $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
-            header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
+            header('location: ../../../error-portal-admin.php?managePortfolio=content&message='.$errorMessage.'');
         }
     }
 

@@ -48,6 +48,7 @@ $countPortfolioPhilippines = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE c
 $countPortfolioFrance = $bdd->query('SELECT COUNT(*) FROM portfolio WHERE category_id = "2"');
 
 $categories_portfolio_select = $bdd->query('SELECT * FROM categories_portfolio');
+
 $categories_portfolio = $bdd->query('SELECT * FROM categories_portfolio');
 
 /* ----- 4 : Travels ----- */
@@ -75,6 +76,9 @@ if (isset($_GET['select_category_travels'])) {
 }
 
 $travels = $bdd->query('SELECT * FROM categories_travel INNER JOIN travels ON categories_travel.id = travels.category_id');
+
+$update_portfolio_content = $bdd->query('SELECT * FROM portfolio WHERE id ="'.$id_article.'"');
+$update_portfolio_category = $bdd->query('SELECT * FROM categories_portfolio WHERE id = "'.$id_article.'"');
 
 // echo $travels;
 

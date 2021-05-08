@@ -42,32 +42,32 @@
 
 @font-face {
     font-family: 'Lobster-regular';
-    src: url('../assets/fonts/Lobster-Regular.ttf');
+    src: url('../fonts/Lobster-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Oswald-regular';
-    src: url('../assets/fonts/Oswald-Regular.ttf');
+    src: url('../fonts/Oswald-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Playball-regular';
-    src: url('../assets/fonts/Playball-Regular.ttf');
+    src: url('../fonts/Playball-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Bangers-regular';
-    src: url('../assets/fonts/Bangers-Regular.ttf');
+    src: url('../fonts/Bangers-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Quicksand-regular';
-    src: url('../assets/fonts/Quicksand-Regular.ttf');
+    src: url('../fonts/Quicksand-Regular.ttf');
 }
 
 // 0.2 : Var
 
-$main-purple: #542886;
+$main-purple: #5e16b1;
 $main-blue: #0e0e1a;
 $main-pink: #36151d;
 $main-hover: #bdbdbd;
@@ -78,7 +78,7 @@ $pink-black: #1f0c11;
 $main-green: #264226;
 $green-light: #3a683a;
 $green-black: #0f200f;
-$main-magenta: #7e1f43;
+$main-magenta: #8d1342;
 
 // 0.3 : Portals
 
@@ -198,7 +198,7 @@ body {
 }
 
 .index-body {
-    background-color: $main-blue;
+    background-color: #afafaf;
 
     header {
         position: absolute;
@@ -249,31 +249,31 @@ body {
 }
 
 .numbers-body {
-    background-image: url('../assets/pictures/vocabulary/numbers/numbers-body.jpg');
+    background-image: url('../pictures/vocabulary/numbers/numbers-body.jpg');
     background-size: cover;
 }
 
 .cooking-body {
-    background-image: url('../assets/pictures/vocabulary/cooking/background-1.jpeg');
+    background-image: url('../pictures/vocabulary/cooking/background-1.jpeg');
     background-size: cover;
 }
 
 .aboutUs-body {
-    background-image: url('../assets/pictures/about-us/background.jpg');
+    background-image: url('../pictures/about-us/background.jpg');
     background-size: cover;
 }
 
 .animals-body {
-    background-image: url('../assets/pictures/vocabulary/animals/background.jpg');
+    background-image: url('../pictures/vocabulary/animals/background.jpg');
     background-size: cover;
 }
 
 .courtesy-body {
-    background-image: url('../assets/pictures/vocabulary/courtesy/background.jpg');
+    background-image: url('../pictures/vocabulary/courtesy/background.jpg');
 }
 
 .courtesy-body {
-    background-image: url('../assets/pictures/vocabulary/courtesy/background.jpg');
+    background-image: url('../pictures/vocabulary/courtesy/background.jpg');
 }
 
 .travels-body, .people-body, .portfolio-body, .portals-body {
@@ -282,7 +282,7 @@ body {
 
 .admin-body {
     // background-color: #1b1b1b;
-    background-image: url('../assets/pictures/admin/background-admin.jpg');
+    background-image: url('../pictures/admin/background-admin.jpg');
     background-size: auto 1080px;
 }
 
@@ -395,7 +395,7 @@ header {
     }
 
     .navbar-nav {
-        margin-left: 50%;
+        margin-left: 40%;
 
         li {
             margin: 0 20px;
@@ -412,7 +412,7 @@ header {
                 a:hover,
                 a:focus,
                 a:active {
-                    background-color: #090911cb;
+                    background-color: $main-magenta;
                     color: white;
                 }
             }
@@ -1785,5 +1785,5 @@ footer {
 
 /* ----- 5 : Admin ----- */
 
-@import '../admin/assets/scss/style-admin.css';
+@import '../../admin/assets/scss/style-admin.css';
 

@@ -14,7 +14,7 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- My stylesheet -->
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 <body class="<?php
     // Body background
@@ -56,7 +56,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.php"><i class="fas fa-images"></i>Portfolio<div class="bar-nav-item"></div></a>
                 </li>
-                <!-- Bucket List -->
+                <!-- Travels -->
                 <li class="nav-item">
                     <a class="nav-link" href="travel-categories.php"><i class="fas fa-route"></i>Travels<div class="bar-nav-item"></div></a>
                 </li>

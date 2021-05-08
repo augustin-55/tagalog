@@ -12,11 +12,11 @@ if ($_GET['managePortfolio'] == 'pictures') {
 
     if ($delete->execute()) {
         $confirmMessage = 'The article is well deleted from the database !';
-        header('location: ../../../confirm-portal-admin.php?managePortfolio=pictures&message='.$confirmMessage.'');
+        header('location: ../../../confirm-portal-admin.php?managePortfolio=content&message='.$confirmMessage.'');
     }
     else {
         $errorMessage = 'An error occured, this article can\'t be deleted';
-        header('location: ../../../error-portal-admin.php?managePortfolio=pictures&message='.$errorMessage.'');
+        header('location: ../../../error-portal-admin.php?managePortfolio=content&message='.$errorMessage.'');
     }
 }
 else if ($_GET['managePortfolio'] == 'category') {

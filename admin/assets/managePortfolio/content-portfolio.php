@@ -5,7 +5,7 @@
 <form action="#" method="GET">
 <select name="select_category_portfolio">
         <option value="default"> ----- </option>
-        <?php while ($data = $categories_travel_select->fetch()) { ?>
+        <?php while ($data = $categories_portfolio_select->fetch()) { ?>
             <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
         <?php } ?>
     </select>
@@ -31,7 +31,7 @@
                     <td><?php echo $data['category']; ?></td>
                     <td><img src="../assets/pictures/portfolio/<?php echo $data['picture']; ?>"></td>
                     <td><?php echo $data['title']; ?></td>
-                    <td class="text-justify"><?php echo $data['description']; ?></td>
+                    <td class="text-justify"><?php echo substr($data['description'], 0, 100).'...'; ?></td>
                     <td><a href="update-forms-admin.php?update=portfolio&display=content&id=<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a></td>
                     <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=pictures&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
@@ -45,7 +45,7 @@
             <div>
                 <select name="category">
                     <option value="0">---</option>
-                    <?php while ($data = $categories_portfolio->fetch()) { ?>
+                    <?php while ($data = $categories_portfolio_select->fetch()) { ?>
                         <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
                     <?php } ?>
                 </select>

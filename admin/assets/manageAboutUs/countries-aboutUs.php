@@ -42,7 +42,7 @@
                         <td><?php echo ucfirst($data['country']); ?></td>
                         <td><img src="../assets/pictures/about-us/countries/<?php echo $data['picture']; ?>"></td>
                         <td><?php echo $data['title']; ?></td>
-                        <td><?php echo $data['description']; ?></td>
+                        <td><?php echo substr($data['description'], 0, 100).'...'; ?></td>
                         <td><a href="#"><i class="fas fa-edit"></i></a></td>
                         <td><a href="assets/managePortfolio/controller/delete.php?managePortfolio=category&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>

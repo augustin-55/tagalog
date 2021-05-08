@@ -39,7 +39,7 @@
                         <img src="../assets/pictures/travels/content/<?php echo $data['picture_4']; ?>">
                     </td>
                     <td><?php echo $data['title']; ?></td>
-                    <td class="text-justify"><?php echo $data['description']; ?></td>
+                    <td class="text-justify"><?php echo substr($data['description'], 0, 200).'...'; ?></td>
                     <td><?php echo $data['display_carousel']; ?></td>
                     <td><a href="update-forms-admin.php?update=travels&display=content&id=<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a></td>
                     <td><a href="assets/manageTravels/controller/delete.php?manageTravels=content&id=<?php echo $data['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>

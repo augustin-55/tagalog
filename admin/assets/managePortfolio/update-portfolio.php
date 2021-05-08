@@ -15,10 +15,10 @@
                     <?php } ?>
                 </select>
             </div>
-                <?php while($data = $update_travels_content->fetch()) { ?>
+                <?php while($data = $update_portfolio_content->fetch()) { ?>
                 <div class="display-pictures-update">
-                    <input type="hidden" name="path_pictures" value="../assets/pictures/travels/content/">
-                    <img src="../assets/pictures/travels/content/<?php echo $data['picture']; ?>" alt="thumbnail of <?php echo $data['title']; ?> - travels article">
+                    <input type="hidden" name="path_pictures" value="../assets/pictures/portfolio/">
+                    <img src="../assets/pictures/portfolio/<?php echo $data['picture']; ?>" alt="thumbnail of <?php echo $data['title']; ?> - portfolio article">
                     <div class="d-flex justify-content-center align-items-center">
                         <label class="btn-file-input-preview">
                             <i class="fa fa-image mr-2"></i><span class="span-no-choice"><?php echo $data['picture']; ?></span><span class="span-file-chosen"></span><input type="file" style="display: none;" name="picture">
@@ -35,7 +35,7 @@
             </div>
         </form>
         <hr>
-        <a href="manageTravels.php?manageTravels=content">Previous</a>
+        <a href="managePortfolio.php?managePortfolio=content">Previous</a>
     </article>
 
 <?php } else if ($_GET['display'] == 'category') { ?>
@@ -52,7 +52,7 @@
             </div>
         </form>
         <hr>
-        <a href="manageTravels.php?manageTravels=content">Previous</a>
+        <a href="managePortfolio.php?managePortfolio=categories">Previous</a>
     </article>
 
 <?php } ?>
