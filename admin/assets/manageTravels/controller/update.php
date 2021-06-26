@@ -2,11 +2,9 @@
 
 require('../../functions/functions-admin.php');
 
-var_dump($_POST);
-
 if (isset($_POST['thumbnail'])) {
 
-    if (isset($_POST['category-list']) && $_POST['category-list'] != '') {
+    if (isset($_POST['category']) && $_POST['category'] != '') {
         $id = $_GET['id'];
 
         if ($_POST['thumbnail'] != '') {
@@ -19,7 +17,7 @@ if (isset($_POST['thumbnail'])) {
             }
         }
 
-        $category = $_POST['category-list'];
+        $category = $_POST['category'];
     
         $update = $bdd->query('UPDATE categories_travel SET thumbnail = "'.$thumbnail.'", category = "'.$category.'" WHERE id = '.$id.'');
     

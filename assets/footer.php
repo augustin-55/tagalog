@@ -38,6 +38,8 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
+     <!-- Arctext -->
+     <script src="assets/js/libraries/jquery.arctext.js"></script>
      <!-- My scripts -->
      <script src="assets/js/scripts.min.js"></script>
 </body>

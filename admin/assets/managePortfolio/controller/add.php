@@ -26,7 +26,7 @@ if (isset($_POST)) {
                 header('location: ../../../confirm-portal-admin.php?managePortfolio=content&message='.$confirmMessage.'');
             }
             else {
-                $errorMessage = 'You must fill a category and picture input at least <i class="fas fa-frown-open"></i>';
+                $errorMessage = 'There\'s an error while adding this article in the database <i class="fas fa-frown-open"></i>';
                 header('location: ../../../error-portal-admin.php?managePortfolio=content&message='.$errorMessage.'');
             }
         }

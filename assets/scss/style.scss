@@ -65,20 +65,26 @@
     src: url('../fonts/Quicksand-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'GreatVibes-regular';
+    src: url('../fonts/GreatVibes-Regular.ttf');
+}
+
 // 0.2 : Var
 
 $main-purple: #5e16b1;
 $main-blue: #0e0e1a;
 $main-pink: #36151d;
 $main-hover: #bdbdbd;
-$main-yellow: #414105;
+$main-yellow: #DDC045;
 $main-red: #410000;
+$main-green: #264226;
+$main-magenta: #8d1342;
 $pink-light: #582d35;
 $pink-black: #1f0c11;
-$main-green: #264226;
 $green-light: #3a683a;
 $green-black: #0f200f;
-$main-magenta: #8d1342;
+$blue-light: #525270;
 
 // 0.3 : Portals
 
@@ -189,6 +195,23 @@ $main-magenta: #8d1342;
 
 // 0.4 : Animations
 
+// 0.5 : Scrollbar
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: $main-hover;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: $main-blue;
+    border: 2px solid $main-hover;
+    border-radius: 5px;
+} 
+
 /* ----- 1 : Main body ----- */
 
 body {
@@ -198,19 +221,20 @@ body {
 }
 
 .index-body {
-    background-color: #afafaf;
+    background-color: $blue-light;
 
     header {
         position: absolute;
         width: 98%;
-        
+        background-color: #57575800;
 
         .navbar-nav {
     
             li {
                 
                 a {
-                    color: #9b9b9b;
+                    color: #161616ce;
+                    // text-shadow: 1px 1px 1px $main-magenta;
     
                     i {
                         color: $main-magenta;
@@ -226,7 +250,7 @@ body {
                 a:hover,
                 a:focus,
                 a:active {
-                    color: $main-hover;
+                    color: $main-blue;
 
                     i {
                         color: $main-purple;
@@ -311,6 +335,7 @@ h4 {
     font-family: 'Lobster-Regular';
     color: #a7a7a7c4;
     margin: 5px 0 20px 0;
+    text-align: center;
 }
 
 h5 {
@@ -360,7 +385,7 @@ h5 {
 /* ----- 2 : Header ----- */
 
 header {
-    background-color: #0e0e1ae1;
+    background-color: #0e0e1acc;
     margin: 10px 20px;
     border-radius: 7px;
     z-index: 10;
@@ -395,7 +420,7 @@ header {
     }
 
     .navbar-nav {
-        margin-left: 40%;
+        margin-left: 30%;
 
         li {
             margin: 0 20px;
@@ -419,7 +444,7 @@ header {
             
             a {
                 color: white;
-                font-size: 15px;
+                // font-size: 1px;
                 font-family: 'Oswald-regular';
                 transition: 0.5s ease color;
 
@@ -488,7 +513,128 @@ header {
 // 3.2 : Homepage
 
 .main-container-home {
-    border: 1px solid black;
+    // border: 1px solid black;
+
+    .section-1-bis-home {
+        margin-bottom: 20px;
+
+        .background-section-1-bis {
+            background-image: url('../pictures/home/section-1-bis/background.jpg');
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+            filter: blur(2px);
+
+            // .blur {
+            //     backdrop-filter: blur(2px);
+            //     height: 100vh;
+            //     width: 100%;
+            //     position: absolute;
+            // }
+        }
+
+        .div-bis-home-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-family: 'Quicksand-Regular';
+                text-shadow: 1px 1px 1px #636363d0;
+                margin: 100px 0 40px 0;
+            }
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .div-bis-home-2 {
+            margin-top: 100px;
+            
+            p {
+                color: white;
+                text-shadow: 1px 1px 1px #636363d0;
+                font-family: 'GreatVibes-regular';
+                text-align: center;
+                font-size: 50px;
+            }
+
+            span {
+                color: $main-yellow;
+            }
+        }
+
+        .div-bis-home-3 {
+            
+            p {
+                font-family: 'Quicksand-Regular';
+                color: white;
+                text-align: center;
+                font-size: 18px;
+                margin: 10px;
+            }
+
+            .number-bis-home-3 {
+
+                span {
+                    margin: 10px 0;
+                    font-size: 12px;
+                    color: $main-yellow;
+                    font-family: 'Quicksand-Regular';
+                    text-align: center;
+                }
+
+                div {
+
+                    span {
+                        background-color: white;
+                        border-radius: 5px;
+                        padding: 10px;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+        .div-bis-home-4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+            p {
+                font-family: 'Quicksand-Regular';
+                font-size: 28px;
+                color: white;
+            }
+        }
+
+        .div-bis-home-5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+
+                i {
+                    margin: 20px 0;
+                    color: white;
+                }
+            }
+
+            button {
+                border: 2px solid white;
+                background-color: #ffffff00;
+                color: white;
+                border-radius: 10px;
+                padding: 5px 20px;
+                text-shadow: 1px 1px 1px #636363d0;
+            }
+        }
+
+    }
 
     .section-1-home {
         display: flex;
@@ -512,19 +658,56 @@ header {
     .section-2-home {
         display: flex;
         justify-content: space-around;
+        font-family: 'Quicksand-regular';
 
-        article {
-            
+        h4 {
+            color: $main-blue;
+        } 
+
+        .section-thingsAboutUs-home {
+            // background-color: $main-blue;
+            padding: 10px;
+            box-shadow: 1px 1px 1px $main-blue;
+
+            span {
+                position: absolute;
+                z-index: -1;
+                font-size: 300px;
+                color: $main-hover;
+                font-family: 'Bangers-regular';
+                opacity: 0.5;
+            }
+
+            li {
+                margin: 20px 0;
+            }
+        }
+
+        .section-intro-home {
+            // border: 1px solid black;
+            padding: 20px;
+            box-shadow: 1px 1px 1px $main-blue;
+
             img {
-                border-radius: 100%;
+                width: 600px;
+            }
+
+            p {
+                width: 600px;
+                text-align: justify;
+                color: $main-hover;
+                margin: 5px auto;
             }
         }
     }
 
     .section-3-home {
+        margin: 40px 0;
 
         h4 {
             text-align: center;
+            margin-bottom: 20px;
+            color: $main-blue;
         }
 
         .section-display-articles-home {
@@ -533,11 +716,13 @@ header {
             flex-direction: column;
             align-items: center;
             // margin: 10px;
+            overflow: auto;
             
             article {
                 // margin: 0 40px;
                 // padding: 10px;
                 display: flex;
+
 
                 div {
                     margin: 10px 40px;
@@ -546,20 +731,24 @@ header {
                     align-items: center;
 
                     img {
-                        width: 200px;
+                        height: 400px;
                         border-radius: 5px;
                     }
 
-                    .title-articles-home {
-                        color: $main-hover;
-                        // text-align: center;
-                    }
+                    // .title-articles-home {
+                    //     color: $main-hover;
+                    //     // text-align: center;
+                    // }
 
                     .description-articles-home {
-                        color: $main-hover;
-                        text-align: justify;
-                        // padding: 0 40px;
-                        width: 200px;
+                        // position: absolute;
+                        
+                        p {
+                            color: $main-hover;
+                            text-align: justify;
+                            // padding: 0 40px;
+                            width: 200px;
+                        }
                     }
                 }
             }
@@ -571,6 +760,64 @@ header {
                 width: 0%;
                 position: absolute;
                 display: none;
+            }
+        }
+    }
+
+    .section-4-home {
+        background-color: $main-blue;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 40px auto;
+
+        article {
+            border: 3px solid white;
+            padding: 10px;
+
+            div {
+
+                img {
+                    width: 200px;
+                    border: 2px solid white;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    .section-5-home {
+        background-color: $main-blue;
+        border-radius: 5px;
+        width: 60%;
+        margin: 10px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        article {
+            padding: 20px 0;
+
+            a {
+                margin: 10px 20px;
+                color: $main-magenta;
+                transition: color 0.4s ease;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                color: $main-hover;
+                text-decoration: none;
+                transition: color 0.4s ease;
             }
         }
     }

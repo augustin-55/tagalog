@@ -1,10 +1,20 @@
 <?php
 
-// Var
+/**
+ * 0.1 : Var
+ * 0.2 : Import BDD
+ * 0.3 : Import queries
+ * 0.4 : Count number of months together
+ * 0.5 : Functions of video webpage
+ * 0.6 : Display articles in different pages - Travel
+ * 0.7 : Functions wedding page
+*/
+
+// 0.1 : Var
 
 $video = '';
 
-// Import BDD
+// 0.2 : Import BDD
 
 require('env.php');
 
@@ -83,4 +93,18 @@ if (isset($count_articles_travel)) {
 // }
 
 // var_dump($_SESSION);
+
+// Functions wedding page
+
+$target = mktime(0, 9, 25, 2011); //set marriage date
+$DateAndTime = date('Y;m;d;H', time());  
+echo "The current date and time are $DateAndTime";
+// echo $today;
+// $difference =($target-$today);
+// $years = date('Y', $difference);
+// $months = date('m',$difference);
+// $days = date('d',$difference);
+// $hours = date('h',$difference);
+
+
 

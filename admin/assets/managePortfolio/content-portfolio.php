@@ -45,7 +45,7 @@
             <div>
                 <select name="category">
                     <option value="0">---</option>
-                    <?php while ($data = $categories_portfolio_select->fetch()) { ?>
+                    <?php while ($data = $categories_portfolio->fetch()) { ?>
                         <option value="<?php echo $data['id']; ?>"><?php echo $data['category']; ?></option>
                     <?php } ?>
                 </select>

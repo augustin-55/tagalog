@@ -71,6 +71,10 @@ $(function() {
         $('.navbar-brand img').css({'opacity':'1'}).addClass('animate__animated animate__fadeInLeft');
     });
 
+    // Arctext "our wedding date" section
+
+    $('.div-bis-home-1 h2').arctext({radius: 250});
+
     /* ---------- 4 : Vocabulary ---------- */ 
 
     // 4.1 : Numbers

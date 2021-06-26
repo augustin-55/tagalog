@@ -35,7 +35,7 @@
                 <li><a href="?page=meeting">Our meeting</a></li>
                 <li><a href="?page=countries">Our countries</a></li>
                 <li><a href="?page=songs">Favorite songs</a></li>
-                <li><a href="#">Item 4</a></li>
+                <li><a href="?page=series">Favorite series</a></li>
                 <li><a href="#">Item 5</a></li>
                 <li><a href="#">Item 6</a></li>
             </ul>

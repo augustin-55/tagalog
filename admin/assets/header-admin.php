@@ -13,6 +13,8 @@
     <script src="https://kit.fontawesome.com/f1c8fa9f91.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- DataTables -->
+    <link rel="stylesheet" type="text/css" href="assets/scss/dependencies/DataTables/datatables.min.css"/>
     <!-- My stylesheet -->
     <link rel="stylesheet" href="../assets/scss/style.css">
 </head>
@@ -33,14 +35,18 @@
                 <!-- Home -->
                 <li class="nav-item">
                     <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home</a>
-                    <div class="bar-nav-item"></div>
+                </li>
+                <!-- Homepage -->
+                <li class="nav-item">
+                    <a class="nav-link" href="manageHomepage.php"><i class="fas fa-house-user"></i>Homepage</a>
                 </li>
                 <!-- About us -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-heart"></i>About us<div class="bar-nav-item"></div></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=category">Our meeting</a>
-                        <a class="dropdown-item" href="managePortfolio.php?managePortfolio=content">Content</a>
+                        <a class="dropdown-item" href="manageAboutUs.php?manageAboutUs=meeting">Meeting</a>
+                        <a class="dropdown-item" href="manageAboutUs.php?manageAboutUs=countries">Countries</a>
+                        <a class="dropdown-item" href="manageAboutUs.php?manageAboutUs=songs">Songs</a>
                     </div>
                 </li>
                 <!-- Portfolio -->
@@ -69,7 +75,7 @@
                     </div>
                 </li>
                 <!-- Training -->
-                <li class="nav-item">
+                <li class="nav-item d-none">
                     <a class="nav-link" href="manageTraining.php"><i class="fas fa-graduation-cap"></i>Training</a>
                 </li>
                 <!-- Account -->

@@ -48,6 +48,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php"><i class="fas fa-house-damage"></i>Home<div class="bar-nav-item"></div></a>
                 </li>
+                <!-- Wedding -->
+                <li class="nav-item">
+                    <a class="nav-link" href="wedding.php"><i class="fas fa-heart"></i>Wedding</a>
+                </li>
                 <!-- About us -->
                 <li class="nav-item">
                     <a class="nav-link" href="aboutUs.php?profile=May"><i class="fas fa-heart"></i>About us<div class="bar-nav-item"></div></a>
@@ -72,7 +76,7 @@
                     </div>
                 </li>
                 <!-- Training -->
-                <li class="nav-item">
+                <li class="nav-item d-none">
                     <a class="nav-link" href="training.php"><i class="fas fa-graduation-cap"></i>Training<div class="bar-nav-item"></div></a>
                 </li>
             </ul>

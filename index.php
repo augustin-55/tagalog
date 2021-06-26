@@ -70,30 +70,32 @@
         </section>
     </section>
     <section class="section-2-home">
-       <section>
+        <section class="section-thingsAboutUs-home">
            <h4>10 things about us</h4>
-           <img src="#" alt="#">
+           <!-- <img src="#" alt="#"> -->
+           <span>10</span>
            <article>
                <ul>
-                   <li>1 : </li>
-                   <li>2 : </li>
-                   <li>3 : </li>
-                   <li>4 : </li>
-                   <li>5 : </li>
-                   <li>6 : </li>
-                   <li>7 : </li>
-                   <li>8 : </li>
-                   <li>9 : </li>
-                   <li>10 : </li>
+                   <li>1 : May is afraid by cockroaches</li>
+                   <li>2 : I'm afraid by spiders</li>
+                   <li>3 : May likes avocado with cream</li>
+                   <li>4 : I like avocado with vinegar</li>
+                   <li>5 : May's working so much</li>
+                   <li>6 : I drink Coca-Cola in computer racks</li>
+                   <li>7 :</li>
+                   <li>8 :</li>
+                   <li>9 : But May is a wonderful girlfriend</li>
+                   <li>10 : And I'm a handsome boyfriend.</li>
                </ul>
            </article>
-       </section>
-        <section>
+        </section>
+        <section class="section-intro-home">
             <article>
-                <img src="assets/pictures/lorem/lorem.jpg" alt="couple picture home">
+                <img src="assets/pictures/home/couple-picture.jpg" alt="couple picture home">
             </article>
             <article>
                 <p>We know each other for <?php echo $nbDayRelationship; ?> months now, and we're in couple for <?php echo $nbDayLove; ?> months</p>
+                <p>In venenatis lacus vitae consequat accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer quis velit massa. Etiam finibus eros quis felis sodales, nec blandit nisl tempor. Phasellus sed dictum augue. Nulla facilisis, libero in pulvinar placerat, diam purus blandit felis, sed convallis velit turpis vitae quam. Maecenas aliquet felis vel nisi consectetur pretium.</p>
             </article>
         </section> 
    </section>
@@ -105,8 +107,10 @@
                 <?php while ($data = $portfolio_home->fetch()) { ?>
                 <div>
                     <img src="assets/pictures/travels/content/<?php echo $data ['picture']; ?>" alt="Article <?php echo $data['title']; ?> from portfolio">
-                    <p class="title-articles-home"><?php echo $data['title']; ?></p>
-                    <p class="description-articles-home"><?php echo substr($data['description'], 0, 100).'...'; ?><a href="#"> See more</a></p>
+                    <div class="description-articles-home">
+                        <h5><?php echo $data['title']; ?></h5>
+                        <p><?php echo substr($data['description'], 0, 100).'...'; ?><a href="#"> See more</a></p>
+                    </div>
                 </div>
                 <?php } ?>
             </article>
@@ -117,14 +121,37 @@
                     <?php while ($data = $travels_home->fetch()) { ?>
                     <div>
                         <img src="assets/pictures/portfolio/<?php echo $data['picture']; ?>" alt="Article <?php echo $data['title']; ?> from travels">
-                        <p class="title-articles-home"><?php echo $data['title']; ?></p>
-                        <p class="description-articles-home"><?php echo substr($data['description'], 0, 100).'...'; ?><a href="display-articles-travels.php">See more</a></p>
+                        <div class="description-articles-home">
+                            <h5><?php echo $data['title']; ?></h5>
+                            <p><?php echo substr($data['description'], 0, 100).'...'; ?><a href="display-articles-travels.php">See more</a></p>
+                        </div>
                     </div>
                     <?php } ?>
                 </article>
                 <p class="see-more-home">Find more in <span><a href="portfolio.php">portfolio</a><a href="portfolio.php" class="hover-sm-home">portfolio</a></p>
             </section>
         </div>
+   </section>
+   <section class="section-4-home">
+        <article>
+            <h4>The most popular...</h4>
+            <div>
+                <img src="#" alt="#">
+                <p>Title</p>
+            </div>
+        </article>
+        <article>
+            <h4>Our latest videos</h4>
+        </article>
+   </section>
+   <section class="section-5-home">
+        <h4>Meet us on our social medias</h4>
+        <article>
+            <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+            <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+        </article>
    </section>
 </div>
 

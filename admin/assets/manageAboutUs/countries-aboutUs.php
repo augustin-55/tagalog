@@ -1,14 +1,3 @@
-<?php
-    if (isset($_GET['country'])) {
-        $countrySmSelect = 'ok';
-        var_dump($_GET);
-    }
-    else {
-        $countrySmSelect = 'non ok';
-        var_dump($_GET);
-    }
-?>
-
 <div class="main-title-admin">
     <h2>Manage About us - Countries</h2>
 </div>

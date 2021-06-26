@@ -1,13 +1,6 @@
 <?php include('assets/header-admin.php'); ?>
 
 <section class="main-container-mAboutUs main-container">
-    <div class="menu-mAboutUs">
-        <ul>
-            <li><a href="?manageAboutUs=meeting">Our meeting</a></li>
-            <li><a href="?manageAboutUs=countries">Our Countries</a></li>
-            <li><a href="?manageAboutUs=songs">Our favorite songs</a></li>
-        </ul>
-    </div>
     <div class="content-mAboutUs">
         <?php
             if (isset($_GET['manageAboutUs'])) {
